@@ -18,6 +18,13 @@ const { title, description, canonical, type, faqs } = Astro.props;
 <html lang="es" class="scroll-smooth">
   <head>
     <BaseHead title={title} description={description} canonical={canonical} type={type} faqs={faqs} />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZF1G0T80D2"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZF1G0T80D2');
+    </script>
   </head>
   <body class="flex flex-col bg-white min-h-dvh">
     <Navigation />
