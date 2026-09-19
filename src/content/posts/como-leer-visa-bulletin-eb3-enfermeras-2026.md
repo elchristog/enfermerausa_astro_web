@@ -1,5 +1,6 @@
 ---
 pubDate: 2026-09-19
+team: "david-lee"
 title: "Cómo leer el Visa Bulletin EB-3 para enfermeras en 2026"
 description: "Aprende a interpretar tu fecha de prioridad, las tablas EB-3 y el boletín mensual de visas de Estados Unidos sin confundir pasos ni fechas."
 image:
