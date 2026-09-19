@@ -1,0 +1,43 @@
+name: Publicar sitio
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el sitio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Construir el sitio
+        run: |
+          npm ci
+          npm run build
+
+      - name: Conectar con Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/627008374034/locations/global/workloadIdentityPools/github-deployments/providers/github-actions
+          service_account: github-deploy@company-data-driven.iam.gserviceaccount.com
+
+      - name: Publicar en enfermerausa.com
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: company-data-driven
+
+      - name: Subir la versión publicada
+        run: gcloud storage rsync --recursive dist gs://enfermerausa.com
