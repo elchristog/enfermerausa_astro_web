@@ -6,13 +6,15 @@ interface Props {
   description?: string;
   canonical?: string;
   ogImage?: string;
+  type?: "website" | "article";
 }
 
 const {
   title = "Agencia para Enfermeras en USA | Homologación, Visa y Empleo",
   description = "La principal y más grande agencia para enfermeros hispanos en Estados Unidos. Únete a miles de casos de éxito. Homologación, sponsor y empleo.",
   canonical = "https://enfermerausa.com",
-  ogImage = "https://enfermerausa.com/logo.webp"
+  ogImage = "https://enfermerausa.com/logo.webp",
+  type = "website"
 } = Astro.props;
 ---
 
@@ -34,7 +36,7 @@ const {
       },
     ],
     site_name: "Enfermera en Estados Unidos",
-    type: "website",
+    type,
     locale: "es_US",
   }}
   twitter={{
