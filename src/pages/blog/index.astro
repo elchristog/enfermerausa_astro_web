@@ -1,3 +1,17 @@
 ---
-return Astro.redirect("/blog/home/", 301);
+const destination = "https://enfermerausa.com/blog/home/";
 ---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog | Enfermera en Estados Unidos</title>
+    <link rel="canonical" href={destination} />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+  </head>
+  <body>
+    <p><a href={destination}>Ir al blog</a></p>
+  </body>
+</html>
