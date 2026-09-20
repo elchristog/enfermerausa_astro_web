@@ -21,7 +21,7 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
           <p class="font-semibold text-[#2C3E50]">Elige tu horario para reservar tu lugar</p>
           <p class="mt-1 text-sm text-slate-500">La confirmación y los recordatorios llegarán a tu correo.</p>
         </div>
-        <div class="calendly-inline-widget min-h-[760px]" data-url={calendlyUrl}></div>
+        <div class="calendly-inline-widget" data-url={calendlyUrl} style="min-width: 320px; height: 980px;"></div>
         <div id="booking-success" class="hidden px-6 py-8 text-center">
           <p class="text-2xl font-extrabold text-[#27AE60]">Tu reserva está confirmada</p>
           <p class="mx-auto mt-2 max-w-xl text-slate-600">Revisa tu correo para guardar el horario y recibir los recordatorios antes de la sesión.</p>
@@ -30,6 +30,13 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
     </div>
   </section>
 
+  <style>
+    .calendly-inline-widget iframe { min-height: 980px !important; }
+    @media (max-width: 640px) {
+      .calendly-inline-widget { height: 920px !important; }
+      .calendly-inline-widget iframe { min-height: 920px !important; }
+    }
+  </style>
   <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script is:inline>
     window.addEventListener('message', function(event) {
