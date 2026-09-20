@@ -30,11 +30,11 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
     </div>
   </section>
 
-  <style>
-    .calendly-inline-widget iframe { min-height: 980px !important; }
+  <style is:global>
+    .calendly-inline-widget iframe { height: 980px !important; min-height: 980px !important; }
     @media (max-width: 640px) {
       .calendly-inline-widget { height: 920px !important; }
-      .calendly-inline-widget iframe { min-height: 920px !important; }
+      .calendly-inline-widget iframe { height: 920px !important; min-height: 920px !important; }
     }
   </style>
   <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
