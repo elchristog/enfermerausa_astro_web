@@ -4,14 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import { legacyRedirects } from './src/data/legacy-redirects.mjs';
 
-// Build Astro redirects map (with and without trailing slash)
-const redirects = Object.fromEntries(
-  Object.entries(legacyRedirects).flatMap(([from, to]) => [
-    [`/${from}`, to],
-    [`/${from}/`, to],
-  ])
-);
-
 export default defineConfig({
   site: 'https://enfermerausa.com',
   trailingSlash: 'always',
@@ -33,7 +25,7 @@ export default defineConfig({
     drafts: true
   },
   integrations: [ sitemap({
-    filter: (page) => !Object.keys(legacyRedirects).some((slug) => page.includes(`/${slug}`)),
+    // Keep legacy redirect shells out of the sitemap
+    filter: (page) => !Object.keys(legacyRedirects).some((slug) => page.includes(`/${slug}/`) || page.endsWith(`/${slug}`)),
   }), mdx()],
-  redirects,
 });
