@@ -53,10 +53,6 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
         window.fbq('track', 'Schedule', { content_name: 'Sesión informativa gratuita' }, { eventID: eventId });
       }
 
-      var metaFallback = new Image(1, 1);
-      metaFallback.style.display = 'none';
-      metaFallback.src = 'https://www.facebook.com/tr?id=309464551754526&ev=Schedule&cd%5Bcontent_name%5D=Sesion%20informativa%20gratuita&eventID=' + encodeURIComponent(eventId) + '&noscript=1';
-      document.body.appendChild(metaFallback);
 
       if (window.gtag) {
         window.gtag('event', 'generate_lead', {
