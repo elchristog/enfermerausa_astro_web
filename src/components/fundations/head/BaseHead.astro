@@ -11,15 +11,17 @@ interface Props {
   canonical?: string;
   type?: 'home' | 'service' | 'faq' | 'article';
   faqs?: Array<{ question: string; answer: string }>;
+  datePublished?: string;
+  ogImage?: string;
 }
 
-const { title, description, canonical, type = 'home', faqs = [] } = Astro.props;
+const { title, description, canonical, type = 'home', faqs = [], datePublished, ogImage } = Astro.props;
 ---
-<Seo title={title} description={description} canonical={canonical} />
+<Seo title={title} description={description} canonical={canonical} ogImage={ogImage} type={type === 'article' ? 'article' : 'website'} />
 <Meta />
 <Fonts />
 <Favicons />
-<JsonLd type={type} title={title} description={description} url={canonical} faqs={faqs} />
+<JsonLd type={type} title={title} description={description} url={canonical} faqs={faqs} datePublished={datePublished} />
 <script is:inline>
   !function(f,b,e,v,n,t,s){
     if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
