@@ -43,7 +43,7 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
       }
     });
   </script>
-  <script>
+  <script is:inline>
     window.addEventListener('message', function(event) {
       if (event.origin !== 'https://calendly.com') return;
       if (!event.data || event.data.event !== 'calendly.event_scheduled') return;
