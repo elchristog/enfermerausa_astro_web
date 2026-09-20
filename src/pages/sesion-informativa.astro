@@ -21,7 +21,7 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
           <p class="font-semibold text-[#2C3E50]">Elige tu horario para reservar tu lugar</p>
           <p class="mt-1 text-sm text-slate-500">La confirmación y los recordatorios llegarán a tu correo.</p>
         </div>
-        <div class="calendly-inline-widget" data-url={calendlyUrl} data-resize="true" style="min-width: 320px; height: 750px;"></div>
+        <div id="calendly-embed" style="min-width: 320px; height: 750px;"></div>
         <div id="booking-success" class="hidden px-6 py-8 text-center">
           <p class="text-2xl font-extrabold text-[#27AE60]">Tu reserva está confirmada</p>
           <p class="mx-auto mt-2 max-w-xl text-slate-600">Revisa tu correo para guardar el horario y recibir los recordatorios antes de la sesión.</p>
@@ -30,18 +30,24 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
     </div>
   </section>
 
-  <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script is:inline src="https://assets.calendly.com/assets/external/widget.js"></script>
   <script is:inline>
+    window.addEventListener('load', function() {
+      if (window.Calendly) {
+        window.Calendly.initInlineWidget({
+          url: 'https://calendly.com/enfermeraenestadosunidos/homologacion-enfermeria-reunion-informativa',
+          parentElement: document.getElementById('calendly-embed'),
+          resize: true
+        });
+      }
+    });
+
     window.addEventListener('message', function(event) {
       if (event.origin !== 'https://calendly.com') return;
       if (!event.data || event.data.event !== 'calendly.event_scheduled') return;
 
-      if (window.fbq) {
-        window.fbq('track', 'Schedule', { content_name: 'Sesión informativa gratuita' });
-      }
-      if (window.gtag) {
-        window.gtag('event', 'generate_lead', { event_category: 'Calendly', event_label: 'Sesión informativa gratuita' });
-      }
+      if (window.fbq) window.fbq('track', 'Schedule', { content_name: 'Sesión informativa gratuita' });
+      if (window.gtag) window.gtag('event', 'generate_lead', { event_category: 'Calendly', event_label: 'Sesión informativa gratuita' });
 
       var success = document.getElementById('booking-success');
       if (success) success.classList.remove('hidden');
