@@ -12,6 +12,7 @@ import BlogEntries1 from "@/components/blog/BlogEntries.astro";
 const { frontmatter } = Astro.props;
 import { getEntry } from "astro:content";
 const team = await getEntry("team", frontmatter.team);
+const canonical = `https://enfermerausa.com${Astro.url.pathname}`;
 // Get all posts and filter by tag
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("posts");
@@ -20,7 +21,14 @@ const relatedPosts = allPosts.filter((post) =>
 );
 ---
 
-<BaseLayout>
+<BaseLayout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  canonical={canonical}
+  type="article"
+  datePublished={frontmatter.pubDate.toISOString()}
+  ogImage={frontmatter.image.url}
+>
   <section>
     <Wrapper variant="standard" class="fixed z-40 top-[3.8rem] inset-x-0">
       <div class="w-full py-2 bg-white border-b border-base-200">
