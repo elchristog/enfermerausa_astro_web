@@ -10,14 +10,16 @@ interface Props {
   canonical?: string;
   type?: 'home' | 'service' | 'faq' | 'article';
   faqs?: Array<{ question: string; answer: string }>;
+  datePublished?: string;
+  ogImage?: string;
 }
 
-const { title, description, canonical, type, faqs } = Astro.props;
+const { title, description, canonical, type, faqs, datePublished, ogImage } = Astro.props;
 ---
 
 <html lang="es" class="scroll-smooth">
   <head>
-    <BaseHead title={title} description={description} canonical={canonical} type={type} faqs={faqs} />
+    <BaseHead title={title} description={description} canonical={canonical} type={type} faqs={faqs} datePublished={datePublished} ogImage={ogImage} />
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZF1G0T80D2"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
