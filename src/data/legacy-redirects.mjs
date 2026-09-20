@@ -39,7 +39,6 @@ export const legacyRedirects = {
 
   // Empleo / visa / patrocinio
   'ofertas-de-trabajo-para-enfermeras-en-ee-uu': '/ofertas-de-empleo-para-enfermeras-en-usa/',
-  'ofertas-de-empleo-para-enfermeras-en-usa': '/ofertas-de-empleo-para-enfermeras-en-usa/',
   'como-conseguir-trabajo-como-enfermera-en-estados-unidos': '/ofertas-de-empleo-para-enfermeras-en-usa/',
   'enfermera-en-estados-unidos-como-conseguir-trabajo-2': '/ofertas-de-empleo-para-enfermeras-en-usa/',
   'soy-enfermera-y-quiero-trabajar-en-estados-unidos': '/ofertas-de-empleo-para-enfermeras-en-usa/',
@@ -58,7 +57,6 @@ export const legacyRedirects = {
 
   // Salarios
   'cuanto-gana-una-enfermera-en-estados-unidos': '/salarios-de-enfermeros-en-estados-unidos/',
-  'salarios-de-enfermeros-en-estados-unidos': '/salarios-de-enfermeros-en-estados-unidos/',
   'tabla-de-salarios-para-enfermeras-registradas-en-estados-unidos-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'tabla-salarial-en-enfermeria-en-estados-unidos-una-guia-detallada': '/salarios-de-enfermeros-en-estados-unidos/',
   'salario-minimo-para-enfermeras-en-los-estados-unidos-en-2025': '/salarios-de-enfermeros-en-estados-unidos/',
