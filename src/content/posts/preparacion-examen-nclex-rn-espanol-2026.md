@@ -2,7 +2,7 @@
 pubDate: 2026-09-16
 team: "david-lee"
 title: "Examen NCLEX-RN para Enfermeros Hispanos: Estrategias de Estudio y Preparación 2026"
-description: "Todo lo que necesitas saber para aprobar el [examen NCLEX-RN](/licencia-de-enfermeria-y-examen-nclex-usa/) en tu primer intento. Formato NGN, bancos de preguntas y simuladores en español."
+description: "Todo lo que necesitas saber para aprobar el examen NCLEX-RN en tu primer intento: formato NGN, bancos de preguntas y simuladores en español."
 image:
   url: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop"
   alt: "Estudio y preparación para examen NCLEX RN"
@@ -14,7 +14,7 @@ tags:
 
 # Examen NCLEX-RN para Enfermeros Hispanos: Estrategias de Estudio 2026
 
-El **NCLEX-RN** (National Council Licensure Examination for Registered Nurses) es el examen oficial imprescindible para obtener tu licencia de enfermería en Estados Unidos.
+El **NCLEX-RN** (National Council Licensure Examination for Registered Nurses) es el examen oficial imprescindible para obtener tu [licencia de enfermería en Estados Unidos](/licencia-de-enfermeria-y-examen-nclex-usa/).
 
 ---
 
