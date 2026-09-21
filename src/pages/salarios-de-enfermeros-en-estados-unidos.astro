@@ -2,18 +2,18 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const salaryStates = [
-  { state: "California", avgSalary: "$133,340 / año", hourly: "$64.11 / hr" },
-  { state: "Texas", avgSalary: "$84,320 / año", hourly: "$40.54 / hr" },
-  { state: "Florida", avgSalary: "$80,960 / año", hourly: "$38.92 / hr" },
-  { state: "New York", avgSalary: "$100,130 / año", hourly: "$48.14 / hr" },
-  { state: "Illinois", avgSalary: "$85,500 / año", hourly: "$41.10 / hr" },
-  { state: "Washington", avgSalary: "$101,670 / año", hourly: "$48.88 / hr" },
+  { state: "California", avgSalary: "$137,690 / año", hourly: "$66.20 / hr" },
+  { state: "Texas", avgSalary: "$90,210 / año", hourly: "$43.37 / hr" },
+  { state: "Florida", avgSalary: "$84,760 / año", hourly: "$40.75 / hr" },
+  { state: "New York", avgSalary: "$106,620 / año", hourly: "$51.26 / hr" },
+  { state: "Illinois", avgSalary: "$87,650 / año", hourly: "$42.14 / hr" },
+  { state: "Washington", avgSalary: "$111,030 / año", hourly: "$53.38 / hr" },
 ];
 ---
 
 <BaseLayout
   title="Salario de Enfermera en USA 2026 | Cuánto Gana por Estado y Especialidad"
-  description="Descubre cuánto gana una enfermera en Estados Unidos. Datos de 2026 sobre salarios promedio por estado, especialidades mejor pagadas e ingresos extras."
+  description="Descubre cuánto gana una enfermera en Estados Unidos. Datos oficiales del BLS (mayo 2023) sobre salarios promedio por estado, especialidades mejor pagadas e ingresos extras."
   canonical="https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/"
   type="service"
 >
@@ -42,7 +42,7 @@ const salaryStates = [
 
   <div class="py-16 bg-white">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-8">
-      <h2 class="text-2xl font-bold text-gray-900">Salario Promedio Anual por Estado</h2>
+      <h2 class="text-2xl font-bold text-gray-900">Salario Promedio Anual por Estado (BLS, mayo 2023)</h2>
 
       <div class="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
         <table class="w-full text-left text-sm text-gray-700">
@@ -64,6 +64,7 @@ const salaryStates = [
           </tbody>
         </table>
       </div>
+      <p class="text-xs text-gray-500 mt-3">Fuente: U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics (OEWS), mayo 2023. <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">Ver datos oficiales de Registered Nurses (29-1141)</a>.</p>
     </div>
   </div>
 
@@ -75,7 +76,7 @@ const salaryStates = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
           <h3 class="font-bold text-slate-900 text-lg mb-2">¿Cuál es el salario promedio por hora de una enfermera registrada (RN) en EE.UU.?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">En 2026, el salario promedio nacional de una Registered Nurse (RN) en EE.UU. oscila entre $38 y $58 USD por hora. En estados como California y Nueva York supera los $65 USD/hora, con ingresos anuales de $80,000 a $120,000 USD.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Según el Bureau of Labor Statistics (OEWS, mayo 2023), la media estatal de una Registered Nurse (RN) va de $40.75/hora en Florida a $66.20/hora en California. En Nueva York la media es de $51.26/hora ($106,620 al año).</p>
         </div>
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
           <h3 class="font-bold text-slate-900 text-lg mb-2">¿Los hospitales patrocinadores pagan horas extra y bonos de relocalización?</h3>
@@ -160,7 +161,7 @@ const salaryStates = [
       <div class="text-center max-w-2xl mx-auto mb-8">
         <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Ingresos Reales vs Impuestos</span>
         <h2 class="text-2xl md:text-3xl font-extrabold text-white">¿Cuánto Dinero Líquido Recibes al Mes en tu Cuenta?</h2>
-        <p class="text-sm text-slate-300 mt-2">Estimación de salario neto (después de impuestos federales y retenciones de ley) para un enfermero RN a 36h/semana.</p>
+        <p class="text-sm text-slate-300 mt-2">Estimación de salario neto (después de impuestos federales y retenciones de ley) para un enfermero RN a 36 h/semana, calculada con las tarifas medias del BLS (mayo 2023).</p>
       </div>
 
       <div class="overflow-x-auto bg-slate-800 rounded-2xl border border-slate-700 text-xs">
@@ -176,25 +177,25 @@ const salaryStates = [
           <tbody class="divide-y divide-slate-700 text-slate-200">
             <tr>
               <td class="p-4 font-bold text-white">Texas (Houston / Dallas)</td>
-              <td class="p-4">$6,720 USD</td>
+              <td class="p-4">$6,760 USD</td>
               <td class="p-4 text-emerald-400 font-bold">0% (Sin impuesto estatal)</td>
               <td class="p-4 font-bold text-emerald-300">$5,310 - $5,550 USD / mes</td>
             </tr>
             <tr>
               <td class="p-4 font-bold text-white">Florida (Orlando / Miami)</td>
-              <td class="p-4">$6,320 USD</td>
+              <td class="p-4">$6,350 USD</td>
               <td class="p-4 text-emerald-400 font-bold">0% (Sin impuesto estatal)</td>
               <td class="p-4 font-bold text-emerald-300">$5,020 - $5,250 USD / mes</td>
             </tr>
             <tr>
               <td class="p-4 font-bold text-white">Illinois (Chicago)</td>
-              <td class="p-4">$6,850 USD</td>
+              <td class="p-4">$6,570 USD</td>
               <td class="p-4 text-slate-300">4.95% (State Tax)</td>
               <td class="p-4 font-bold text-emerald-300">$5,200 - $5,420 USD / mes</td>
             </tr>
             <tr>
               <td class="p-4 font-bold text-white">California (Los Ángeles / San Diego)</td>
-              <td class="p-4">$9,200 USD</td>
+              <td class="p-4">$10,320 USD</td>
               <td class="p-4 text-slate-300">6.0% - 9.3% (State Tax)</td>
               <td class="p-4 font-bold text-emerald-300">$6,450 - $6,800 USD / mes</td>
             </tr>
