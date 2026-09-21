@@ -127,7 +127,7 @@ const relatedPosts = allPosts.filter((post) =>
             class="flex flex-col p-4 lg:stick lg:top-30 lg:sticky lg:z-50 lg:order-first bg-base-50 gap-2 lg:justify-between"
           >
             <Text tag="p" variant="textBase" class="text-base-500">
-              Share this article:
+              Comparte este artículo:
             </Text>
             <ShareButtons description={frontmatter.description} />
           </div>
@@ -140,7 +140,7 @@ const relatedPosts = allPosts.filter((post) =>
       <section>
         <Wrapper variant="standard" class="py-8">
           <Text tag="h2" variant="displaySM" class=" text-base-800">
-            Related posts
+            Artículos relacionados
           </Text>
           <div class="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {relatedPosts.slice(0, 3).map((post) => (
