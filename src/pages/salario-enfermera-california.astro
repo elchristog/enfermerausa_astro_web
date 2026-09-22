@@ -1,0 +1,132 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Cuánto gana una enfermera registrada en California?",
+    answer: "Según el Bureau of Labor Statistics (OEWS, mayo 2023), el salario medio anual de una Registered Nurse en California es de $137,690 ($66.20 por hora), el más alto entre los estados con datos publicados en esa encuesta. En Los Ángeles–Long Beach–Anaheim la media es de $121,440; en el Área de la Bahía (San Francisco–Oakland) supera $170,000 en varias zonas metropolitanas."
+  },
+  {
+    question: "¿California tiene impuesto estatal a la renta?",
+    answer: "Sí. California aplica impuesto estatal sobre la renta con tramos progresivos. El salario bruto más alto del país no se traduce uno a uno en neto: hay que restar federal, estatal y FICA, y considerar el costo de vivienda."
+  },
+  {
+    question: "¿California está en el Nurse Licensure Compact?",
+    answer: "No. California no es miembro del Enhanced Nurse Licensure Compact. La licencia de California es de un solo estado: no habilita por sí sola a ejercer en otros estados del compacto."
+  },
+];
+---
+
+<BaseLayout
+  title="Salario de enfermera en California 2026 | Datos BLS"
+  description="Cuánto gana una enfermera RN en California según el BLS: $137,690 al año de media, el más alto del país. Impuesto estatal, costo de vida y junta BRN."
+  canonical="https://enfermerausa.com/salario-enfermera-california/"
+  type="service"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">California · Salarios RN</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Salario de enfermera en California
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          California es el estado con el <strong>salario medio RN más alto</strong> del BLS: <strong>$137,690 al año</strong> ($66.20/hora). También es el de mayor empleo (332,560 RN). A cambio: impuesto estatal, costo de vida alto y <strong>sin Nurse Licensure Compact</strong>.
+        </p>
+        <p class="text-sm text-gray-500 mb-8">
+          Fuente salarial: <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OEWS, mayo 2023</a>. Mediana nacional mayo 2025: $97,550 (<a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OOH</a>).
+        </p>
+        <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow gap-2">
+          <span>Agendar sesión informativa</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-10">
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Cifras oficiales de salario RN en California</h2>
+        <div class="overflow-x-auto border border-gray-200 rounded-xl">
+          <table class="w-full text-left text-sm text-gray-700">
+            <thead class="bg-gray-100 text-xs uppercase font-bold text-gray-900">
+              <tr>
+                <th class="px-6 py-3">Ámbito</th>
+                <th class="px-6 py-3">Salario medio anual</th>
+                <th class="px-6 py-3">Por hora</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="px-6 py-3 font-semibold">California (estado)</td><td class="px-6 py-3 text-emerald-800 font-bold">$137,690</td><td class="px-6 py-3">$66.20</td></tr>
+              <tr><td class="px-6 py-3">Los Ángeles–Long Beach–Anaheim</td><td class="px-6 py-3">$121,440</td><td class="px-6 py-3">$58.39</td></tr>
+              <tr><td class="px-6 py-3">San Francisco–Oakland–Hayward</td><td class="px-6 py-3">$174,370</td><td class="px-6 py-3">$83.83</td></tr>
+              <tr><td class="px-6 py-3">San Jose–Sunnyvale–Santa Clara</td><td class="px-6 py-3">$170,780</td><td class="px-6 py-3">$82.11</td></tr>
+              <tr><td class="px-6 py-3">Mediana nacional (mayo 2025)</td><td class="px-6 py-3">$97,550</td><td class="px-6 py-3">$46.90</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 mt-3">Empleo RN en California: 332,560 (BLS OEWS mayo 2023). Primer estado por número de enfermeras registradas.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Bruto alto, neto y costo de vida</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          El bruto de California lidera el país, pero el estado <strong>sí cobra impuesto sobre la renta</strong> (tramos progresivos). Vivienda, transporte y comida en zonas costeras reducen el poder adquisitivo frente a Texas o Florida a igualdad de estilo de vida.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Por eso conviene comparar <strong>neto + arriendo</strong>, no solo el salario publicado. En la sesión informativa se puede contrastar ofertas reales por estado sin tratar el bruto de California como ingreso disponible.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Licencia en California (sin Compact)</h2>
+        <ul class="list-disc pl-6 text-gray-600 space-y-2">
+          <li>La junta es el <a href="https://www.rn.ca.gov/" target="_blank" rel="noopener" class="text-emerald-700 underline">California Board of Registered Nursing (BRN)</a>.</li>
+          <li>California <strong>no</strong> participa en el <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="text-emerald-700 underline">Nurse Licensure Compact</a>. La licencia es válida solo en California.</li>
+          <li>Si más adelante quieres ejercer en un estado del compacto, necesitarás la ruta de licencia de ese otro estado (o una multistate emitida desde un estado compacto que sea tu residencia principal).</li>
+          <li>Empieza por la <a href="/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/" class="text-emerald-700 underline">guía de homologación</a> y <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">NCLEX</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <div class="p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-gray-900 mb-3">Comparar con otros estados</h2>
+        <ul class="text-sm text-gray-700 space-y-2">
+          <li><a href="/salario-enfermera-texas/" class="text-emerald-700 underline font-semibold">Salario de enfermera en Texas</a> — sin impuesto estatal + Compact.</li>
+          <li><a href="/salario-enfermera-florida/" class="text-emerald-700 underline font-semibold">Salario de enfermera en Florida</a> — sin impuesto estatal + Compact.</li>
+          <li><a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline font-semibold">Tabla de salarios por estado</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="py-12 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-md mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿California encaja con tu plan?</h2>
+      <p class="text-emerald-100 text-sm mb-6">Salario alto no es lo mismo que poder adquisitivo. En la sesión revisamos números reales, licencia BRN y el resto del camino (homologación, NCLEX, visa).</p>
+      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg">Agendar sesión gratuita</a>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes</span>
+      <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2023</a>
+      · <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH</a>
+      · <a href="https://www.rn.ca.gov/" target="_blank" rel="noopener" class="underline">California BRN</a>
+      · <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="underline">NCSBN Compact</a>
+    </div>
+  </div>
+</BaseLayout>
