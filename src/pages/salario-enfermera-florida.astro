@@ -1,0 +1,129 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Cuánto gana una enfermera registrada en Florida?",
+    answer: "Según el Bureau of Labor Statistics (OEWS, mayo 2023), el salario medio anual de una Registered Nurse en Florida es de $84,760 ($40.75 por hora). En Miami–Fort Lauderdale–West Palm Beach la media es de $87,710."
+  },
+  {
+    question: "¿Florida cobra impuesto estatal a la renta?",
+    answer: "No. Florida no tiene impuesto estatal sobre la renta. El neto depende del impuesto federal, Seguro Social y Medicare."
+  },
+  {
+    question: "¿Florida está en el Nurse Licensure Compact?",
+    answer: "Sí. Florida es miembro del Enhanced Nurse Licensure Compact. Una licencia multistate de Florida puede usarse en otros estados del compacto, según NCSBN y cada junta estatal."
+  },
+];
+---
+
+<BaseLayout
+  title="Salario de enfermera en Florida 2026 | Datos BLS y Compact"
+  description="Cuánto gana una enfermera RN en Florida según el BLS: $84,760 al año de media, sin impuesto estatal y con licencia compact. Cifras oficiales y junta de enfermería."
+  canonical="https://enfermerausa.com/salario-enfermera-florida/"
+  type="service"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Florida · Salarios RN</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Salario de enfermera en Florida
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          Florida ofrece un salario medio de <strong>$84,760 al año</strong> para Registered Nurses, <strong>sin impuesto estatal a la renta</strong>, alta demanda en zonas metropolitanas y membresía en el Nurse Licensure Compact. Es el tercer estado con más empleo de RN del país.
+        </p>
+        <p class="text-sm text-gray-500 mb-8">
+          Fuente salarial: <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OEWS, mayo 2023</a>. Mediana nacional mayo 2025: $97,550 (<a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OOH</a>).
+        </p>
+        <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow gap-2">
+          <span>Agendar sesión informativa</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-10">
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Cifras oficiales de salario RN en Florida</h2>
+        <div class="overflow-x-auto border border-gray-200 rounded-xl">
+          <table class="w-full text-left text-sm text-gray-700">
+            <thead class="bg-gray-100 text-xs uppercase font-bold text-gray-900">
+              <tr>
+                <th class="px-6 py-3">Ámbito</th>
+                <th class="px-6 py-3">Salario medio anual</th>
+                <th class="px-6 py-3">Por hora</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="px-6 py-3 font-semibold">Florida (estado)</td><td class="px-6 py-3 text-emerald-800 font-bold">$84,760</td><td class="px-6 py-3">$40.75</td></tr>
+              <tr><td class="px-6 py-3">Miami–Fort Lauderdale–West Palm Beach</td><td class="px-6 py-3">$87,710</td><td class="px-6 py-3">$42.17</td></tr>
+              <tr><td class="px-6 py-3">Mediana nacional (mayo 2025)</td><td class="px-6 py-3">$97,550</td><td class="px-6 py-3">$46.90</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 mt-3">Empleo RN en Florida: 207,910 (BLS OEWS mayo 2023).</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Impuestos y costo de vida</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Florida <strong>no tiene impuesto estatal sobre la renta</strong>. El salario bruto se reduce solo por retenciones federales y FICA. El costo de vivienda varía mucho entre el interior del estado y el sur de Florida (Miami, Fort Lauderdale).
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          El salario medio estatal está por debajo de la mediana nacional, pero la ausencia de impuesto estatal y la demanda hospitalaria hacen de Florida un destino frecuente para enfermeras hispanohablantes.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Licencia y Compact en Florida</h2>
+        <ul class="list-disc pl-6 text-gray-600 space-y-2">
+          <li>La junta es el <a href="https://floridasnursing.gov/" target="_blank" rel="noopener" class="text-emerald-700 underline">Florida Board of Nursing</a>.</li>
+          <li>Florida está en el <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="text-emerald-700 underline">Nurse Licensure Compact</a>.</li>
+          <li>La secuencia profesional sigue siendo: junta estatal → evaluación de credenciales → NCLEX → empleo/sponsor. Ver la <a href="/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/" class="text-emerald-700 underline">guía de homologación</a> y <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">NCLEX</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <div class="p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-gray-900 mb-3">Comparar con otros estados</h2>
+        <ul class="text-sm text-gray-700 space-y-2">
+          <li><a href="/salario-enfermera-texas/" class="text-emerald-700 underline font-semibold">Salario de enfermera en Texas</a></li>
+          <li><a href="/salario-enfermera-california/" class="text-emerald-700 underline font-semibold">Salario de enfermera en California</a></li>
+          <li><a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline font-semibold">Tabla de salarios por estado</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="py-12 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-md mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿Florida es tu estado objetivo?</h2>
+      <p class="text-emerald-100 text-sm mb-6">En la sesión informativa vemos el recorrido completo: homologación, NCLEX, empleo y visa, con el estado que elijas.</p>
+      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg">Agendar sesión gratuita</a>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes</span>
+      <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2023</a>
+      · <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH</a>
+      · <a href="https://floridasnursing.gov/" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a>
+      · <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="underline">NCSBN Compact</a>
+    </div>
+  </div>
+</BaseLayout>
