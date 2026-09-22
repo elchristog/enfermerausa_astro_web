@@ -41,16 +41,5 @@ jobs:
 
       - name: Subir la versión publicada
         run: |
-          # Assets estáticos: cache largo (1 año)
-          gcloud storage rsync --recursive dist gs://enfermerausa.com \
-            --cache-control="public, max-age=31536000, immutable" \
-            --exclude=".*\.html$" \
-            --exclude="robots\.txt$" \
-            --exclude=".*sitemap.*\.xml$"
-          # HTML y mapas: cache corto para que los cambios se vean rápido
-          gcloud storage rsync --recursive dist gs://enfermerausa.com \
-            --cache-control="public, max-age=300, must-revalidate" \
-            --include=".*\.html$" \
-            --include="robots\.txt$" \
-            --include=".*sitemap.*\.xml$" \
-            --exclude=".*"
+          gcloud storage rsync --recursive --delete-unmatched-destination-objects dist gs://enfermerausa.com \
+            --cache-control="public, max-age=3600"
