@@ -1,0 +1,130 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Cuánto gana una enfermera registrada en Texas?",
+    answer: "Según el Bureau of Labor Statistics (OEWS, mayo 2023), el salario medio anual de una Registered Nurse en Texas es de $90,210 ($43.37 por hora). En el área de Dallas–Fort Worth la media es de $94,240 y en Houston de $94,390."
+  },
+  {
+    question: "¿Texas cobra impuesto estatal a la renta?",
+    answer: "No. Texas no tiene impuesto estatal sobre la renta. El ingreso neto depende del impuesto federal, Seguro Social y Medicare. Eso hace que el dinero que llega a la cuenta sea mayor que en estados con impuesto estatal, a igualdad de salario bruto."
+  },
+  {
+    question: "¿Texas pertenece al Nurse Licensure Compact?",
+    answer: "Sí. Texas es miembro del Enhanced Nurse Licensure Compact (eNLC). Una licencia multistate emitida en Texas permite ejercer en otros estados del compacto, según las reglas de NCSBN y de cada junta."
+  },
+];
+---
+
+<BaseLayout
+  title="Salario de enfermera en Texas 2026 | Datos BLS y costo de vida"
+  description="Cuánto gana una enfermera RN en Texas según el BLS: $90,210 al año de media, sin impuesto estatal y con licencia compact. Cifras oficiales y junta de enfermería."
+  canonical="https://enfermerausa.com/salario-enfermera-texas/"
+  type="service"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Texas · Salarios RN</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Salario de enfermera en Texas
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          Texas combina un salario medio de <strong>$90,210 al año</strong> para Registered Nurses, <strong>cero impuesto estatal a la renta</strong> y membresía en el Nurse Licensure Compact. Es uno de los estados con más empleo de enfermeras del país.
+        </p>
+        <p class="text-sm text-gray-500 mb-8">
+          Fuente salarial: <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OEWS, mayo 2023</a> (ocupación 29-1141). Mediana nacional mayo 2025: $97,550 (<a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OOH</a>).
+        </p>
+        <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow gap-2">
+          <span>Agendar sesión informativa</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-10">
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Cifras oficiales de salario RN en Texas</h2>
+        <div class="overflow-x-auto border border-gray-200 rounded-xl">
+          <table class="w-full text-left text-sm text-gray-700">
+            <thead class="bg-gray-100 text-xs uppercase font-bold text-gray-900">
+              <tr>
+                <th class="px-6 py-3">Ámbito</th>
+                <th class="px-6 py-3">Salario medio anual</th>
+                <th class="px-6 py-3">Por hora</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="px-6 py-3 font-semibold">Texas (estado)</td><td class="px-6 py-3 text-emerald-800 font-bold">$90,210</td><td class="px-6 py-3">$43.37</td></tr>
+              <tr><td class="px-6 py-3">Dallas–Fort Worth–Arlington</td><td class="px-6 py-3">$94,240</td><td class="px-6 py-3">$45.31</td></tr>
+              <tr><td class="px-6 py-3">Houston–The Woodlands–Sugar Land</td><td class="px-6 py-3">$94,390</td><td class="px-6 py-3">$45.38</td></tr>
+              <tr><td class="px-6 py-3">Mediana nacional (mayo 2025)</td><td class="px-6 py-3">$97,550</td><td class="px-6 py-3">$46.90</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 mt-3">Empleo RN en Texas: 251,840 (BLS OEWS mayo 2023). Segundo estado con más enfermeras registradas después de California.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Impuestos y dinero en cuenta</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Texas <strong>no cobra impuesto estatal sobre la renta</strong>. El descuento típico sobre el bruto es federal + FICA (Seguro Social y Medicare). A igualdad de salario bruto, el neto suele ser mayor que en California o Nueva York.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Ejemplo orientativo: a ~36 h/semana con la media estatal, el bruto mensual ronda $6,800. El neto depende de tu situación fiscal federal; no hay retención estatal adicional.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Licencia y Compact en Texas</h2>
+        <ul class="list-disc pl-6 text-gray-600 space-y-2">
+          <li>La junta estatal es la <a href="https://www.bon.texas.gov/" target="_blank" rel="noopener" class="text-emerald-700 underline">Texas Board of Nursing</a>.</li>
+          <li>Texas participa en el <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="text-emerald-700 underline">Nurse Licensure Compact (NCSBN)</a>: una licencia multistate válida en otros estados del compacto, si cumples los requisitos.</li>
+          <li>Antes del NCLEX necesitas la ruta de credenciales y la autorización de la junta. Empieza por la <a href="/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/" class="text-emerald-700 underline">guía de homologación</a> y la página de <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">licencia y NCLEX</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <div class="p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-gray-900 mb-3">Comparar con otros estados</h2>
+        <ul class="text-sm text-gray-700 space-y-2">
+          <li><a href="/salario-enfermera-florida/" class="text-emerald-700 underline font-semibold">Salario de enfermera en Florida</a> — también sin impuesto estatal y en el Compact.</li>
+          <li><a href="/salario-enfermera-california/" class="text-emerald-700 underline font-semibold">Salario de enfermera en California</a> — el más alto del país; con impuesto estatal y fuera del Compact.</li>
+          <li><a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline font-semibold">Tabla de salarios por estado</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="py-12 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-md mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿Te interesa Texas como destino?</h2>
+      <p class="text-emerald-100 text-sm mb-6">En la sesión informativa revisamos homologación, NCLEX, empleo con sponsor y el estado que mejor encaja con tu perfil.</p>
+      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg">Agendar sesión gratuita</a>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes</span>
+      <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2023 — Registered Nurses</a>
+      · <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH Registered Nurses</a>
+      · <a href="https://www.bon.texas.gov/" target="_blank" rel="noopener" class="underline">Texas Board of Nursing</a>
+      · <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="underline">NCSBN Nurse Licensure Compact</a>
+    </div>
+  </div>
+</BaseLayout>
