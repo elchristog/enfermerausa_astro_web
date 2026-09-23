@@ -74,6 +74,12 @@ Antes de pagar o enviar documentos, confirma estas cuatro preguntas:
 
 El CES Professional Report analiza credenciales según requisitos de destinatarios específicos. El informe académico se orienta a colocación educativa; no debes asumir que reemplaza un informe para licencia. Para Nueva York, TruMerit describe una verificación de credenciales y señala que la evaluación final corresponde al Departamento de Educación del estado.
 
+## El requisito de inglés: puntajes vigentes desde mayo de 2026
+
+Muchas juntas estatales también exigen demostrar dominio de inglés antes de autorizar el NCLEX, y el certificado federal VisaScreen lo requiere siempre. El 12 de mayo de 2026 la agencia federal HRSA actualizó la lista de exámenes aprobados y sus puntajes mínimos para enfermeras registradas: IELTS Academic 6.5 global con 7.0 en Speaking, PTE Academic 55 global con 76 en Speaking, OET 360 en Speaking y TOEFL iBT con la escala nueva (4.5 global, 4.5 Speaking). El TOEIC dejó de ser aceptado y las versiones desde casa de cualquier examen no valen.
+
+La [guía de exámenes de inglés para VisaScreen 2026](/blog/posts/requisitos-ingles-visascreen-enfermeras-2026) reúne la tabla completa de puntajes, las exenciones y cómo sincronizar la vigencia del examen con tu trámite de visa.
+
 ## Paso a paso para iniciar bien en 2026
 
 ### 1. Define el estado y revisa su ruta internacional
