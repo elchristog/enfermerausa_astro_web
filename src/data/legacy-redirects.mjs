@@ -17,8 +17,8 @@ export const legacyRedirects = {
   'cgfns-ahora-es-truemerit-guia-completa-para-enfermeros': '/evaluacion-y-homologacion-de-titulo-enfermeria-usa/',
   'servicios-de-evaluacion-de-credenciales-ces-para-enfermeria-en-ee-uu-2025': '/evaluacion-y-homologacion-de-titulo-enfermeria-usa/',
   'trumerit-inc-usa-una-nueva-era-en-el-desarrollo-de-la-fuerza-laboral-de-la-salud-global': '/evaluacion-y-homologacion-de-titulo-enfermeria-usa/',
-  'requisitos-de-dominio-del-idioma-ingles-para-enfermeras-formadas-en-el-extranjero-en-los-estados-unidos-para-2025': '/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/',
-  'enfermera-en-u-s-a-que-nivel-de-ingles-se-necesita': '/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/',
+  'requisitos-de-dominio-del-idioma-ingles-para-enfermeras-formadas-en-el-extranjero-en-los-estados-unidos-para-2025': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
+  'enfermera-en-u-s-a-que-nivel-de-ingles-se-necesita': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
 
   // NCLEX / licencia
   'que-es-el-nclex-el-examen-de-enfermeria-en-estados-unidos': '/licencia-de-enfermeria-y-examen-nclex-usa/',
@@ -34,8 +34,8 @@ export const legacyRedirects = {
   'como-estudiar-para-el-nclex-guia-paso-a-paso-para-aprobar-el-examen-de-enfermeria-en-estados-unidos': '/blog/posts/preparacion-examen-nclex-rn-espanol-2026/',
   'guia-para-aprobar-el-nclex-a-la-primera': '/blog/posts/estrategias-aprobar-examen-nclex-rn-primer-intento/',
   'nuevos-requisitos-para-enfermeras-registradas-en-florida-ee-uu-para-2025': '/licencia-de-enfermeria-y-examen-nclex-usa/',
-  'requisitos-del-pte-academic-para-la-licencia-de-enfermeria-registrada-en-los-estados-de-ee-uu': '/licencia-de-enfermeria-y-examen-nclex-usa/',
-  'requisitos-del-pte-para-enfermeria-en-ee-uu-para-2025': '/licencia-de-enfermeria-y-examen-nclex-usa/',
+  'requisitos-del-pte-academic-para-la-licencia-de-enfermeria-registrada-en-los-estados-de-ee-uu': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
+  'requisitos-del-pte-para-enfermeria-en-ee-uu-para-2025': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
 
   // Empleo / visa / patrocinio
   'ofertas-de-trabajo-para-enfermeras-en-ee-uu': '/ofertas-de-empleo-para-enfermeras-en-usa/',
@@ -175,7 +175,7 @@ export const legacyRedirects = {
   'enfermera-en-u-s-a-disciplina-y-nlcex': '/licencia-de-enfermeria-y-examen-nclex-usa/',
   'enfermera-en-u-s-a-etica-y-legalidad': '/licencia-de-enfermeria-y-examen-nclex-usa/',
   'enfermera-en-u-s-a-la-licencia': '/licencia-de-enfermeria-y-examen-nclex-usa/',
-  'enfermera-en-estados-unidos-el-pte': '/licencia-de-enfermeria-y-examen-nclex-usa/',
+  'enfermera-en-estados-unidos-el-pte': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
   'el-proposito-de-la-american-nurses-association-en-enfermeria-en-los-ee-uu-para-2025': '/licencia-de-enfermeria-y-examen-nclex-usa/',
   'rangos-de-enfermeria-en-estados-unidos-para-2025': '/licencia-de-enfermeria-y-examen-nclex-usa/',
 
@@ -187,7 +187,7 @@ export const legacyRedirects = {
   'enfermera-en-u-s-a-camino-academico': '/evaluacion-y-homologacion-de-titulo-enfermeria-usa/',
   'enfermera-en-u-s-a-documentacion-de-educacion': '/evaluacion-y-homologacion-de-titulo-enfermeria-usa/',
   'enfermera-en-u-s-a-experiencia-clinica': '/evaluacion-y-homologacion-de-titulo-enfermeria-usa/',
-  'enfermera-en-estados-unidos-dominar-el-ingles': '/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/',
+  'enfermera-en-estados-unidos-dominar-el-ingles': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
   'enfermera-en-u-s-a-planifica-tu-tiempo': '/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/',
 
   // Visa / empleo
