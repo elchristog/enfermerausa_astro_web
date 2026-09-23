@@ -69,6 +69,7 @@ export const legacyRedirects = {
   'salarios-de-enfermeria-en-las-vegas-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salarios-de-enfermeria-en-orlando-florida-en-2025': '/salario-enfermera-florida/',
   'salarios-de-enfermeria-en-boston-ma-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
+  'salario-de-enfermeras-registradas-en-michigan-en-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salario-de-enfermeras-en-montana-en-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'cuanto-gana-una-enfermera-en-new-hampshire': '/salarios-de-enfermeros-en-estados-unidos/',
   'salario-de-enfermeras-neonatales-en-estados-unidos-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
