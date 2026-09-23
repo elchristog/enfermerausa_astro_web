@@ -25,7 +25,12 @@ export default defineConfig({
     drafts: true
   },
   integrations: [ sitemap({
-    // Keep legacy redirect shells out of the sitemap
-    filter: (page) => !Object.keys(legacyRedirects).some((slug) => page.includes(`/${slug}/`) || page.endsWith(`/${slug}`)),
+    // Keep legacy redirect shells out of the sitemap, but keep real pages
+    // that only map to themselves (e.g. /validar-enfermeria-en-usa/ → itself).
+    filter: (page) => !Object.entries(legacyRedirects).some(([slug, target]) => {
+      const selfPath = `/${slug}/`;
+      if (target === selfPath) return false; // real page, not a shell
+      return page.includes(selfPath) || page.endsWith(`/${slug}`);
+    }),
   }), mdx()],
 });
