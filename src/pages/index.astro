@@ -3,37 +3,53 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const faqs = [
   {
-    question: "¿Cuál es el mejor sitio para reclutar enfermeras?",
-    answer: "Más que un simple sitio web o portal de empleos, el mejor lugar para un enfermero/a hispano es una agencia especializada como enfermerausa.com que funciona como socio estratégico en la homologación, examen NCLEX y visado de trabajo."
+    question: "¿Cuál es el sueldo de una enfermera en Estados Unidos?",
+    answer: "Según el Bureau of Labor Statistics, la mediana nacional de una Registered Nurse (RN) es de $97,550 al año ($46.90/hora, mayo 2025). Por estado varía: Texas $90,210, Florida $84,760 y California $137,690 de media (OEWS mayo 2023). El neto depende de si el estado cobra impuesto a la renta."
   },
   {
-    question: "¿Cuánto cobra una agencia de enfermería?",
-    answer: "Nuestros programas integrales están diseñados con transparencia total, incluyendo la guía de homologación, simulación NCLEX, diseño de currículum y conexión directa con hospitales patrocinadores de visa Green Card."
+    question: "¿Qué necesito para trabajar de enfermera en Estados Unidos?",
+    answer: "En la práctica el camino es: 1) título y licencia de enfermería en tu país, 2) evaluación de credenciales que acepte la junta del estado (p. ej. vía CGFNS/TruMerit u otra autorizada), 3) aprobar el NCLEX-RN, 4) licencia de la junta estatal, 5) demostrar inglés cuando lo exija la junta o el empleador (IELTS, OET, PTE, etc.) y 6) una vía migratoria con sponsor —con frecuencia EB-3 Schedule A— más la oferta de un hospital."
   },
   {
-    question: "¿Cuáles son las reclutadoras más confiables para trabajar en Estados Unidos?",
-    answer: "Una agencia confiable ofrece transparencia total en procesos, pruebas sociales con casos reales de éxito, experiencia demostrada en CGFNS/TruMerit e inmigración (Visa EB-3) y especialización en la comunidad hispana."
+    question: "¿Cuántos años se estudia para enfermera en Estados Unidos?",
+    answer: "Si ya eres licenciada o titulado en tu país, no empiezas la carrera de cero: homologas, apruebas el NCLEX y obtienes la licencia estatal. Quien estudia enfermería dentro de EE.UU. suele hacer un ADN (~2 años) o un BSN (~4 años) y luego el NCLEX. Los tiempos de homologación + NCLEX + visa para internacionales se miden en meses o años según documentos, inglés y cola migratoria —no en un plazo único."
   },
   {
-    question: "¿Qué agencia de contratación de enfermería paga más?",
-    answer: "Las agencias conectan con hospitales empleadores. Nos enfocamos en maximizar tu oferta laboral y salario en instituciones de prestigio según tu especialidad y estado."
-  }
+    question: "¿Cuáles son los tipos de enfermería en Estados Unidos?",
+    answer: "Los niveles más citados son CNA (asistente), LPN/LVN (licencia práctica), RN (Registered Nurse, el objetivo habitual de homologación internacional) y roles avanzados (NP y otros con posgrado). Esta página y nuestro acompañamiento se centran en el camino a RN para hispanohablantes formados en el extranjero."
+  },
+];
+
+const testimonials = [
+  {
+    name: "Elizabeth Duque",
+    detail: "Enfermera colombiana · Aprobó el NCLEX-RN",
+    quote: "Pasé el NCLEX a la pregunta 85. Empecé con inglés básico y, con disciplina diaria y acompañamiento, di cada escalón del proceso. La noticia del pass es un logro que no se olvida.",
+    videoUrl: "https://www.youtube.com/watch?v=A13rKHMjH_c",
+    videoLabel: "Ver entrevista completa en YouTube",
+  },
+  {
+    name: "Sara",
+    detail: "Enfermera colombiana · NCLEX, PTE y oferta hospitalaria",
+    quote: "Aprobé el NCLEX, el PTE de inglés y conseguí oferta con hospital. El proceso es largo, pero alcanzable: se vuelve un proyecto de vida. Lo difícil es empezar; después se sigue paso a paso.",
+    videoUrl: "https://www.youtube.com/watch?v=8kfnvoUVvvI",
+    videoLabel: "Ver entrevista completa en YouTube",
+  },
 ];
 ---
 
 <BaseLayout
   title="Enfermera en Estados Unidos | Homologación, NCLEX y Empleo"
   description="Enfermera en Estados Unidos: homologación del título, NCLEX-RN, visa EB-3 y empleo con sponsor. Salarios BLS y sesión informativa en español."
-  canonical="https://enfermerausa.com"
+  canonical="https://enfermerausa.com/"
   type="home"
   faqs={faqs}
 >
-  <!-- Hero Section -->
   <section class="bg-gradient-to-b from-emerald-50/50 via-white to-white py-16 md:py-24 border-b border-gray-100">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
       <div class="max-w-3xl mx-auto text-center">
         <span class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1.5 rounded-full mb-6 uppercase tracking-wider">
-          🇺🇸 Enfermera en Estados Unidos · Acompañamiento en español
+          Enfermera en Estados Unidos · Acompañamiento en español
         </span>
         <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
           <span class="text-emerald-700">Enfermera en Estados Unidos</span>: de la homologación al empleo como RN
@@ -46,23 +62,89 @@ const faqs = [
             href="https://bit.ly/3R6RbFW"
             target="_blank"
             rel="noopener noreferrer"
-            class="w-full sm:w-auto inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/20 transition-all gap-3"
+            class="w-full sm:w-auto inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/20 transition-all"
           >
-            <span>Agendar Sesión Informativa Gratuita</span>
-            <svg class="size-5 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+            Agendar sesión informativa gratuita
           </a>
           <a
-            href="/validar-enfermeria-en-usa/"
+            href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/"
             class="w-full sm:w-auto inline-flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold text-base px-6 py-4 rounded-xl transition-all"
           >
-            Validar mi Perfil
+            Ver el proceso de homologación
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Salarios por estado (intención de búsqueda real) -->
+  <section class="py-14 bg-white border-b border-gray-100">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Quién te acompaña</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-2 mb-4">
+            Personas reales, proceso real, en español
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            <strong>Enfermera en Estados Unidos</strong> es el proyecto de acompañamiento que ya conoces en YouTube, Instagram y TikTok: explicación clara del camino a RN —homologación, NCLEX, inglés, empleo con sponsor y visa— sin promesas vacías.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            El canal <strong>Enfermera en Estados Unidos</strong> (más de 50.000 suscriptores) documenta entrevistas con enfermeras que ya dieron esos pasos. Aquí en la web concentramos las guías con fuentes oficiales y la puerta de entrada: la sesión informativa.
+          </p>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Acompañamiento 100% en español</li>
+            <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Testimonios en video, verificables en YouTube</li>
+            <li class="flex gap-2"><span class="text-emerald-600 font-bold">✓</span> Contenido alineado a NCSBN, BLS, CGFNS/TruMerit y juntas estatales</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-8">
+          <p class="text-sm font-bold text-emerald-800 uppercase tracking-wide mb-3">El camino en 4 etapas</p>
+          <ol class="space-y-3 text-sm text-gray-700">
+            <li><strong>1. Homologación</strong> — credenciales y junta estatal. <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">Guía</a></li>
+            <li><strong>2. NCLEX y licencia</strong> — examen y RN. <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">Guía</a></li>
+            <li><strong>3. Empleo con sponsor</strong> — oferta hospitalaria. <a href="/ofertas-de-empleo-para-enfermeras-en-usa/" class="text-emerald-700 underline">Ofertas</a></li>
+            <li><strong>4. Visa y llegada</strong> — EB-3 / green card. <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">Visa</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-gray-50 border-b border-gray-100">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-2xl mb-10">
+        <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Casos reales</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-2 mb-3">
+          Ellas ya dieron el paso — en sus propias palabras
+        </h2>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          No inventamos reseñas. Estas entrevistas están publicadas en el canal oficial de YouTube; puedes ver el video completo.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {testimonials.map((t) => (
+          <figure class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col">
+            <blockquote class="text-gray-700 leading-relaxed text-sm md:text-base flex-1">
+              “{t.quote}”
+            </blockquote>
+            <figcaption class="mt-5 pt-4 border-t border-gray-100">
+              <p class="font-bold text-gray-900">{t.name}</p>
+              <p class="text-xs text-gray-500 mb-3">{t.detail}</p>
+              <a
+                href={t.videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-sm font-bold text-emerald-700 hover:text-emerald-800 underline"
+              >
+                {t.videoLabel} →
+              </a>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <section class="py-14 bg-white border-b border-gray-100">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
       <div class="max-w-2xl mb-8">
@@ -71,7 +153,7 @@ const faqs = [
           Cuánto gana una enfermera en Estados Unidos
         </h2>
         <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-          Mediana nacional: <strong>$97,550 al año</strong> (BLS, mayo 2025). El bruto cambia mucho por estado —y el neto, si hay impuesto estatal. Guías con cifras oficiales:
+          Mediana nacional: <strong>$97,550 al año</strong> (BLS, mayo 2025). El bruto cambia por estado —y el neto, si hay impuesto estatal.
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
@@ -97,234 +179,88 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Demanda Laboral Section -->
-  <section class="py-16 bg-white border-b border-gray-100">
+  <section class="py-14 bg-white border-b border-gray-100">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Mercado Laboral en EE.UU.</span>
-          <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-6">
+          <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Mercado laboral</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-2 mb-4">
             Demanda de enfermeras registradas en USA
           </h2>
           <p class="text-gray-600 leading-relaxed mb-4">
-            Una de las preguntas más importantes es: <strong>“¿Realmente hay trabajo para mí?”</strong> La respuesta es un rotundo <strong>SÍ</strong>. Basándonos en proyecciones del Bureau de Estadísticas Laborales de EE.UU. (BLS, 2025–2035), se abren unos 180,800 puestos de enfermera registrada cada año, y la demanda de talento bilingüe sigue creciendo.
+            Según proyecciones del <strong>Bureau of Labor Statistics</strong> (2025–2035), se abren unos <strong>180.800 puestos de RN al año</strong> en Estados Unidos. La demanda de personal bilingüe sigue siendo alta en muchos hospitales.
           </p>
-          <p class="text-gray-600 leading-relaxed mb-6">
-            Actualmente, la necesidad de los hospitales supera la capacidad del sistema de visados, generando una fila de espera. Iniciar tu proceso de homologación y licenciamiento hoy es la única forma de asegurar tu lugar y no quedarte atrás.
+          <p class="text-gray-600 leading-relaxed">
+            Empezar homologación y NCLEX con tiempo es lo que puedes controlar; la cola de visa no.
           </p>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-100">
-              <span class="block text-3xl font-extrabold text-emerald-800">+180,800</span>
-              <span class="text-xs text-gray-600 font-medium">Vacantes anuales proyectadas para enfermeras registradas (BLS 2025–2035)</span>
-            </div>
-            <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-100">
-              <span class="block text-3xl font-extrabold text-emerald-800">Green Card</span>
-              <span class="text-xs text-gray-600 font-medium">Patrocinio directo de Residencia Permanente</span>
-            </div>
-          </div>
         </div>
-
-        <div class="bg-gradient-to-br from-emerald-900 to-gray-900 text-white p-8 rounded-2xl shadow-xl">
-          <h3 class="text-xl font-bold mb-4 text-emerald-300">¿Por qué elegir nuestra agencia?</h3>
-          <ul class="space-y-4 text-sm text-gray-200">
-            <li class="flex items-start gap-3">
-              <span class="bg-emerald-500/20 text-emerald-400 p-1 rounded font-bold">✓</span>
-              <span><strong>Acompañamiento 100% en español</strong> adaptado a la realidad de los enfermeros de Latinoamérica y España.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="bg-emerald-500/20 text-emerald-400 p-1 rounded font-bold">✓</span>
-              <span><strong>Gestión de Credenciales (TruMerit / CGFNS)</strong> sin errores costosos ni demoras burocráticas.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="bg-emerald-500/20 text-emerald-400 p-1 rounded font-bold">✓</span>
-              <span><strong>Simuladores y Preparación NCLEX-RN</strong> diseñados para aprobar en tu primer intento.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="bg-emerald-500/20 text-emerald-400 p-1 rounded font-bold">✓</span>
-              <span><strong>Red Directa de Hospitales Patrocinadores</strong> de Visa EB-3 y relocalización familiar.</span>
-            </li>
-          </ul>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="p-5 bg-emerald-50 rounded-xl border border-emerald-100">
+            <span class="block text-2xl md:text-3xl font-extrabold text-emerald-800">180.800</span>
+            <span class="text-xs text-gray-600 font-medium">Aperturas anuales proyectadas de RN (BLS 2025–2035)</span>
+          </div>
+          <div class="p-5 bg-emerald-50 rounded-xl border border-emerald-100">
+            <span class="block text-2xl md:text-3xl font-extrabold text-emerald-800">$97.550</span>
+            <span class="text-xs text-gray-600 font-medium">Mediana nacional RN (BLS mayo 2025)</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- El Método en 4 Etapas -->
-  <section class="py-16 md:py-24 bg-gray-50 border-b border-gray-100">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Paso a Paso Probado</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">
-          El Camino a EE.UU. es Complejo. Lo Hacemos Simple para Ti.
-        </h2>
-        <p class="text-gray-600 mt-4">
-          Olvídate de la burocracia y los costosos errores. Te guiamos en estas cuatro etapas clave hacia tu licencia de Registered Nurse.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Etapa 1 -->
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-          <div>
-            <span class="inline-block bg-emerald-100 text-emerald-800 font-extrabold text-sm px-3 py-1 rounded-full mb-4">Etapa 1</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Evaluación y Homologación</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-6">
-              Analizamos tu perfil universitario y te acompañamos paso a paso en la revalidación de tu título ante TruMerit y la junta de enfermería correspondiente.
-            </p>
-          </div>
-          <a
-            href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/"
-            class="text-sm font-bold text-emerald-600 hover:text-emerald-700 inline-flex items-center gap-1"
-          >
-            Saber más →
-          </a>
-        </div>
-
-        <!-- Etapa 2 -->
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-          <div>
-            <span class="inline-block bg-emerald-100 text-emerald-800 font-extrabold text-sm px-3 py-1 rounded-full mb-4">Etapa 2</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Licencia y Examen NCLEX</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-6">
-              Te preparamos con recursos exclusivos y planes de estudio efectivos para que apruebes el examen NCLEX-RN y obtengas tu licencia oficial.
-            </p>
-          </div>
-          <a
-            href="/licencia-de-enfermeria-y-examen-nclex-usa/"
-            class="text-sm font-bold text-emerald-600 hover:text-emerald-700 inline-flex items-center gap-1"
-          >
-            Saber más →
-          </a>
-        </div>
-
-        <!-- Etapa 3 -->
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-          <div>
-            <span class="inline-block bg-emerald-100 text-emerald-800 font-extrabold text-sm px-3 py-1 rounded-full mb-4">Etapa 3</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Oferta Laboral con Sponsor</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-6">
-              Te conectamos con nuestra red de hospitales asociados en EE.UU. para asegurar una oferta formal con patrocinio de visa de trabajo.
-            </p>
-          </div>
-          <a
-            href="/ofertas-de-empleo-para-enfermeras-en-usa/"
-            class="text-sm font-bold text-emerald-600 hover:text-emerald-700 inline-flex items-center gap-1"
-          >
-            Ver empleos →
-          </a>
-        </div>
-
-        <!-- Etapa 4 -->
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-          <div>
-            <span class="inline-block bg-emerald-100 text-emerald-800 font-extrabold text-sm px-3 py-1 rounded-full mb-4">Etapa 4</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Visa EB-3 y Relocalización</h3>
-            <p class="text-sm text-gray-600 leading-relaxed mb-6">
-              Nuestro equipo migratorio gestiona tu Green Card para ti y tu núcleo familiar, además de asesorarte en tu llegada a tu nueva ciudad.
-            </p>
-          </div>
-          <a
-            href="/proceso-de-visa-y-relocalizacion-para-enfermeras/"
-            class="text-sm font-bold text-emerald-600 hover:text-emerald-700 inline-flex items-center gap-1"
-          >
-            Saber más →
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQs Section -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-20 bg-gray-50 border-b border-gray-100">
     <div class="max-w-screen-lg mx-auto px-4 md:px-8">
       <div class="text-center mb-12">
-        <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Preguntas Frecuentes</span>
-        <h2 class="text-3xl font-extrabold text-gray-900 mt-2">
-          Todo lo que Necesitas Saber para Empezar
+        <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Preguntas frecuentes</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-2">
+          Lo que más se pregunta sobre ser enfermera en Estados Unidos
         </h2>
       </div>
-
-      <div class="space-y-6">
+      <div class="space-y-5">
         {faqs.map((faq) => (
-          <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200">
+          <div class="p-6 bg-white rounded-2xl border border-gray-200">
             <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
             <p class="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
           </div>
         ))}
       </div>
+      <p class="text-xs text-gray-500 mt-6 text-center">
+        Fuentes:
+        <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH</a>
+        · <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS</a>
+        · <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a>
+        · <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>
+      </p>
     </div>
   </section>
 
-  <!-- CTA Banner -->
   <section class="bg-emerald-900 text-white py-16">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-        ¿Lista para Participar en la Sesión Informativa Gratuita?
+      <h2 class="text-2xl md:text-4xl font-extrabold mb-4">
+        ¿Lista para la sesión informativa gratuita?
       </h2>
-      <p class="text-emerald-100 text-lg max-w-2xl mx-auto mb-8">
-        En esta sesión en vivo explicamos detalladamente todo el proceso de homologación, costos involucrados, tiempos, examen NCLEX y patrocinio de visa EB-3.
+      <p class="text-emerald-100 text-base md:text-lg max-w-2xl mx-auto mb-8">
+        En vivo, en español: homologación, costos, NCLEX, empleo con sponsor y visa EB-3. Sin compromiso de compra en la sesión.
       </p>
       <a
         href="https://bit.ly/3R6RbFW"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center bg-white text-emerald-900 hover:bg-emerald-50 font-extrabold text-base px-8 py-4 rounded-xl shadow-lg transition-all gap-2"
+        class="inline-flex items-center bg-white text-emerald-900 hover:bg-emerald-50 font-extrabold text-base px-8 py-4 rounded-xl shadow-lg transition-all"
       >
-        <span>Agendar mi Lugar en la Sesión Informativa</span>
-        <svg class="size-5 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+        Agendar mi lugar en la sesión
       </a>
     </div>
   </section>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Enfermera USA",
-    "url": "https://enfermerausa.com",
-    "description": "Agencia especializada en homologación de títulos de enfermería, examen NCLEX-RN y patrocinio de visa EB-3 para EE.UU.",
-    "areaServed": "United States",
-    "serviceType": "Nursing License & Visa Sponsorship Agency"
-  }
-  </script>
-
-
-  <!-- Bloque Enlazado Interno SEO -->
-  <section class="py-8 bg-emerald-900 text-white text-center">
-    <div class="max-w-screen-xl mx-auto px-4">
-      <h3 class="text-xl font-bold mb-2">¿Listo para dar el paso hacia tu Licencia RN en EE.UU.?</h3>
-      <p class="text-emerald-100 text-sm mb-4">Acompáñanos en nuestra próxima Sesión Informativa donde resolveremos tus dudas sobre costos y procesos.</p>
-      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
-        Agendar Mi Lugar en la Sesión Informativa
-      </a>
-    </div>
-  </section>
-
-
-  <!-- Bloque E-E-A-T Autoría y Revisión -->
   <div class="max-w-screen-xl mx-auto px-4 my-8">
-    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 flex items-center gap-4 text-xs text-slate-700">
-      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded">✓ Información Verificada</span>
-      <span>Contenido redactado y revisado por el Equipo Especializado en Licencias Médicas de EE.UU. (CGFNS & NCLEX Specialists). Fuentes oficiales: <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a> | <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>.</span>
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes</span>
+      Contenido orientativo con datos de
+      <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS</a>,
+      <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a> y
+      <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>.
+      Testimonios enlazados a las entrevistas originales en YouTube.
     </div>
   </div>
-
-
-  <!-- Bloque Answer-First GEO -->
-  <div class="max-w-screen-xl mx-auto px-4 my-6">
-    <div class="p-5 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-      <p class="text-xs font-bold text-emerald-800 uppercase tracking-wide">📌 Resumen Clave del Proceso:</p>
-      <p class="text-sm font-semibold text-slate-900 mt-1">Para ejercer como enfermero registrado (RN) en EE.UU. en 2026 se requiere: 1) Homologar créditos con CGFNS o TruMerit, 2) Aprobar el examen adaptativo NCLEX-RN (85-150 preguntas NGN), 3) Demostrar inglés (OET u IELTS), y 4) Obtener patrocinio de Visa EB-3 de Residencia Permanente directa (Schedule A).</p>
-    </div>
-  </div>
-
-  
-
-
-
-
-
-
-
-  <!-- Ultima Auditoria y Actualizacion SEO/GEO de Registro Factual 2026: Ciclo #113 -->
 </BaseLayout>
