@@ -27,7 +27,7 @@ Al elegir la ciudad donde vas a relocalizarte como enfermera registrada (RN) en 
 
 ## ¿Qué implican estas cifras para tu proceso?
 
-La diferencia entre estados es grande (California paga en promedio un 53% más que Florida), pero la comparación real depende de tus gastos: vivienda, transporte y seguros cambian cada estado. Si estás definiendo tu ruta completa —homologación, NCLEX, licencia y oferta de empleo—, la sesión informativa revisa estos números junto al resto del proceso.
+La diferencia entre estados es grande (California paga en promedio un 62% más que Florida: $137,690 frente a $84,760 según el BLS), pero la comparación real depende de tus gastos: vivienda, transporte y seguros cambian cada estado. Si estás definiendo tu ruta completa —homologación, NCLEX, licencia y oferta de empleo—, la sesión informativa revisa estos números junto al resto del proceso.
 
 👉 [**Agendar Sesión Informativa**](https://bit.ly/3R6RbFW) para revisar tu ruta paso a paso.
 
