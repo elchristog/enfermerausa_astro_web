@@ -41,5 +41,11 @@ jobs:
 
       - name: Subir la versión publicada
         run: |
+          # Assets con hash pueden cachearse; el HTML debe refrescarse en minutos
           gcloud storage rsync --recursive --delete-unmatched-destination-objects dist gs://enfermerausa.com \
-            --cache-control="public, max-age=3600"
+            --cache-control="public, max-age=60, must-revalidate"
+          # Forzar cabecera corta en las páginas HTML (evita que Cloudflare/navegador guarden 1h la home)
+          gcloud storage objects update gs://enfermerausa.com/**/*.html \
+            --cache-control="public, max-age=60, must-revalidate" || true
+          gcloud storage objects update gs://enfermerausa.com/index.html \
+            --cache-control="public, max-age=60, must-revalidate" || true
