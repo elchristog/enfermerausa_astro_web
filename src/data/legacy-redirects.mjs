@@ -156,7 +156,7 @@ export const legacyRedirects = {
   'salarios-de-enfermeria-en-maryland-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salarios-de-enfermeria-en-nuevo-mexico-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salarios-de-enfermeria-en-ohio-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
-  'salarios-de-enfermeria-en-oklahoma-para-202': '/salarios-de-enfermeros-en-estados-unidos/',
+  'salarios-de-enfermeria-en-oklahoma-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salarios-de-enfermeria-en-rhode-island-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salarios-de-enfermeria-en-virginia-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
   'salarios-impuestos-y-costo-de-vida-de-enfermeras-registradas-en-estados-unidos-para-2025': '/salarios-de-enfermeros-en-estados-unidos/',
