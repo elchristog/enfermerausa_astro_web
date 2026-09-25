@@ -112,8 +112,8 @@
   }
 }
 :root {
-  /* Typography stylistic sets for Inter with system fallbacks */
-  font-family: InterVariable, Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* System stack first — no remote font download on LCP path */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-display: swap;
   font-feature-settings: 
     "liga" 1, /* Standard Ligatures */
