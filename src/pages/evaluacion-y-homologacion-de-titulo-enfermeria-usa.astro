@@ -1,5 +1,24 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Cómo homologar el título de enfermería en Estados Unidos?",
+    answer: "No hay una homologación federal única. Eliges el Board de Nursing del estado donde quieres la licencia, confirmas qué evaluación de credenciales acepta (p. ej. TruMerit/CGFNS CES), reúnes diploma y expediente enviados por tu universidad, y luego avanzas a la autorización de examen y al NCLEX-RN."
+  },
+  {
+    question: "¿Qué es CGFNS o TruMerit en la homologación?",
+    answer: "Son servicios de evaluación de credenciales que muchos Boards usan para revisar títulos de enfermería obtenidos fuera de EE.UU. El Board de tu estado decide cuál acepta."
+  },
+  {
+    question: "¿Cuánto tarda homologar el título de enfermería?",
+    answer: "No hay un plazo único. Depende del Board, de cuánto tarden tu universidad y la autoridad profesional en enviar documentos, y de que el expediente esté completo."
+  },
+  {
+    question: "¿Mi título de Latinoamérica sirve para ser RN en USA?",
+    answer: "Puede servir si el Board del estado y la evaluación de credenciales lo reconocen como equivalente. No asumas elegibilidad solo por el nombre del título."
+  },
+];
 ---
 
 <BaseLayout
@@ -7,6 +26,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   description="Cómo homologar tu título de enfermería en EE.UU.: requisitos del Board, CGFNS/TruMerit, documentos y orden real antes del NCLEX. Guía en español 2026."
   canonical="https://enfermerausa.com/evaluacion-y-homologacion-de-titulo-enfermeria-usa/"
   type="service"
+  faqs={faqs}
 >
   <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -145,9 +165,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     <div class="max-w-screen-xl mx-auto px-4">
       <h3 class="text-xl font-bold mb-2">¿Listo para dar el paso hacia tu Licencia RN en EE.UU.?</h3>
       <p class="text-emerald-100 text-sm mb-4">Acompáñanos en nuestra próxima Sesión Informativa donde resolveremos tus dudas sobre costos y procesos.</p>
-      <a href="/sesion-informativa/" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
-        Agendar Mi Lugar en la Sesión Informativa
+      <a href="/sesion-informativa/" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
+        Reservar sesión informativa
       </a>
+      <p class="text-emerald-100 text-xs mt-3"><a href="/salarios-de-enfermeros-en-estados-unidos/" class="underline">Salarios RN</a> · <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="underline">NCLEX y licencia</a> · <a href="/validar-enfermeria-en-usa/" class="underline">Planes</a></p>
     </div>
   </section>
 
