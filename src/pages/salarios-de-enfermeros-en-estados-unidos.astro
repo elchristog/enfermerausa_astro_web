@@ -9,13 +9,29 @@ const salaryStates = [
   { state: "Illinois", avgSalary: "$90,810 / año", hourly: "$43.66 / hr", href: null },
   { state: "Washington", avgSalary: "$111,030 / año", hourly: "$53.38 / hr", href: null },
 ];
+
+const faqs = [
+  {
+    question: "¿Cuánto gana una enfermera en Estados Unidos?",
+    answer: "La mediana nacional de una Registered Nurse es $97,550 al año ($46.90/hora) según el BLS (mayo 2025). Por estado, las medias OEWS mayo 2023 incluyen California $137,690, Nueva York $106,620, Texas $90,210 y Florida $84,760."
+  },
+  {
+    question: "¿En qué estado gana más una enfermera RN?",
+    answer: "En la tabla BLS OEWS mayo 2023, California tiene una de las medias más altas ($137,690). El neto depende del impuesto estatal y del costo de vida: Texas y Florida no cobran impuesto estatal a la renta."
+  },
+  {
+    question: "¿Cuánto gana una enfermera en Texas y Florida?",
+    answer: "Media BLS OEWS mayo 2023: Texas $90,210 al año ($43.37/h) y Florida $84,760 ($40.75/h). Ambos sin impuesto estatal a la renta y en el Nurse Licensure Compact."
+  },
+];
 ---
 
 <BaseLayout
-  title="Cuánto gana una enfermera en Estados Unidos 2026 | BLS"
-  description="Mediana nacional $97,550 (BLS). Texas $90,210, Florida $84,760, California $137,690. Tabla por estado, impuesto y Compact. Datos oficiales."
+  title="Cuánto gana una enfermera en Estados Unidos 2026 | BLS $97,550"
+  description="¿Cuánto gana una enfermera en USA? Mediana BLS $97,550. Texas $90,210, Florida $84,760, California $137,690. Tabla por estado, impuestos y Compact."
   canonical="https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/"
   type="service"
+  faqs={faqs}
 >
   <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -24,17 +40,31 @@ const salaryStates = [
         <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
           Cuánto gana una enfermera en Estados Unidos
         </h1>
-        <p class="text-lg text-gray-600 leading-relaxed mb-8">
-          La mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Abajo: medias por estado, si hay impuesto estatal, y guías de Texas, Florida y California con cifras oficiales.
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          <strong>Respuesta corta:</strong> la mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Por estado cambia mucho: California ~$137,690, Texas ~$90,210, Florida ~$84,760 (medias BLS OEWS mayo 2023).
         </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 max-w-2xl text-left">
+          <a href="/salario-enfermera-texas/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
+            <p class="text-xs font-bold uppercase text-emerald-700">Texas</p>
+            <p class="text-xl font-extrabold text-gray-900">$90,210</p>
+            <p class="text-xs text-gray-500 mt-1">Sin impuesto estatal · Compact</p>
+          </a>
+          <a href="/salario-enfermera-florida/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
+            <p class="text-xs font-bold uppercase text-emerald-700">Florida</p>
+            <p class="text-xl font-extrabold text-gray-900">$84,760</p>
+            <p class="text-xs text-gray-500 mt-1">Sin impuesto estatal · Compact</p>
+          </a>
+          <a href="/salario-enfermera-california/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
+            <p class="text-xs font-bold uppercase text-emerald-700">California</p>
+            <p class="text-xl font-extrabold text-gray-900">$137,690</p>
+            <p class="text-xs text-gray-500 mt-1">Más alto · con impuesto estatal</p>
+          </a>
+        </div>
         <a
-          href="https://bit.ly/3R6RbFW"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/sesion-informativa/"
           class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow transition-all gap-2"
         >
-          <span>Agendar Sesión Informativa de Salarios</span>
-          <svg class="size-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+          <span>Sesión informativa gratuita</span>
         </a>
       </div>
     </div>
@@ -81,20 +111,22 @@ const salaryStates = [
   <!-- Sección GEO / Respuestas Factuales para Google AI Overviews & Destacados SERP -->
   <div class="py-12 bg-slate-50 border-t border-slate-200">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6">Preguntas Frecuentes sobre Salarios de Enfermeros en EE.UU. por Estado (Clave: salarios enfermeros estados unidos)</h2>
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Preguntas frecuentes sobre salarios de enfermeras en EE.UU.</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {faqs.map((f) => (
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">{f.question}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{f.answer}</p>
+          </div>
+        ))}
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-bold text-slate-900 text-lg mb-2">¿Cuál es el salario promedio por hora de una enfermera registrada (RN) en EE.UU.?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Según el BLS (OEWS mayo 2023), la media estatal de una RN va de $40.75/hora en Florida a $66.20/hora en California. En Nueva York la media es de $51.26/hora ($106,620 al año). La mediana nacional (mayo 2025) es $97,550.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-bold text-slate-900 text-lg mb-2">¿Los hospitales patrocinadores pagan horas extra y bonos de relocalización?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Sí. La gran mayoría de ofertas para enfermeros internacionales contemplan bonos de inicio (signing bonus) de $5,000 a $15,000 USD, pago de tiempo extraordinario (overtime a 1.5x) y apoyo para pasajes aéreos y primer mes de vivienda.</p>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">¿Hay horas extra y diferenciales?</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">La ley federal (FLSA) exige tarifa y media tras 40 h semanales en la mayoría de casos. Muchos hospitales añaden diferenciales nocturnos o de fin de semana; los montos varían por empleador y estado. Bonos de firma o relocalización existen en algunas ofertas, pero no son un estándar fijo: confírmalos en el contrato.</p>
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow text-sm gap-2">
-          <span>Agendar Sesión Informativa de Salarios de Enfermeros en EE.UU. por Estado</span>
+        <a href="/sesion-informativa/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow text-sm gap-2">
+          <span>Reservar sesión informativa</span>
         </a>
       </div>
     </div>
@@ -119,9 +151,10 @@ const salaryStates = [
     <div class="max-w-screen-xl mx-auto px-4">
       <h3 class="text-xl font-bold mb-2">¿Listo para dar el paso hacia tu Licencia RN en EE.UU.?</h3>
       <p class="text-emerald-100 text-sm mb-4">Acompáñanos en nuestra próxima Sesión Informativa donde resolveremos tus dudas sobre costos y procesos.</p>
-      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
-        Agendar Mi Lugar en la Sesión Informativa
+      <a href="/sesion-informativa/" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
+        Reservar sesión informativa
       </a>
+      <p class="text-emerald-100 text-xs mt-3"><a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="underline">Homologación de título</a> · <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="underline">NCLEX y licencia</a></p>
     </div>
   </section>
 
