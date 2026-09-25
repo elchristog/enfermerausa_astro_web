@@ -29,6 +29,7 @@ const testimonials = [
     name: "Elizabeth Duque",
     detail: "Enfermera colombiana · Aprobó el NCLEX-RN",
     quote: "Pasé el NCLEX a la pregunta 85. Empecé con inglés básico y, con disciplina diaria y acompañamiento, di cada escalón del proceso. La noticia del pass es un logro que no se olvida.",
+    videoId: "A13rKHMjH_c",
     videoUrl: "https://www.youtube.com/watch?v=A13rKHMjH_c",
     videoLabel: "Ver entrevista completa en YouTube",
   },
@@ -36,6 +37,7 @@ const testimonials = [
     name: "Sara",
     detail: "Enfermera colombiana · NCLEX, PTE y oferta hospitalaria",
     quote: "Aprobé el NCLEX, el PTE de inglés y conseguí oferta con hospital. El proceso es largo, pero alcanzable: se vuelve un proyecto de vida. Lo difícil es empezar; después se sigue paso a paso.",
+    videoId: "8kfnvoUVvvI",
     videoUrl: "https://www.youtube.com/watch?v=8kfnvoUVvvI",
     videoLabel: "Ver entrevista completa en YouTube",
   },
@@ -128,6 +130,17 @@ const testimonials = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {testimonials.map((t) => (
           <figure class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col">
+            <div class="relative w-full overflow-hidden rounded-xl bg-black mb-4" style="padding-bottom:56.25%">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src={`https://www.youtube-nocookie.com/embed/${t.videoId}`}
+                title={`Entrevista: ${t.name}`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
             <blockquote class="text-gray-700 leading-relaxed text-sm md:text-base flex-1">
               “{t.quote}”
             </blockquote>
