@@ -1,0 +1,136 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Cuánto gana una enfermera registrada (RN) en Nueva York?",
+    answer: "Según el Bureau of Labor Statistics (OEWS, mayo 2023), el salario medio anual de una Registered Nurse en Nueva York es de $106,620 ($51.26 por hora). En el área metropolitana de Nueva York–Newark–Jersey City la media es de $111,210, con más de 184,000 enfermeras empleadas."
+  },
+  {
+    question: "¿Nueva York cobra impuesto estatal a la renta?",
+    answer: "Sí. A diferencia de Texas y Florida, Nueva York tiene un impuesto estatal a la renta progresivo: la tasa sube con el ingreso. Por eso el salario bruto más alto no siempre se traduce en un neto proporcionalmente mayor; conviene comparar también el costo de vivienda."
+  },
+  {
+    question: "¿Nueva York pertenece al Nurse Licensure Compact?",
+    answer: "No. Nueva York no es estado del Nurse Licensure Compact, así que una licencia de otro estado no sirve para ejercer allí: hay que solicitar la licencia directamente ante la junta de Nueva York (NYSED)."
+  },
+  {
+    question: "¿Cómo homologo mi título extranjero para la licencia RN de Nueva York?",
+    answer: "La junta es el New York State Education Department (NYSED). El camino oficial para egresadas de escuelas extranjeras (Pathway 5) incluye: curso de control de infecciones y de identificación y reporte de maltrato infantil, Formulario 1 con pago de $143, verificación de credenciales (TruMerit Credential Verification Service for New York State es la opción recomendada), y aprobar el NCLEX-RN."
+  },
+];
+---
+
+<BaseLayout
+  title="Salario de enfermera en Nueva York 2026 | Datos BLS y NYSED"
+  description="Cuánto gana una enfermera RN en Nueva York según el BLS: $106,620 al año de media, $111,210 en el área metropolitana. Requisitos de licencia NYSED para egresadas extranjeras."
+  canonical="https://enfermerausa.com/salario-enfermera-nueva-york/"
+  type="service"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Nueva York · Salarios RN</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Salario de enfermera en Nueva York
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          Nueva York paga a las Registered Nurses una media de <strong>$106,620 al año</strong> ($51.26 por hora) — muy por encima de la mediana nacional — y es el estado con la mayor concentración hospitalaria del país. Pero cobra impuesto estatal a la renta y <strong>no pertenece al Nurse Licensure Compact</strong>: la licencia se tramita ante su propia junta.
+        </p>
+        <p class="text-sm text-gray-500 mb-8">
+          Fuente salarial: <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OEWS, mayo 2023</a>. Mediana nacional mayo 2025: $97,550 (<a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline text-emerald-700">BLS OOH</a>).
+        </p>
+        <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow gap-2">
+          <span>Agendar sesión informativa</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-10">
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Cifras oficiales de salario RN en Nueva York</h2>
+        <div class="overflow-x-auto border border-gray-200 rounded-xl">
+          <table class="w-full text-left text-sm text-gray-700">
+            <thead class="bg-gray-100 text-xs uppercase font-bold text-gray-900">
+              <tr>
+                <th class="px-6 py-3">Ámbito</th>
+                <th class="px-6 py-3">Salario medio anual</th>
+                <th class="px-6 py-3">Por hora</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="px-6 py-3 font-semibold">Nueva York (estado)</td><td class="px-6 py-3 text-emerald-800 font-bold">$106,620</td><td class="px-6 py-3">$51.26</td></tr>
+              <tr><td class="px-6 py-3">Nueva York–Newark–Jersey City (área metropolitana)</td><td class="px-6 py-3">$111,210</td><td class="px-6 py-3">$53.47</td></tr>
+              <tr><td class="px-6 py-3">Mediana nacional (mayo 2025)</td><td class="px-6 py-3">$97,550</td><td class="px-6 py-3">$46.90</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 mt-3">Empleo RN en Nueva York: 188,060 en el estado (BLS OEWS mayo 2023), el cuarto del país. La media metropolitana incluye también parte de Nueva Jersey y Pensilvania.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Impuestos y costo de vida: lo que cambia frente a Texas y Florida</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          El salario medio de Nueva York supera la mediana nacional en unos $9,000 anuales, pero este es el único de los estados grandes que <strong>cobra impuesto estatal a la renta (progresivo)</strong>. El neto real depende del ingreso y del municipio: en la ciudad de Nueva York se suma además un impuesto local.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          El otro factor decisivo es la vivienda: el alquiler en el área metropolitana está entre los más altos del país. Para muchas enfermeras internacionales la comparación honesta no es "Nueva York paga más", sino "Nueva York paga más y gasta más": conviene calcular el neto después de vivienda antes de elegir destino.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Licencia RN en Nueva York: la junta es el NYSED</h2>
+        <ul class="list-disc pl-6 text-gray-600 space-y-2">
+          <li>La junta que emite la licencia es el <a href="https://www.op.nysed.gov/professions/registered-professional-nursing" target="_blank" rel="noopener" class="text-emerald-700 underline">New York State Education Department (NYSED), Office of the Professions</a> — no una junta independiente como en otros estados.</li>
+          <li>Nueva York <strong>no está en el Nurse Licensure Compact</strong> (<a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="text-emerald-700 underline">NCSBN</a>): una licencia multistate de otro estado no autoriza a ejercer allí.</li>
+          <li>Para egresadas de escuelas extranjeras, el camino oficial (<a href="https://www.op.nysed.gov/professions/registered-professional-nursing/license-requirements/pathway-5" target="_blank" rel="noopener" class="text-emerald-700 underline">Pathway 5 de NYSED</a>) exige: completar el curso estatal de control de infecciones y el de identificación y reporte de maltrato infantil; presentar el Formulario 1 con la tarifa de $143; y verificar las credenciales extranjeras. La opción recomendada por el propio NYSED es el <strong>TruMerit Credential Verification Service for New York State</strong>; también existe la vía del Formulario 2F a través de la universidad de origen.</li>
+          <li>El NCLEX-RN se registra con Pearson VUE, y solo se puede presentarlo cuando el NYSED completó la revisión de la solicitud y de las credenciales. Existe un permiso limitado (limited permit) de $35 para trabajar bajo supervisión mientras llega la licencia.</li>
+          <li>La secuencia profesional sigue siendo: junta estatal → evaluación de credenciales → NCLEX → empleo/sponsor. Ver la <a href="/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/" class="text-emerald-700 underline">guía de homologación</a> y <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">NCLEX</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <div class="p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-gray-900 mb-3">Comparar con otros estados</h2>
+        <ul class="text-sm text-gray-700 space-y-2">
+          <li><a href="/salario-enfermera-texas/" class="text-emerald-700 underline font-semibold">Salario de enfermera en Texas</a></li>
+          <li><a href="/salario-enfermera-florida/" class="text-emerald-700 underline font-semibold">Salario de enfermera en Florida</a></li>
+          <li><a href="/salario-enfermera-california/" class="text-emerald-700 underline font-semibold">Salario de enfermera en California</a></li>
+          <li><a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline font-semibold">Tabla de salarios por estado</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="py-12 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-md mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿Nueva York es tu estado objetivo?</h2>
+      <p class="text-emerald-100 text-sm mb-6">En la sesión informativa vemos el recorrido completo para NYSED: homologación, NCLEX, empleo y visa, paso a paso y en español.</p>
+      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg">Agendar sesión gratuita</a>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes</span>
+      <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2023</a>
+      · <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH</a>
+      · <a href="https://www.op.nysed.gov/professions/registered-professional-nursing/license-requirements/pathway-5" target="_blank" rel="noopener" class="underline">NYSED Pathway 5 (egresadas extranjeras)</a>
+      · <a href="https://www.ncsbn.org/compacts.page" target="_blank" rel="noopener" class="underline">NCSBN Compact</a>
+    </div>
+  </div>
+</BaseLayout>
