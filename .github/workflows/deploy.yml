@@ -51,5 +51,11 @@ jobs:
             gcloud storage objects update "${HTML_OBJS[@]}" \
               --cache-control="public, max-age=60, s-maxage=86400, must-revalidate" || true
           fi
+          # XML (sitemap, rss): corto — Google debe ver el sitemap actualizado, no una copia de hace un año
+          mapfile -t XML_OBJS < <(gcloud storage ls "gs://enfermerausa.com/*.xml" 2>/dev/null || true)
+          if [ ${#XML_OBJS[@]} -gt 0 ]; then
+            gcloud storage objects update "${XML_OBJS[@]}" \
+              --cache-control="public, max-age=3600, s-maxage=86400, must-revalidate" || true
+          fi
           gcloud storage objects update gs://enfermerausa.com/index.html \
             --cache-control="public, max-age=60, s-maxage=86400, must-revalidate" || true
