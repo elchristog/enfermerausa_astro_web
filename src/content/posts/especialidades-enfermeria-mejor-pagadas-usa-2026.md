@@ -25,16 +25,16 @@ Para ubicarte: la mediana anual de una enfermera registrada (RN) en Estados Unid
 | Enfermera anestesista (CRNA) | $236,590 | ~54,500 |
 | Enfermera partera (CNM) | $134,040 | ~8,200 |
 | Nurse practitioner (NP) | $132,300 | ~336,300 |
-| Enfermera registrada (RN) | $97,550 | ~3,379,720 |
+| Enfermera registrada (RN) | $97,550 | ~3,4 millones |
 
-Fuente: BLS, Occupational Outlook Handbook y OEWS, mayo de 2025. (La media nacional de las tres especialidades de práctica avanzada juntas es $134,920 anual; la media de anestesistas es $248,320, la ocupación mejor pagada del sector salud que no es médica ni dental.)
+Fuente: BLS, Occupational Outlook Handbook y OEWS, mayo de 2025. La mediana conjunta de las tres especialidades de práctica avanzada es $134,920 anual; la de las enfermeras anestesistas es $236,590, la especialidad de enfermería con la mediana más alta.
 
 ## 1. Enfermera anestesista (CRNA): la especialidad mejor pagada
 
-- **Mediana anual: $236,590** según el BLS (la media nacional es $248,320).
+- **Mediana anual: $236,590** según el BLS (OEWS, mayo de 2025).
 - Administra anestesia y maneja el dolor antes, durante y después de cirugías y partos.
 - Requisito de entrada al programa: al menos **1 año de experiencia como RN en cuidados críticos** y un máster en enfermería con certificación nacional.
-- Es, según el propio BLS, la ocupación mejor pagada del sector salud que no es de médicos, cirujanos ni dentistas.
+- Es la especialidad de enfermería con la mediana más alta en las estadísticas oficiales del BLS.
 
 ## 2. Enfermera partera (CNM)
 
@@ -50,7 +50,7 @@ Fuente: BLS, Occupational Outlook Handbook y OEWS, mayo de 2025. (La media nacio
 
 ## 4. El punto de partida: RN
 
-- **Mediana anual: $97,550** ($101,420 de media nacional).
+- **Mediana anual: $97,550** (BLS, OEWS mayo de 2025).
 - En hospitales la mediana sube a **$100,220**, por encima de consultorios y residencias.
 - Los diferenciales por turno nocturno, fines de semana y guardias se suman sobre el salario base.
 
