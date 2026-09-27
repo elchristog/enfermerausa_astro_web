@@ -65,7 +65,7 @@ El orden es siempre el mismo:
 3. **Experiencia clínica** en el área que te interesa (los programas APRN piden máster y, en anestesia, un año en cuidados críticos).
 4. **Estudios y certificación** de práctica avanzada en Estados Unidos.
 
-El panorama completo de pagos, estado por estado, está en nuestra guía de [salarios de enfermeros en Estados Unidos](/salarios-de-enfermeros-en-estados-unidos/) y en la comparativa [California vs. Texas vs. Florida](/blog/salario-enfermera-texas-vs-florida-vs-california-2026/).
+El panorama completo de pagos, estado por estado, está en nuestra guía de [salarios de enfermeros en Estados Unidos](/salarios-de-enfermeros-en-estados-unidos/) y en la comparativa [California vs. Texas vs. Florida](/blog/posts/salario-enfermera-texas-vs-florida-vs-california-2026/).
 
 ¿Quieres revisar cuál de estas rutas se ajusta a tu título y experiencia actual?
 
