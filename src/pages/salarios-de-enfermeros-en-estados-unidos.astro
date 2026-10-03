@@ -2,33 +2,32 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const salaryStates = [
-  { state: "California", avgSalary: "$137,690 / año", hourly: "$66.20 / hr", href: "/salario-enfermera-california/" },
-  { state: "Texas", avgSalary: "$90,210 / año", hourly: "$43.37 / hr", href: "/salario-enfermera-texas/" },
-  { state: "Florida", avgSalary: "$84,760 / año", hourly: "$40.75 / hr", href: "/salario-enfermera-florida/" },
-  { state: "New York", avgSalary: "$106,620 / año", hourly: "$51.26 / hr", href: "/salario-enfermera-nueva-york/" },
-  { state: "Illinois", avgSalary: "$90,810 / año", hourly: "$43.66 / hr", href: null },
-  { state: "Washington", avgSalary: "$111,030 / año", hourly: "$53.38 / hr", href: null },
+  { state: "California", avgSalary: "$150,280 / año", hourly: "$72.25 / hr", href: "/salario-enfermera-california/" },
+  { state: "Nueva York", avgSalary: "$110,490 / año", hourly: "$53.12 / hr", href: "/salario-enfermera-nueva-york/" },
+  { state: "Texas", avgSalary: "$91,690 / año", hourly: "$44.08 / hr", href: "/salario-enfermera-texas/" },
+  { state: "Florida", avgSalary: "$88,200 / año", hourly: "$42.40 / hr", href: "/salario-enfermera-florida/" },
+  { state: "Media nacional", avgSalary: "$101,420 / año", hourly: "$48.76 / hr", href: null },
 ];
 
 const faqs = [
   {
     question: "¿Cuánto gana una enfermera en Estados Unidos?",
-    answer: "La mediana nacional de una Registered Nurse es $97,550 al año ($46.90/hora) según el BLS (mayo 2025). Por estado, las medias OEWS mayo 2023 incluyen California $137,690, Nueva York $106,620, Texas $90,210 y Florida $84,760."
+    answer: "La mediana nacional de una Registered Nurse es $97,550 al año ($46.90/hora) y la media $101,420 ($48.76/hora) según el BLS (OEWS mayo 2025). Por estado, las medias de mayo 2025 son: California $150,280, Nueva York $110,490, Texas $91,690 y Florida $88,200."
   },
   {
     question: "¿En qué estado gana más una enfermera RN?",
-    answer: "En la tabla BLS OEWS mayo 2023, California tiene una de las medias más altas ($137,690). El neto depende del impuesto estatal y del costo de vida: Texas y Florida no cobran impuesto estatal a la renta."
+    answer: "En la tabla BLS OEWS mayo 2025, California tiene la media más alta ($150,280). El neto depende del impuesto estatal y del costo de vida: Texas y Florida no cobran impuesto estatal a la renta."
   },
   {
     question: "¿Cuánto gana una enfermera en Texas y Florida?",
-    answer: "Media BLS OEWS mayo 2023: Texas $90,210 al año ($43.37/h) y Florida $84,760 ($40.75/h). Ambos sin impuesto estatal a la renta y en el Nurse Licensure Compact."
+    answer: "Media BLS OEWS mayo 2025: Texas $91,690 al año ($44.08/h) y Florida $88,200 ($42.40/h). Ambos sin impuesto estatal a la renta y en el Nurse Licensure Compact."
   },
 ];
 ---
 
 <BaseLayout
   title="Cuánto gana una enfermera en Estados Unidos 2026 | BLS $97,550"
-  description="¿Cuánto gana una enfermera en USA? Mediana BLS $97,550. Texas $90,210, Florida $84,760, California $137,690. Tabla por estado, impuestos y Compact."
+  description="¿Cuánto gana una enfermera en USA? Mediana BLS $97,550. California $150,280, Nueva York $110,490, Texas $91,690, Florida $88,200 (BLS mayo 2025). Tabla por estado, impuestos y Compact."
   canonical="https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/"
   type="service"
   faqs={faqs}
@@ -41,22 +40,25 @@ const faqs = [
           Cuánto gana una enfermera en Estados Unidos
         </h1>
         <p class="text-lg text-gray-600 leading-relaxed mb-6">
-          <strong>Respuesta corta:</strong> la mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Por estado cambia mucho: California ~$137,690, Texas ~$90,210, Florida ~$84,760 (medias BLS OEWS mayo 2023).
+          <strong>Respuesta corta:</strong> la mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Por estado cambia mucho: California $150,280, Nueva York $110,490, Texas $91,690 y Florida $88,200 (medias BLS OEWS mayo 2025).
+        </p>
+        <p class="text-sm text-gray-500 mb-6">
+          ¿Y desglosado en pagos reales? Mira cuánto es <a href="/blog/posts/cuanto-gana-enfermera-usa-por-hora-semana-mes-2026/" class="text-emerald-700 underline">por hora, por semana y por mes</a>, con conversión a pesos mexicanos.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 max-w-2xl text-left">
           <a href="/salario-enfermera-texas/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
             <p class="text-xs font-bold uppercase text-emerald-700">Texas</p>
-            <p class="text-xl font-extrabold text-gray-900">$90,210</p>
+            <p class="text-xl font-extrabold text-gray-900">$91,690</p>
             <p class="text-xs text-gray-500 mt-1">Sin impuesto estatal · Compact</p>
           </a>
           <a href="/salario-enfermera-florida/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
             <p class="text-xs font-bold uppercase text-emerald-700">Florida</p>
-            <p class="text-xl font-extrabold text-gray-900">$84,760</p>
+            <p class="text-xl font-extrabold text-gray-900">$88,200</p>
             <p class="text-xs text-gray-500 mt-1">Sin impuesto estatal · Compact</p>
           </a>
           <a href="/salario-enfermera-california/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
             <p class="text-xs font-bold uppercase text-emerald-700">California</p>
-            <p class="text-xl font-extrabold text-gray-900">$137,690</p>
+            <p class="text-xl font-extrabold text-gray-900">$150,280</p>
             <p class="text-xs text-gray-500 mt-1">Más alto · con impuesto estatal</p>
           </a>
         </div>
@@ -72,8 +74,8 @@ const faqs = [
 
   <div class="py-16 bg-white">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-8">
-      <p class="text-sm text-gray-600 mb-4">Mediana nacional de Registered Nurses (mayo 2025): <strong>$97,550 al año</strong> / $46.90 por hora. Abajo, medias estatales del BLS OEWS (mayo 2023), la tabla estatal completa más reciente publicada en bls.gov que verificamos.</p>
-      <h2 class="text-2xl font-bold text-gray-900">Salario medio anual por estado (BLS OEWS, mayo 2023)</h2>
+      <p class="text-sm text-gray-600 mb-4">Mediana nacional de Registered Nurses (mayo 2025): <strong>$97,550 al año</strong> / $46.90 por hora. Abajo, medias estatales del BLS OEWS (mayo 2025), el informe estatal más reciente publicado en bls.gov.</p>
+      <h2 class="text-2xl font-bold text-gray-900">Salario medio anual por estado (BLS OEWS, mayo 2025)</h2>
 
       <div class="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
         <table class="w-full text-left text-sm text-gray-700">
@@ -103,7 +105,7 @@ const faqs = [
           </tbody>
         </table>
       </div>
-      <p class="text-xs text-gray-500 mt-3">Fuente estatal: <a href="https://www.bls.gov/oes/2023/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2023 — Registered Nurses (29-1141)</a>. Mediana nacional: <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH, mayo 2025</a>. Illinois usa el área Chicago–Naperville–Elgin del mismo informe.</p>
+      <p class="text-xs text-gray-500 mt-3">Fuente estatal: <a href="https://www.bls.gov/oes/2025/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2025 — Registered Nurses (29-1141)</a>. Mediana nacional: <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH, mayo 2025</a>.</p>
     </div>
   </div>
 
@@ -203,7 +205,7 @@ const faqs = [
       <div class="text-center max-w-2xl mx-auto mb-8">
         <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Ingresos Reales vs Impuestos</span>
         <h2 class="text-2xl md:text-3xl font-extrabold text-white">¿Cuánto Dinero Líquido Recibes al Mes en tu Cuenta?</h2>
-        <p class="text-sm text-slate-300 mt-2">Bruto aproximado a ~36 h/semana con la media estatal BLS (mayo 2023). El neto exacto depende de tu situación federal; la columna clave es si el estado cobra renta o no.</p>
+        <p class="text-sm text-slate-300 mt-2">Bruto mensual estimado = media estatal anual del BLS (mayo 2025) dividida entre 12. El neto exacto depende de tu situación federal; la columna clave es si el estado cobra renta o no.</p>
       </div>
 
       <div class="overflow-x-auto bg-slate-800 rounded-2xl border border-slate-700 text-xs">
@@ -219,25 +221,19 @@ const faqs = [
           <tbody class="divide-y divide-slate-700 text-slate-200">
             <tr>
               <td class="p-4 font-bold text-white">Texas (Houston / Dallas)</td>
-              <td class="p-4">~$6,770 USD</td>
+              <td class="p-4">~$7,641 USD</td>
               <td class="p-4 text-emerald-400 font-bold">0% (sin impuesto estatal)</td>
               <td class="p-4 font-bold text-emerald-300">Mayor neto relativo (solo federal + FICA)</td>
             </tr>
             <tr>
               <td class="p-4 font-bold text-white">Florida (Orlando / Miami)</td>
-              <td class="p-4">~$6,360 USD</td>
+              <td class="p-4">~$7,350 USD</td>
               <td class="p-4 text-emerald-400 font-bold">0% (sin impuesto estatal)</td>
               <td class="p-4 font-bold text-emerald-300">Mayor neto relativo (solo federal + FICA)</td>
             </tr>
             <tr>
-              <td class="p-4 font-bold text-white">Illinois (Chicago)</td>
-              <td class="p-4">~$6,810 USD</td>
-              <td class="p-4 text-slate-300">Impuesto estatal (flat ~4.95%)</td>
-              <td class="p-4 font-bold text-emerald-300">Neto menor que TX/FL a igual bruto</td>
-            </tr>
-            <tr>
               <td class="p-4 font-bold text-white">California (Los Ángeles / Bay Area)</td>
-              <td class="p-4">~$10,330 USD</td>
+              <td class="p-4">~$12,523 USD</td>
               <td class="p-4 text-slate-300">Impuesto estatal progresivo</td>
               <td class="p-4 font-bold text-emerald-300">Bruto alto; neto y arriendo varían mucho</td>
             </tr>
