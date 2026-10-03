@@ -17,9 +17,9 @@ Para referencia nacional: la mediana anual de una RN en EE. UU. es de **$97,550*
 
 ## 1. California: El Estado Mejor Pagado
 
-- **Salario medio (BLS):** $148,330 al año ($71.31 por hora).
+- **Salario medio (BLS):** $150,280 al año ($72.25 por hora).
 - **Impuesto estatal sobre la renta:** sí, con escalas altas; el costo de vida, sobre todo la vivienda, es el mayor del país.
-- California encabeza el ranking nacional de salarios de enfermería: paga un 58% más que la media nacional.
+- California encabeza el ranking nacional de salarios de enfermería: paga un 48% más que la media nacional.
 
 ## 2. Texas: Equilibrio y Cero Impuestos Estatales
 
@@ -35,7 +35,7 @@ Para referencia nacional: la mediana anual de una RN en EE. UU. es de **$97,550*
 
 | Estado | Salario medio anual | Por hora | Impuesto estatal |
 | --- | --- | --- | --- |
-| California | $148,330 | $71.31 | Sí (alto) |
+| California | $150,280 | $72.25 | Sí (alto) |
 | Texas | $91,690 | $44.08 | No |
 | Florida | $88,200 | $42.40 | No |
 | Nacional (media) | $101,420 | $48.76 | — |
@@ -44,7 +44,7 @@ Fuente: BLS OEWS, mayo de 2025, Registered Nurses (29-1141).
 
 ## ¿Qué implican estas cifras para tu proceso?
 
-La diferencia entre estados es grande: California paga en promedio un 68% más que Florida ($148,330 frente a $88,200 según el BLS). Pero la comparación real depende de tus gastos: vivienda, transporte y seguros cambian en cada estado, y un salario bruto alto con costo de vida alto puede rendir menos que uno medio sin impuesto estatal.
+La diferencia entre estados es grande: California paga en promedio un 70% más que Florida ($150,280 frente a $88,200 según el BLS). Pero la comparación real depende de tus gastos: vivienda, transporte y seguros cambian en cada estado, y un salario bruto alto con costo de vida alto puede rendir menos que uno medio sin impuesto estatal.
 
 Otros factores que mueven tu oferta real:
 
@@ -52,7 +52,7 @@ Otros factores que mueven tu oferta real:
 - **Turnos:** noches, fines de semana y guardias suelen pagar diferenciales adicionales sobre el salario base.
 - **Experiencia y especialidad:** el 10% mejor pagado del país gana más de $137,470 al año.
 
-El panorama completo, estado por estado, está en nuestra guía de [salarios de enfermeros en Estados Unidos](/salarios-de-enfermeros-en-estados-unidos/), con páginas dedicadas por estado: [California](/salario-enfermera-california/), [Texas](/salario-enfermera-texas/), [Florida](/salario-enfermera-florida/) y [Nueva York](/salario-enfermera-nueva-york/).
+El panorama completo, estado por estado, está en nuestra guía de [salarios de enfermeros en Estados Unidos](/salarios-de-enfermeros-en-estados-unidos/), con páginas dedicadas por estado: [California](/salario-enfermera-california/), [Texas](/salario-enfermera-texas/), [Florida](/salario-enfermera-florida/) y [Nueva York](/salario-enfermera-nueva-york/). Si prefieres el desglose en pagos reales, mira [cuánto gana una enfermera por hora, semana y mes](/blog/posts/cuanto-gana-enfermera-usa-por-hora-semana-mes-2026/).
 
 Si estás definiendo tu ruta completa —homologación, NCLEX, licencia y oferta de empleo—, la sesión informativa revisa estos números junto al resto del proceso.
 
