@@ -58,7 +58,7 @@ Para una enfermera recién llegada con visa, el punto de referencia es el salari
 
 ## Cuánto es en pesos mexicanos
 
-Con el tipo de cambio de referencia FIX de Banxico (~17.15 pesos por dólar, publicado en septiembre de 2026; el tipo cambia a diario), la mediana mensual de ~$8,129 equivale a **unos 139,000 pesos mexicanos al mes**. Si tu meta es trabajar en USA y enviar remesas, la diferencia frente a un salario de enfermería en México es el motor económico principal de todo el proceso.
+El tipo de cambio de referencia FIX de Banxico rondaba 17.2 pesos por dólar en septiembre de 2026 y se mueve a diario: consúltalo en Banxico antes de convertir. Con ese nivel, la mediana mensual de ~$8,129 equivale a **unos 139,000 pesos mexicanos al mes**; a un tipo de 18 pesos serían ~146,000. Si tu meta es trabajar en USA y enviar remesas, la diferencia frente a un salario de enfermería en México es el motor económico principal de todo el proceso.
 
 ## Qué necesitas para poder cobrar ese salario
 
