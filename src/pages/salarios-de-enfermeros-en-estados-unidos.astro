@@ -3,16 +3,16 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const salaryStates = [
   { state: "California", avgSalary: "$150,280 / año", hourly: "$72.25 / hr", href: "/salario-enfermera-california/" },
-  { state: "Nueva York", avgSalary: "$110,490 / año", hourly: "$53.12 / hr", href: "/salario-enfermera-nueva-york/" },
-  { state: "Texas", avgSalary: "$91,690 / año", hourly: "$44.08 / hr", href: "/salario-enfermera-texas/" },
-  { state: "Florida", avgSalary: "$88,200 / año", hourly: "$42.40 / hr", href: "/salario-enfermera-florida/" },
+  { state: "Nueva York", avgSalary: "$113,440 / año", hourly: "$54.54 / hr", href: "/salario-enfermera-nueva-york/" },
+  { state: "Texas", avgSalary: "$95,380 / año", hourly: "$45.86 / hr", href: "/salario-enfermera-texas/" },
+  { state: "Florida", avgSalary: "$90,650 / año", hourly: "$43.58 / hr", href: "/salario-enfermera-florida/" },
   { state: "Media nacional", avgSalary: "$101,420 / año", hourly: "$48.76 / hr", href: null },
 ];
 
 const faqs = [
   {
     question: "¿Cuánto gana una enfermera en Estados Unidos?",
-    answer: "La mediana nacional de una Registered Nurse es $97,550 al año ($46.90/hora) y la media $101,420 ($48.76/hora) según el BLS (OEWS mayo 2025). Por estado, las medias de mayo 2025 son: California $150,280, Nueva York $110,490, Texas $91,690 y Florida $88,200."
+    answer: "La mediana nacional de una Registered Nurse es $97,550 al año ($46.90/hora) y la media $101,420 ($48.76/hora) según el BLS (OEWS mayo 2025). Por estado, las medias de mayo 2025 son: California $150,280, Nueva York $113,440, Texas $95,380 y Florida $90,650."
   },
   {
     question: "¿En qué estado gana más una enfermera RN?",
@@ -20,14 +20,14 @@ const faqs = [
   },
   {
     question: "¿Cuánto gana una enfermera en Texas y Florida?",
-    answer: "Media BLS OEWS mayo 2025: Texas $91,690 al año ($44.08/h) y Florida $88,200 ($42.40/h). Ambos sin impuesto estatal a la renta y en el Nurse Licensure Compact."
+    answer: "Media BLS OEWS mayo 2025: Texas $95,380 al año ($45.86/h) y Florida $90,650 ($43.58/h). Ambos sin impuesto estatal a la renta y en el Nurse Licensure Compact."
   },
 ];
 ---
 
 <BaseLayout
   title="Cuánto gana una enfermera en Estados Unidos 2026 | BLS $97,550"
-  description="¿Cuánto gana una enfermera en USA? Mediana BLS $97,550. California $150,280, Nueva York $110,490, Texas $91,690, Florida $88,200 (BLS mayo 2025). Tabla por estado, impuestos y Compact."
+  description="¿Cuánto gana una enfermera en USA? Mediana BLS $97,550. California $150,280, Nueva York $113,440, Texas $95,380, Florida $90,650 (BLS mayo 2025). Tabla por estado, impuestos y Compact."
   canonical="https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/"
   type="service"
   faqs={faqs}
@@ -40,7 +40,7 @@ const faqs = [
           Cuánto gana una enfermera en Estados Unidos
         </h1>
         <p class="text-lg text-gray-600 leading-relaxed mb-6">
-          <strong>Respuesta corta:</strong> la mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Por estado cambia mucho: California $150,280, Nueva York $110,490, Texas $91,690 y Florida $88,200 (medias BLS OEWS mayo 2025).
+          <strong>Respuesta corta:</strong> la mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Por estado cambia mucho: California $150,280, Nueva York $113,440, Texas $95,380 y Florida $90,650 (medias BLS OEWS mayo 2025).
         </p>
         <p class="text-sm text-gray-500 mb-6">
           ¿Y desglosado en pagos reales? Mira cuánto es <a href="/blog/posts/cuanto-gana-enfermera-usa-por-hora-semana-mes-2026/" class="text-emerald-700 underline">por hora, por semana y por mes</a>, con conversión a pesos mexicanos.
@@ -48,12 +48,12 @@ const faqs = [
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 max-w-2xl text-left">
           <a href="/salario-enfermera-texas/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
             <p class="text-xs font-bold uppercase text-emerald-700">Texas</p>
-            <p class="text-xl font-extrabold text-gray-900">$91,690</p>
+            <p class="text-xl font-extrabold text-gray-900">$95,380</p>
             <p class="text-xs text-gray-500 mt-1">Sin impuesto estatal · Compact</p>
           </a>
           <a href="/salario-enfermera-florida/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
             <p class="text-xs font-bold uppercase text-emerald-700">Florida</p>
-            <p class="text-xl font-extrabold text-gray-900">$88,200</p>
+            <p class="text-xl font-extrabold text-gray-900">$90,650</p>
             <p class="text-xs text-gray-500 mt-1">Sin impuesto estatal · Compact</p>
           </a>
           <a href="/salario-enfermera-california/" class="rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-500 shadow-sm">
