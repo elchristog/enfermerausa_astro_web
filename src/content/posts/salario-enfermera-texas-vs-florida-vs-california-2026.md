@@ -23,12 +23,12 @@ Para referencia nacional: la mediana anual de una RN en EE. UU. es de **$97,550*
 
 ## 2. Texas: Equilibrio y Cero Impuestos Estatales
 
-- **Salario medio (BLS):** $91,690 al año ($44.08 por hora).
+- **Salario medio (BLS):** $95,380 al año ($45.86 por hora).
 - **Impuesto estatal sobre la renta:** no existe. Cada dólar nominal rinde más, y el costo de vivienda es muy inferior al de California.
 
 ## 3. Florida: Alta Demanda e Inmersión Cultural
 
-- **Salario medio (BLS):** $88,200 al año ($42.40 por hora).
+- **Salario medio (BLS):** $90,650 al año ($43.58 por hora).
 - **Impuesto estatal sobre la renta:** tampoco existe, y la comunidad hispana es una de las más grandes del país, lo que facilita la adaptación.
 
 ## Comparación rápida
@@ -36,15 +36,15 @@ Para referencia nacional: la mediana anual de una RN en EE. UU. es de **$97,550*
 | Estado | Salario medio anual | Por hora | Impuesto estatal |
 | --- | --- | --- | --- |
 | California | $150,280 | $72.25 | Sí (alto) |
-| Texas | $91,690 | $44.08 | No |
-| Florida | $88,200 | $42.40 | No |
+| Texas | $95,380 | $45.86 | No |
+| Florida | $90,650 | $43.58 | No |
 | Nacional (media) | $101,420 | $48.76 | — |
 
 Fuente: BLS OEWS, mayo de 2025, Registered Nurses (29-1141).
 
 ## ¿Qué implican estas cifras para tu proceso?
 
-La diferencia entre estados es grande: California paga en promedio un 70% más que Florida ($150,280 frente a $88,200 según el BLS). Pero la comparación real depende de tus gastos: vivienda, transporte y seguros cambian en cada estado, y un salario bruto alto con costo de vida alto puede rendir menos que uno medio sin impuesto estatal.
+La diferencia entre estados es grande: California paga en promedio un 66% más que Florida ($150,280 frente a $90,650 según el BLS). Pero la comparación real depende de tus gastos: vivienda, transporte y seguros cambian en cada estado, y un salario bruto alto con costo de vida alto puede rendir menos que uno medio sin impuesto estatal.
 
 Otros factores que mueven tu oferta real:
 
