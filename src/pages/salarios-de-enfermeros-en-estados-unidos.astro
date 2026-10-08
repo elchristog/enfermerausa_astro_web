@@ -11,6 +11,14 @@ const salaryStates = [
 
 const faqs = [
   {
+    question: "¿Cuánto gana una enfermera al mes en Estados Unidos?",
+    answer: "Con la mediana nacional del BLS ($97,550 al año), una Registered Nurse gana unos $8,129 brutos al mes antes de impuestos (cálculo: 97,550 ÷ 12). Con las medias estatales de mayo 2025: California ~$12,523, Nueva York ~$9,453, Texas ~$7,948 y Florida ~$7,554 al mes."
+  },
+  {
+    question: "¿Cuánto gana una enfermera por hora en Estados Unidos?",
+    answer: "La mediana nacional es $46.90 por hora y la media $48.76 (BLS OEWS mayo 2025). Por estado: California $72.25, Nueva York $54.54, Texas $45.86 y Florida $43.58 por hora."
+  },
+  {
     question: "¿Cuánto gana una enfermera en Estados Unidos?",
     answer: "La mediana nacional de una Registered Nurse es $97,550 al año ($46.90/hora) y la media $101,420 ($48.76/hora) según el BLS (OEWS mayo 2025). Por estado, las medias de mayo 2025 son: California $150,280, Nueva York $113,440, Texas $95,380 y Florida $90,650."
   },
@@ -26,8 +34,8 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Cuánto gana una enfermera en Estados Unidos 2026 | BLS $97,550"
-  description="¿Cuánto gana una enfermera en USA? Mediana BLS $97,550. California $150,280, Nueva York $113,440, Texas $95,380, Florida $90,650 (BLS mayo 2025). Tabla por estado, impuestos y Compact."
+  title="Cuánto gana una enfermera en USA: $8,129 al mes (BLS 2026)"
+  description="Una enfermera RN gana $97,550 al año: ~$8,129 al mes y $46.90 por hora (BLS). California $12,523/mes, Texas $7,948, Florida $7,554. Tabla por estado."
   canonical="https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/"
   type="service"
   faqs={faqs}
@@ -40,7 +48,7 @@ const faqs = [
           Cuánto gana una enfermera en Estados Unidos
         </h1>
         <p class="text-lg text-gray-600 leading-relaxed mb-6">
-          <strong>Respuesta corta:</strong> la mediana nacional de una Registered Nurse (RN) es <strong>$97,550 al año</strong> ($46.90/hora, BLS mayo 2025). Por estado cambia mucho: California $150,280, Nueva York $113,440, Texas $95,380 y Florida $90,650 (medias BLS OEWS mayo 2025).
+          <strong>Respuesta corta:</strong> una Registered Nurse (RN) gana en mediana <strong>$97,550 al año</strong>: unos <strong>$8,129 al mes</strong> brutos y <strong>$46.90 por hora</strong> (BLS, mayo 2025). Por estado cambia mucho: California $150,280, Nueva York $113,440, Texas $95,380 y Florida $90,650 al año (medias BLS OEWS mayo 2025).
         </p>
         <p class="text-sm text-gray-500 mb-6">
           ¿Y desglosado en pagos reales? Mira cuánto es <a href="/blog/posts/cuanto-gana-enfermera-usa-por-hora-semana-mes-2026/" class="text-emerald-700 underline">por hora, por semana y por mes</a>, con conversión a pesos mexicanos.
@@ -105,6 +113,28 @@ const faqs = [
           </tbody>
         </table>
       </div>
+      <h2 class="text-2xl font-bold text-gray-900 mt-10">¿Cuánto gana una enfermera al mes y por hora, por estado?</h2>
+      <p class="text-sm text-gray-600">Bruto mensual = media anual BLS (mayo 2025) ÷ 12, antes de impuestos.</p>
+      <div class="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
+        <table class="w-full text-left text-sm text-gray-700">
+          <thead class="bg-gray-100 font-bold text-gray-900 uppercase text-xs">
+            <tr>
+              <th class="px-6 py-4">Estado</th>
+              <th class="px-6 py-4">Al mes (bruto)</th>
+              <th class="px-6 py-4">Por hora</th>
+              <th class="px-6 py-4">Al año</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr><td class="px-6 py-3 font-bold text-gray-900">Mediana nacional</td><td class="px-6 py-3 text-emerald-800 font-semibold">~$8,129</td><td class="px-6 py-3">$46.90</td><td class="px-6 py-3">$97,550</td></tr>
+            <tr><td class="px-6 py-3 font-bold text-gray-900">California</td><td class="px-6 py-3 text-emerald-800 font-semibold">~$12,523</td><td class="px-6 py-3">$72.25</td><td class="px-6 py-3">$150,280</td></tr>
+            <tr><td class="px-6 py-3 font-bold text-gray-900">Nueva York</td><td class="px-6 py-3 text-emerald-800 font-semibold">~$9,453</td><td class="px-6 py-3">$54.54</td><td class="px-6 py-3">$113,440</td></tr>
+            <tr><td class="px-6 py-3 font-bold text-gray-900">Texas</td><td class="px-6 py-3 text-emerald-800 font-semibold">~$7,948</td><td class="px-6 py-3">$45.86</td><td class="px-6 py-3">$95,380</td></tr>
+            <tr><td class="px-6 py-3 font-bold text-gray-900">Florida</td><td class="px-6 py-3 text-emerald-800 font-semibold">~$7,554</td><td class="px-6 py-3">$43.58</td><td class="px-6 py-3">$90,650</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-gray-600">Más detalle en <a href="/blog/posts/cuanto-gana-enfermera-usa-por-hora-semana-mes-2026/" class="text-emerald-700 underline font-semibold">cuánto gana una enfermera por hora, semana y mes</a>, y cómo llegar con <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline font-semibold">homologación</a> y <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline font-semibold">NCLEX</a>.</p>
       <p class="text-xs text-gray-500 mt-3">Fuente estatal: <a href="https://www.bls.gov/oes/2025/may/oes291141.htm" target="_blank" rel="noopener" class="underline">BLS OEWS mayo 2025 — Registered Nurses (29-1141)</a>. Mediana nacional: <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS OOH, mayo 2025</a>.</p>
     </div>
   </div>
