@@ -1,12 +1,32 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Cuántas preguntas tiene el NCLEX-RN?",
+    answer: "El NCLEX-RN es un examen adaptativo con un mínimo de 85 y un máximo de 150 preguntas en el formato Next Generation (NGN)."
+  },
+  {
+    question: "¿Se puede presentar el NCLEX-RN en español?",
+    answer: "No. El examen oficial se rinde solo en inglés. El estudio y las explicaciones sí pueden hacerse en español para entender la terminología clínica."
+  },
+  {
+    question: "¿Tengo que viajar a Estados Unidos para rendir el NCLEX?",
+    answer: "No necesariamente. El NCLEX se administra en centros Pearson VUE, incluidos centros fuera de EE.UU. Confirma sede y disponibilidad en el sitio oficial de NCSBN y Pearson VUE."
+  },
+  {
+    question: "¿Qué necesito antes de rendir el NCLEX-RN?",
+    answer: "Que el Board of Nursing de tu estado apruebe tu solicitud y te dé la autorización para el examen (ATT). Antes suele haber una evaluación de credenciales; el orden exacto lo define cada estado."
+  },
+];
 ---
 
 <BaseLayout
-  title="Examen NCLEX-RN 2026: Guía para Enfermeras"
-  description="La guía #1 para enfermeros hispanos. Te revelamos la estrategia paso a paso para aprobar el examen NCLEX-RN, obtener tu licencia y ejercer en EE.UU."
+  title="NCLEX-RN para enfermeras hispanas 2026: requisitos y pasos"
+  description="Qué evalúa el NCLEX-RN NGN (85 a 150 preguntas), en qué idioma se rinde, dónde y cómo prepararte desde Latinoamérica. Guía en español 2026."
   canonical="https://enfermerausa.com/licencia-de-enfermeria-y-examen-nclex-usa/"
   type="service"
+  faqs={faqs}
 >
   <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -16,17 +36,22 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           Licencia de Enfermería y Examen NCLEX-RN en EE.UU.
         </h1>
         <p class="text-lg text-gray-600 leading-relaxed mb-8">
-          El examen NCLEX-RN (National Council Licensure Examination) es la prueba estandarizada obligatoria para certificar que posees los conocimientos de seguridad y juicio clínico necesarios para trabajar como enfermera en los Estados Unidos.
+          El NCLEX-RN es el examen obligatorio para obtener la licencia de enfermera (RN) en cualquier estado de EE.UU.
         </p>
-        <a
-          href="https://bit.ly/3R6RbFW"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow transition-all gap-2"
-        >
-          <span>Agendar Sesión Informativa NCLEX</span>
-          <svg class="size-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
-        </a>
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          <strong>Respuesta corta:</strong> se rinde solo en inglés, es adaptativo (85 a 150 preguntas) y puedes presentarlo en centros Pearson VUE, también fuera de EE.UU., una vez que el Board de tu estado te autorice.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/sesion-informativa/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow transition-all gap-2">
+            <span>Sesión informativa gratuita</span>
+          </a>
+          <a href="/blog/posts/preparacion-examen-nclex-rn-espanol-2026/" class="inline-flex items-center border-2 border-emerald-600 text-emerald-800 hover:bg-emerald-50 font-bold px-6 py-3 rounded-lg gap-2">
+            <span>Cómo prepararte en español</span>
+          </a>
+        </div>
+        <p class="text-sm text-gray-500 mt-4">
+          Más guías: <a href="/blog/posts/cuantas-veces-se-puede-tomar-el-nclex-rn-reglas-ncsbn-2026/" class="text-emerald-700 underline">cuántas veces se puede tomar</a> · <a href="/blog/posts/estrategias-aprobar-examen-nclex-rn-primer-intento/" class="text-emerald-700 underline">estrategias para aprobar a la primera</a> · <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">homologación del título</a> · <a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline">salarios RN</a>
+        </p>
       </div>
     </div>
   </div>
@@ -75,8 +100,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow text-sm gap-2">
-          <span>Agendar Sesión Informativa de Preparación y Licencia Examen NCLEX-RN</span>
+        <a href="/sesion-informativa/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow text-sm gap-2">
+          <span>Reservar sesión informativa</span>
         </a>
       </div>
     </div>
@@ -140,8 +165,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     <div class="max-w-screen-xl mx-auto px-4">
       <h3 class="text-xl font-bold mb-2">¿Listo para dar el paso hacia tu Licencia RN en EE.UU.?</h3>
       <p class="text-emerald-100 text-sm mb-4">Acompáñanos en nuestra próxima Sesión Informativa donde resolveremos tus dudas sobre costos y procesos.</p>
-      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
-        Agendar Mi Lugar en la Sesión Informativa
+      <a href="/sesion-informativa/" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
+        Reservar sesión informativa
       </a>
     </div>
   </section>
@@ -169,8 +194,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
           <p class="text-xs text-slate-700 leading-relaxed mb-4">
             Nuestros aspirantes utilizan plataformas de simulación de preguntas (UWorld, Archer Review) combinadas con glosarios médicos en español-inglés para dominar la terminología clínica del examen en 120 días.
           </p>
-          <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs px-5 py-2.5 rounded-lg shadow">
-            Consultar Guía de Preparación NCLEX →
+          <a href="/blog/posts/preparacion-examen-nclex-rn-espanol-2026/" class="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs px-5 py-2.5 rounded-lg shadow">
+            Guía de preparación NCLEX →
           </a>
         </div>
       </div>
