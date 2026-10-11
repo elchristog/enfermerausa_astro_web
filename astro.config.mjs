@@ -28,9 +28,13 @@ export default defineConfig({
     // Keep legacy redirect shells out of the sitemap, but keep real pages
     // that only map to themselves (e.g. /validar-enfermeria-en-usa/ → itself).
     filter: (page) => !Object.entries(legacyRedirects).some(([slug, target]) => {
-      const selfPath = `/${slug}/`;
-      if (target === selfPath) return false; // real page, not a shell
-      return page.includes(selfPath) || page.endsWith(`/${slug}`);
+      // Excluir SOLO la URL legacy exacta (la shell de redirect).
+      // Antes: page.includes('/blog/') excluía TODO el blog (posts, tags, home)
+      // del sitemap porque 'blog' es un slug legacy.
+      const slugPath = `/${slug}`;
+      const targetPath = target.replace(/\/+$/, '');
+      if (targetPath === slugPath) return false; // página real, no shell
+      return page.replace(/\/+$/, '') === slugPath;
     }),
   }), mdx()],
 });
