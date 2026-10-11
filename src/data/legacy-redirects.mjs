@@ -260,4 +260,9 @@ export const legacyRedirects = {
   'guia-definitiva-para-enfermeros-latinos-en-usa': '/sesion-informativa/',
   'mejores-agencias-para-tramitar-la-enfermeria': '/blog/posts/agencias-reclutadoras-enfermeras-usa-guia-2026/',
   'mejores-canales-de-youtube-en-espanol-para-aspirantes-a-enfermeras-registradas-en-ee-uu': '/blog/home/',
+
+  // ===== Extensión ciclo #150 (GSC 11 sep – 10 oct 2026, slugs con impresiones sin destino) =====
+  'enfermera-en-u-s-a-signos-distintivos-de-la-pancreatitis': '/blog/home/',
+  'enfermera-en-estados-unidos-la-importancia-del-ingles': '/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/',
+  'la-vida-como-enfermero-en-estados-unidos': '/blog/posts/como-es-un-dia-como-enfermera-en-usa-rutinas-turnos/',
 };
