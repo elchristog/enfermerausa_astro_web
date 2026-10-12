@@ -73,6 +73,26 @@ const relatedPosts = allPosts.filter((post) =>
             </div>
           )
         }
+        {
+          !team && frontmatter.author && (
+            <Text tag="p" variant="textXS" class="text-base-500 ">
+              <span>
+                Publicado el{" "}
+                <time datetime={new Date(frontmatter.pubDate).toISOString()}>
+                  {new Date(frontmatter.pubDate).toLocaleDateString("es-ES", {
+                    year: "numeric",
+                    month: "long",
+                    day: "2-digit",
+                  })}
+                </time>{" "}
+                por <span class="font-medium">{frontmatter.author}</span>
+              </span>
+              {frontmatter.authorRole && (
+                <span class="block">{frontmatter.authorRole}</span>
+              )}
+            </Text>
+          )
+        }
       </div>
     </Wrapper>
     <Wrapper variant="standard" class="pb-8" style="padding-top: 0">
