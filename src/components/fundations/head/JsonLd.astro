@@ -6,6 +6,9 @@ interface Props {
   url?: string;
   faqs?: Array<{ question: string; answer: string }>;
   datePublished?: string;
+  authorName?: string;
+  authorRole?: string;
+  image?: string;
 }
 
 const {
@@ -14,7 +17,10 @@ const {
   description = 'Agencia líder en homologación de título de enfermería, preparación NCLEX, visa EB-3 y patrocinio en EE.UU.',
   url = 'https://enfermerausa.com',
   faqs = [],
-  datePublished = '2026-01-01'
+  datePublished = '2026-01-01',
+  authorName,
+  authorRole,
+  image
 } = Astro.props;
 
 const organizationSchema = {
@@ -63,7 +69,15 @@ const articleSchema = type === 'article' ? {
   "description": description,
   "mainEntityOfPage": url,
   "datePublished": datePublished,
-  "author": {
+  "dateModified": datePublished,
+  "inLanguage": "es",
+  ...(image ? { "image": [image] } : {}),
+  "author": authorName ? {
+    "@type": "Person",
+    "name": authorName,
+    ...(authorRole ? { "jobTitle": authorRole } : {}),
+    "worksFor": { "@type": "Organization", "name": "Enfermera en Estados Unidos", "url": "https://enfermerausa.com" }
+  } : {
     "@type": "Organization",
     "name": "Enfermera en Estados Unidos"
   },
@@ -78,6 +92,6 @@ const articleSchema = type === 'article' ? {
 } : null;
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+{type !== 'article' && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />}
 {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
