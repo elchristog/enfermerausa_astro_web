@@ -9,6 +9,19 @@ description: "Una enfermera RN gana una mediana de $97,550 al año en EE.UU. (BL
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/a0def9d7-8362-4157-b458-31525a7548ac/featured.jpg"
   alt: "Cuánto gana una enfermera en Estados Unidos en 2026"
+faqs:
+  - question: "¿Cuánto gana una enfermera en Estados Unidos al año?"
+    answer: "La mediana nacional de una enfermera RN es de $97,550 al año, según el BLS (mayo 2025). Cambia según el estado, la especialidad y la experiencia."
+  - question: "¿Cuánto gana una enfermera por hora en EE.UU.?"
+    answer: "La mediana nacional es de $46.90 por hora (BLS, mayo 2025). Las horas extra y los turnos de noche pueden pagarse distinto según el empleador."
+  - question: "¿En qué estado ganan más las enfermeras?"
+    answer: "De los tres estados de esta guía, California paga más: $150,280 de media, frente a $95,380 en Texas y $90,650 en Florida (BLS, mayo 2025)."
+  - question: "¿Una enfermera extranjera gana menos que una estadounidense?"
+    answer: "No hay una escala distinta por origen. Con la licencia RN del estado, el salario depende del estado, la especialidad, el empleador y la experiencia."
+  - question: "¿Qué necesito para trabajar de enfermera en EE.UU. con título extranjero?"
+    answer: "Evaluar tus credenciales, aprobar el NCLEX-RN, obtener la licencia estatal, demostrar inglés si te lo piden y contar con una vía migratoria con patrocinio, con frecuencia la EB-3."
+  - question: "¿El salario que publica el BLS es antes o después de impuestos?"
+    answer: "Es bruto, antes de impuestos. El neto depende de si tu estado cobra impuesto sobre el ingreso y de tus deducciones."
 tags:
   - salarios
 ---
