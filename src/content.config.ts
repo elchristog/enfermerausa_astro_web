@@ -85,6 +85,8 @@ const postsCollection = defineCollection({
       pubDate: z.date(),
       description: z.string(),
       team: z.string().optional(),
+      author: z.string().optional(),
+      authorRole: z.string().optional(),
       image: z.object({
         url: z.union([image(), z.string()]),
         alt: z.string(),
