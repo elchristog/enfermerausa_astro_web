@@ -13,12 +13,14 @@ interface Props {
   faqs?: Array<{ question: string; answer: string }>;
   datePublished?: string;
   ogImage?: string;
+  authorName?: string;
+  authorRole?: string;
 }
 
-const { title, description, canonical, type = 'home', faqs = [], datePublished, ogImage } = Astro.props;
+const { title, description, canonical, type = 'home', faqs = [], datePublished, ogImage, authorName, authorRole } = Astro.props;
 ---
 <Seo title={title} description={description} canonical={canonical} ogImage={ogImage} type={type === 'article' ? 'article' : 'website'} />
 <Meta />
 <Fonts />
 <Favicons />
-<JsonLd type={type} title={title} description={description} url={canonical} faqs={faqs} datePublished={datePublished} />
+<JsonLd type={type} title={title} description={description} url={canonical} faqs={faqs} datePublished={datePublished} authorName={authorName} authorRole={authorRole} image={ogImage} />
