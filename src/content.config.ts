@@ -87,6 +87,9 @@ const postsCollection = defineCollection({
       team: z.string().optional(),
       author: z.string().optional(),
       authorRole: z.string().optional(),
+      faqs: z
+        .array(z.object({ question: z.string(), answer: z.string() }))
+        .optional(),
       image: z.object({
         url: z.union([image(), z.string()]),
         alt: z.string(),
