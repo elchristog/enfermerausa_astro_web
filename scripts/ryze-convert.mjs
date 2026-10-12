@@ -55,6 +55,8 @@ for (const file of readdirSync(DATA_DIR)) {
     "---",
     MARK,
     `pubDate: ${pubDate}`,
+    // La plantilla del blog (BlogLayout) siempre lee este campo; se copia el valor de los posts existentes.
+    'team: "david-lee"',
     `title: ${q(a.title)}`,
     `description: ${q(description)}`,
     "image:",
