@@ -132,7 +132,7 @@ const relatedPosts = allPosts.filter((post) =>
       {!team && frontmatter.author && (
         <div class="mt-8 flex items-center gap-4">
           <div class="flex items-center justify-center rounded-full shrink-0 size-12 bg-[#2C3E50] text-white text-sm font-semibold" aria-hidden="true">
-            {frontmatter.author.split(" ").slice(0, 2).map((w: string) => w[0]).join("")}
+            {frontmatter.author.split(" ").slice(0, 2).map((w) => w[0]).join("")}
           </div>
           <div class="min-w-0">
             <p class="text-sm font-semibold text-base-800">{frontmatter.author}</p>
