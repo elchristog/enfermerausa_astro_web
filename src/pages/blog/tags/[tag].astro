@@ -26,7 +26,36 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 const tagTitle = `Artículos sobre ${tag.charAt(0).toUpperCase()}${tag.slice(1)} | Enfermera en Estados Unidos`;
-const tagDescription = `Todos los artículos de nuestro blog sobre ${tag}: homologación, NCLEX, visa y empleo para enfermeros hispanos en Estados Unidos.`;
+// Descripción única por etiqueta: evita el problema de "meta description duplicada"
+// que Google reporta cuando todas las páginas de etiquetas comparten el mismo texto.
+const tagDescriptions: Record<string, string> = {
+  "empleo": "Ofertas de empleo para enfermeras en Estados Unidos: cómo funciona el patrocinio de hospitales, qué piden los reclutadores y cómo prepararte para conseguir tu plaza como RN.",
+  "visa": "Todo sobre visas para enfermeras en Estados Unidos: EB-3, green card por patrocinio, tiempos de trámite y documentos, explicado paso a paso en español.",
+  "homologacion": "Cómo homologar tu título de enfermería en Estados Unidos: evaluación de credenciales, juntas estatales y requisitos para ejercer como RN formada en el extranjero.",
+  "youtube": "Videos y recursos del canal de YouTube de Enfermera en Estados Unidos: guías visuales sobre homologación, NCLEX, visa y vida como RN en USA.",
+  "enfermeria-usa": "Enfermería en Estados Unidos de la A a la Z: niveles de enfermería, licencia RN, sueldos, adaptación y el camino completo para hispanohablantes.",
+  "eb3": "Visa EB-3 para enfermeras: requisitos, patrocinio de hospital, petición I-140 y residencia permanente para ti y tu familia.",
+  "inmigracion": "Inmigración para enfermeras hispanas en EE.UU.: visas de trabajo, green card y trámites migratorios del proceso de enfermería, en lenguaje claro.",
+  "nclex": "Guías del examen NCLEX para enfermeras hispanas: cómo registrarte, qué estudiar y cómo presentarlo con éxito para obtener tu licencia RN.",
+  "nclex-rn": "NCLEX-RN paso a paso: formato del examen, puntajes, reglas de intentos y estrategias de estudio para aprobarlo.",
+  "licencia": "Licencia de enfermería RN en Estados Unidos por estado: requisitos, exámenes y trámites para ejercer legalmente.",
+  "examen": "Exámenes del proceso de enfermería en EE.UU.: NCLEX-RN, exámenes de inglés y evaluaciones de credenciales, con fechas y puntajes clave.",
+  "salarios": "Cuánto gana una enfermera en Estados Unidos: sueldo por hora, semana y mes, comparación por estado y especialidad, con datos oficiales.",
+  "guias": "Guías completas para enfermeras hispanas en EE.UU.: rutas paso a paso de homologación, NCLEX, visa y empleo hospitalario.",
+  "especialidades": "Especialidades de enfermería mejor pagadas en EE.UU.: nurse practitioner, anestesia, partera y más, con salarios oficiales y cómo llegar a cada una.",
+  "rn": "Ser RN (enfermera registrada) en Estados Unidos: diferencia con otros niveles, licencia, sueldo y camino para hispanohablantes.",
+  "homologación": "Revalida tu título de enfermería en Estados Unidos: requisitos, evaluación de credenciales y consejos prácticos para la homologación.",
+  "cgfns": "Trámite CGFNS para enfermeras extranjeras: qué evalúa, documentos y tiempos del certificado para ejercer en EE.UU.",
+  "credenciales": "Evaluación de credenciales de enfermería en EE.UU.: CES, VisaScreen y TruMerit, qué pide cada junta estatal y cómo preparar tus documentos.",
+  "ingles": "Requisitos de inglés para enfermeras en EE.UU.: IELTS, TOEFL, PTE y OET, puntajes mínimos y consejos para presentarlos con éxito.",
+  "visascreen": "VisaScreen para enfermeras: qué es, cómo tramitarlo con TruMerit, vigencia y por qué es requisito federal para tu visa.",
+  "estados": "Guías por estado para enfermeras en EE.UU.: licencias, salarios y requisitos de California, Texas, Florida y más.",
+  "visa-eb3": "Paso a paso de la visa EB-3 para enfermeras con patrocinio de hospital: Schedule A, I-140, consulado y residencia permanente.",
+  "green-card": "Green Card para enfermeras: cómo obtener la residencia permanente de EE.UU. con patrocinio EB-3 de hospitales, requisitos y tiempos.",
+  "sponsor": "Patrocinio de hospitales para enfermeras en EE.UU.: cómo funciona el sponsor, contratos y qué revisar antes de firmar.",
+};
+const tagDescription = tagDescriptions[tag]
+  ?? `Artículos etiquetados "${tag}": recursos en español de homologación, NCLEX, visa y empleo para enfermeros hispanos en Estados Unidos.`;
 const tagCanonical = `https://enfermerausa.com/blog/tags/${tag}/`;
 ---
 
