@@ -1,6 +1,6 @@
 ---
 interface Props {
-  type?: 'home' | 'service' | 'faq' | 'article';
+  type?: 'home' | 'service' | 'faq' | 'article' | 'info';
   title?: string;
   description?: string;
   url?: string;
@@ -120,6 +120,7 @@ const articleSchema = type === 'article' ? {
 
 {type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />}
 {type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
-{type !== 'article' && <script type="application/ld+json" set:html={JSON.stringify(programSchema)} />}
+{type !== 'article' && type !== 'info' && <script type="application/ld+json" set:html={JSON.stringify(programSchema)} />}
+{type === 'info' && <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": url, "inLanguage": "es", "isPartOf": { "@id": "https://enfermerausa.com/#website" }, "publisher": { "@id": "https://enfermerausa.com/#organization" } })} />}
 {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
