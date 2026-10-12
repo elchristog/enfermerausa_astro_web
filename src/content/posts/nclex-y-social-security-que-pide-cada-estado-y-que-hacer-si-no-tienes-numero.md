@@ -211,4 +211,4 @@ Guarda las respuestas oficiales junto a tus documentos. Cuando recibas una recom
 
 Conoce el acompañamiento en español para homologación, NCLEX, licencia RN, visa y empleo hospitalario.
 
-**[Conoce el acompañamiento](https://enfermerausa.com/)**
+**[Conoce el acompañamiento](https://enfermerausa.com/sesion-informativa/)**

@@ -210,4 +210,4 @@ Para tu plan de 2026, separa el empleo que puedes desempeñar ahora del puesto d
 
 Infórmate sobre el acompañamiento en español y la sesión informativa gratuita.
 
-**[Conoce la sesión](https://enfermerausa.com/)**
+**[Conoce la sesión](https://enfermerausa.com/sesion-informativa/)**

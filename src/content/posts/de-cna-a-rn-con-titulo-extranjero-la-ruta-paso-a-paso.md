@@ -210,4 +210,4 @@ Reserva la sesión informativa gratuita de Enfermera en Estados Unidos y lleva t
 
 Presenta tus preguntas sobre homologación, NCLEX-RN, licencia, visa y empleo hospitalario.
 
-**[Solicita tu sesión](https://enfermerausa.com/)**
+**[Solicita tu sesión](https://enfermerausa.com/sesion-informativa/)**
