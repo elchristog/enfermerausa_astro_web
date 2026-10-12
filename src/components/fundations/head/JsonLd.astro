@@ -25,6 +25,32 @@ const {
 
 const organizationSchema = {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://enfermerausa.com/#organization",
+  "name": "Enfermera en Estados Unidos",
+  "url": "https://enfermerausa.com",
+  "logo": "https://enfermerausa.com/logo.webp",
+  "email": "hello@enfermeraenestadosunidos.com",
+  "sameAs": [
+    "https://www.instagram.com/enfermeraenestadosunidos",
+    "https://www.facebook.com/enfermeraenestadosunidosusa",
+    "https://www.youtube.com/@enfermeraenestadosunidos",
+    "https://www.tiktok.com/@enfermeraenestadosunidos"
+  ]
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://enfermerausa.com/#website",
+  "name": "Enfermera en Estados Unidos",
+  "url": "https://enfermerausa.com",
+  "inLanguage": "es",
+  "publisher": { "@id": "https://enfermerausa.com/#organization" }
+};
+
+const programSchema = {
+  "@context": "https://schema.org",
   "@type": "EducationalOccupationalProgram",
   "name": "Programa de Homologación y Empleo para Enfermeras en EE.UU.",
   "description": description,
@@ -92,6 +118,8 @@ const articleSchema = type === 'article' ? {
 } : null;
 ---
 
-{type !== 'article' && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />}
+{type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />}
+{type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
+{type !== 'article' && <script type="application/ld+json" set:html={JSON.stringify(programSchema)} />}
 {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
