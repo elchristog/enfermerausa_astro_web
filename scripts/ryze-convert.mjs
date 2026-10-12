@@ -6,6 +6,8 @@ import { join } from "node:path";
 const DATA_DIR = "blog/data";
 const OUT_DIR = "src/content/posts";
 const MARK = "# generated-by: ryze";
+const AUTHOR = "Alejandra Martínez, RN, BSN, IBCLC";
+const AUTHOR_ROLE = "Fundadora de Enfermera en Estados Unidos y rnnclex.com";
 
 if (!existsSync(DATA_DIR)) {
   console.log(`No existe ${DATA_DIR}; nada que convertir.`);
@@ -57,6 +59,9 @@ for (const file of readdirSync(DATA_DIR)) {
     `pubDate: ${pubDate}`,
     // La plantilla del blog (BlogLayout) siempre lee este campo; se copia el valor de los posts existentes.
     'team: "david-lee"',
+    // Autora visible de todos los artículos.
+    `author: ${q(AUTHOR)}`,
+    `authorRole: ${q(AUTHOR_ROLE)}`,
     `title: ${q(a.title)}`,
     `description: ${q(description)}`,
     "image:",
