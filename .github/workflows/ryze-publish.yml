@@ -1,0 +1,59 @@
+name: Ryze publicar artículos
+
+on:
+  push:
+    branches:
+      - main
+      - ryze/publishing-setup
+    paths:
+      - "blog/data/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ryze-publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el sitio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Convertir artículos de Ryze
+        run: node scripts/ryze-convert.mjs
+
+      - name: Comprobar que el sitio compila
+        run: |
+          npm ci
+          npm run build
+
+      - name: Guardar los posts generados
+        id: commit
+        run: |
+          git config user.name "ryze-bot"
+          git config user.email "ryze-bot@users.noreply.github.com"
+          git add src/content/posts
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Ryze: actualizar posts del blog [skip ci]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publicar el sitio (solo en main)
+        if: steps.commit.outputs.changed == 'true' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
