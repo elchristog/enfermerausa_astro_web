@@ -25,9 +25,16 @@ export async function getStaticPaths() {
 }
 const { tag } = Astro.params;
 const { posts } = Astro.props;
+const tagTitle = `Artículos sobre ${tag.charAt(0).toUpperCase()}${tag.slice(1)} | Enfermera en Estados Unidos`;
+const tagDescription = `Todos los artículos de nuestro blog sobre ${tag}: homologación, NCLEX, visa y empleo para enfermeros hispanos en Estados Unidos.`;
+const tagCanonical = `https://enfermerausa.com/blog/tags/${tag}/`;
 ---
 
-<BaseLayout>
+<BaseLayout
+  title={tagTitle}
+  description={tagDescription}
+  canonical={tagCanonical}
+>
   <section>
     <Wrapper variant="standard" class="pt-48 pb-8 lg:pt-82">
       <Text
