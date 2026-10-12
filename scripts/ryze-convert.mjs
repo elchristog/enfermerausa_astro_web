@@ -28,6 +28,17 @@ function pickTag(a) {
 
 let written = 0;
 let skipped = 0;
+
+// Extrae pares pregunta/respuesta de la sección "## FAQ" (formato **pregunta** + párrafo).
+function extractFaqs(md) {
+  const m = md.match(/^## +FAQ[^\n]*\n([\s\S]*?)(?=^## |$(?![\s\S]))/m);
+  if (!m) return [];
+  const out = [];
+  const re = /\*\*([^*\n]+\?)\*\*\s*\n+([^\n]+(?:\n(?!\*\*|\n)[^\n]+)*)/g;
+  let x;
+  while ((x = re.exec(m[1]))) out.push({ question: x[1].trim(), answer: x[2].replace(/\s+/g, " ").trim() });
+  return out;
+}
 for (const file of readdirSync(DATA_DIR)) {
   if (!file.endsWith(".json")) continue;
   let a;
@@ -53,6 +64,10 @@ for (const file of readdirSync(DATA_DIR)) {
   const imgUrl = a.image && typeof a.image === "object" && a.image.url ? a.image.url : "/logo.webp";
   const imgAlt = a.image && typeof a.image === "object" && a.image.alt ? a.image.alt : a.title;
   const description = a.meta_description || a.excerpt || a.title;
+  const faqs = extractFaqs(a.body_markdown ?? "");
+  const faqYaml = faqs.length
+    ? ["faqs:", ...faqs.flatMap((f) => [`  - question: ${q(f.question)}`, `    answer: ${q(f.answer)}`])]
+    : [];
   const fm = [
     "---",
     MARK,
@@ -67,6 +82,7 @@ for (const file of readdirSync(DATA_DIR)) {
     "image:",
     `  url: ${q(imgUrl)}`,
     `  alt: ${q(imgAlt)}`,
+    ...faqYaml,
     "tags:",
     `  - ${pickTag(a)}`,
     "---",
