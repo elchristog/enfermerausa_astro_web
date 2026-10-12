@@ -16,9 +16,13 @@ const canonical = `https://enfermerausa.com${Astro.url.pathname}`;
 // Get all posts and filter by tag
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("posts");
-const relatedPosts = allPosts.filter((post) =>
-  post.data.tags.some((tag) => frontmatter.tags.includes(tag))
-);
+const relatedPosts = allPosts
+  .filter(
+    (post) =>
+      post.data.title !== frontmatter.title &&
+      post.data.tags.some((tag) => frontmatter.tags.includes(tag))
+  )
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <BaseLayout
@@ -28,6 +32,9 @@ const relatedPosts = allPosts.filter((post) =>
   type="article"
   datePublished={frontmatter.pubDate.toISOString()}
   ogImage={frontmatter.image.url}
+  authorName={!team ? frontmatter.author : undefined}
+  authorRole={!team ? frontmatter.authorRole : undefined}
+  faqs={frontmatter.faqs}
 >
   <section>
     <Wrapper variant="standard" class={team ? "fixed z-40 top-[3.8rem] inset-x-0" : "hidden"}>
