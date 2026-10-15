@@ -9,6 +9,7 @@ El sitio está dirigido a dos audiencias por igual: enfermeras que aún viven en
 ## Páginas principales
 
 - [Inicio](https://enfermerausa.com/): presentación del servicio de acompañamiento integral en español para enfermeras.
+- [Quiénes somos](https://enfermerausa.com/quienes-somos/): quién está detrás del proyecto — Alejandra Martínez, RN, BSN, IBCLC; qué hace la empresa, política editorial y contacto.
 - [Sesión informativa gratuita](https://enfermerausa.com/sesion-informativa/): registro a la sesión informativa por videollamada (miércoles 6 pm EST y domingo 10 am EST).
 - [Validar enfermería en USA](https://enfermerausa.com/validar-enfermeria-en-usa/): guía completa para validar el título de enfermería en Estados Unidos.
 - [Evaluación y homologación de título](https://enfermerausa.com/evaluacion-y-homologacion-de-titulo-enfermeria-usa/): cómo funciona la evaluación de credenciales y la homologación del título de enfermería.
