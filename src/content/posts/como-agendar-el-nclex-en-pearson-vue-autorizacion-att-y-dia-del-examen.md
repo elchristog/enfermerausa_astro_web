@@ -1,6 +1,6 @@
 ---
 # generated-by: ryze
-pubDate: 2026-10-14
+pubDate: 2026-10-15
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
@@ -194,4 +194,4 @@ Reserva la sesión informativa gratuita de Enfermera en Estados Unidos para cono
 
 Conoce el acompañamiento en español para homologación, NCLEX, licencia, visa y empleo hospitalario.
 
-**[Reservar sesión informativa](https://enfermerausa.com/)**
+**[Reservar sesión informativa](https://enfermerausa.com/sesion-informativa/)**
