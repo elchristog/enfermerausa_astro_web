@@ -32,15 +32,15 @@ const relatedPosts = allPosts
   type="article"
   datePublished={frontmatter.pubDate.toISOString()}
   ogImage={frontmatter.image.url}
-  authorName={!team ? frontmatter.author : undefined}
-  authorRole={!team ? frontmatter.authorRole : undefined}
+  authorName={frontmatter.author ? frontmatter.author : undefined}
+  authorRole={frontmatter.authorRole ? frontmatter.authorRole : undefined}
   faqs={frontmatter.faqs}
 >
   <section>
     <Wrapper variant="standard" class={team ? "fixed z-40 top-[3.8rem] inset-x-0" : "hidden"}>
       <div class="w-full py-2 bg-white border-b border-base-200">
         {
-          team && (
+          team && !frontmatter.author && (
             <div class="flex items-center gap-3">
               {team?.data?.image?.url && (
                 <Image
@@ -136,12 +136,13 @@ const relatedPosts = allPosts
         </Text>
       </div>
 
-      {!team && frontmatter.author && (
+      {frontmatter.author && (
         <div class="mt-8 flex items-center gap-4">
           <div class="flex items-center justify-center rounded-full shrink-0 size-12 bg-[#2C3E50] text-white text-sm font-semibold" aria-hidden="true">
             {frontmatter.author.split(" ").slice(0, 2).map((w) => w[0]).join("")}
           </div>
           <div class="min-w-0">
+            <a href="/quienes-somos/" class="text-xs font-medium text-emerald-700 underline hover:text-emerald-800">Conocer a la fundadora →</a>
             <p class="text-sm font-semibold text-base-800">{frontmatter.author}</p>
             <p class="text-xs text-base-500">
               {frontmatter.authorRole && <span>{frontmatter.authorRole} · </span>}
