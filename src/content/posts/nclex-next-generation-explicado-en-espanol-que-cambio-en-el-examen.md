@@ -1,6 +1,6 @@
 ---
 # generated-by: ryze
-pubDate: 2026-10-14
+pubDate: 2026-10-15
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
@@ -260,4 +260,4 @@ En tu preparación de 2026, no midas el progreso solo por preguntas completadas.
 
 Conoce el acompañamiento en español para homologación, NCLEX, licencia y empleo hospitalario.
 
-**[Reservar sesión gratuita](https://enfermerausa.com/)**
+**[Reservar sesión gratuita](https://enfermerausa.com/sesion-informativa/)**
