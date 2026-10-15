@@ -75,6 +75,17 @@ const programSchema = {
   }
 };
 
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": title,
+  "description": description,
+  "url": url,
+  "inLanguage": "es",
+  "isPartOf": { "@id": "https://enfermerausa.com/#website" },
+  "publisher": { "@id": "https://enfermerausa.com/#organization" }
+};
+
 const faqSchema = faqs.length > 0 ? {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -98,14 +109,11 @@ const articleSchema = type === 'article' ? {
   "dateModified": datePublished,
   "inLanguage": "es",
   ...(image ? { "image": [image] } : {}),
-  "author": authorName ? {
+  "author": {
     "@type": "Person",
-    "name": authorName,
-    ...(authorRole ? { "jobTitle": authorRole } : {}),
+    "name": authorName || "Alejandra Martínez",
+    "jobTitle": authorRole || "RN, BSN, IBCLC",
     "worksFor": { "@type": "Organization", "name": "Enfermera en Estados Unidos", "url": "https://enfermerausa.com" }
-  } : {
-    "@type": "Organization",
-    "name": "Enfermera en Estados Unidos"
   },
   "publisher": {
     "@type": "Organization",
@@ -120,7 +128,7 @@ const articleSchema = type === 'article' ? {
 
 {type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />}
 {type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
-{type !== 'article' && type !== 'info' && <script type="application/ld+json" set:html={JSON.stringify(programSchema)} />}
+{(type === 'service' || type === 'faq') && <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />}
 {type === 'info' && <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": url, "inLanguage": "es", "isPartOf": { "@id": "https://enfermerausa.com/#website" }, "publisher": { "@id": "https://enfermerausa.com/#organization" } })} />}
 {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
