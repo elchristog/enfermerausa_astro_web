@@ -59,6 +59,9 @@ jobs:
           fi
           gcloud storage objects update gs://enfermerausa.com/index.html \
             --cache-control="public, max-age=60, s-maxage=86400, must-revalidate" || true
+          # robots.txt y llms.txt: corto; si no, los cambios tardan un año en verse (caché larga por defecto)
+          gcloud storage objects update gs://enfermerausa.com/llms.txt gs://enfermerausa.com/robots.txt \
+            --cache-control="public, max-age=3600, s-maxage=3600, must-revalidate" || true
           # 404.html: NUNCA cachear. Si una URL se pide antes de existir (p. ej. el control de
           # Ryze justo tras publicar un artículo), el 404 no debe quedar guardado en Cloudflare
           # un día entero aunque la página ya exista.
