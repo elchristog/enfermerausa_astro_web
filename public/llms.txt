@@ -41,6 +41,13 @@ El sitio está dirigido a dos audiencias por igual: enfermeras que aún viven en
 
 ### NCLEX y licencia
 
+- [Cómo agendar el NCLEX en Pearson VUE (ATT y día del examen)](https://enfermerausa.com/blog/posts/como-agendar-el-nclex-en-pearson-vue-autorizacion-att-y-dia-del-examen/): registro, autorización ATT, cita y cambios.
+- [NCLEX Next Generation explicado en español](https://enfermerausa.com/blog/posts/nclex-next-generation-explicado-en-espanol-que-cambio-en-el-examen/): casos clínicos, puntuación parcial y preparación.
+- [NCLEX y Social Security: qué pide cada estado](https://enfermerausa.com/blog/posts/nclex-y-social-security-que-pide-cada-estado-y-que-hacer-si-no-tienes-numero/): qué hacer si no tienes número.
+- [Cómo elegir el estado para tu licencia RN](https://enfermerausa.com/blog/posts/como-elegir-el-estado-para-tu-licencia-rn-siendo-enfermera-extranjera/): criterios para enfermeras extranjeras.
+- [Licencia multiestatal (Compact)](https://enfermerausa.com/blog/posts/licencia-multiestatal-para-enfermeras-compact-como-funciona/): cómo funciona y qué no cubre.
+- [De CNA a RN con título extranjero](https://enfermerausa.com/blog/posts/de-cna-a-rn-con-titulo-extranjero-la-ruta-paso-a-paso/): ruta paso a paso.
+- [Enfermera hispana en EE.UU. sin licencia RN](https://enfermerausa.com/blog/posts/enfermera-hispana-en-ee-uu-sin-licencia-rn-en-que-puedes-trabajar-mientras-tanto/): en qué puedes trabajar mientras tanto.
 - [Preparación NCLEX-RN en español 2026](https://enfermerausa.com/blog/posts/preparacion-examen-nclex-rn-espanol-2026/): cómo prepararse para el NCLEX desde el español.
 - [Estrategias para aprobar el NCLEX al primer intento](https://enfermerausa.com/blog/posts/estrategias-aprobar-examen-nclex-rn-primer-intento/): métodos de estudio y estrategias de examen.
 - [Cuántas veces se puede tomar el NCLEX-RN](https://enfermerausa.com/blog/posts/cuantas-veces-se-puede-tomar-el-nclex-rn-reglas-ncsbn-2026/): reglas de la NCSBN sobre intentos y espera.
@@ -59,6 +66,8 @@ El sitio está dirigido a dos audiencias por igual: enfermeras que aún viven en
 
 ### Salarios
 
+- [Cuánto gana un enfermero en Estados Unidos 2026](https://enfermerausa.com/blog/posts/cuanto-gana-un-enfermero-en-estados-unidos-2026/): salario por hora y anual con datos del BLS.
+- [Cuánto gana una enfermera en Nueva York 2026](https://enfermerausa.com/blog/posts/cuanto-gana-una-enfermera-en-nueva-york-guia/): datos del BLS y licencia RN.
 - [Cuánto gana una enfermera en Estados Unidos 2026](https://enfermerausa.com/blog/posts/cuanto-gana-una-enfermera-en-estados-unidos-2026/): análisis detallado de salarios.
 - [Cuánto gana una enfermera por hora, semana y mes 2026](https://enfermerausa.com/blog/posts/cuanto-gana-enfermera-usa-por-hora-semana-mes-2026/): salarios por unidad de tiempo.
 - [Salario por estado: Texas vs Florida vs California 2026](https://enfermerausa.com/blog/posts/salario-enfermera-texas-vs-florida-vs-california-2026/): comparativa entre estados.
