@@ -48,7 +48,20 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Ryze: actualizar posts del blog [skip ci]"
-            git push
+            ok=false
+            for i in 1 2 3 4 5 6; do
+              if git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+                ok=true
+                break
+              fi
+              echo "El guardado falló (intento $i); reintento en unos segundos"
+              git rebase --abort 2>/dev/null || true
+              sleep $((i * 5))
+            done
+            if [ "$ok" != "true" ]; then
+              echo "No se pudo guardar tras 6 intentos"
+              exit 1
+            fi
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
