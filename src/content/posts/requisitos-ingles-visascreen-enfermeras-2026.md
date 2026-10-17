@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-23
 team: "david-lee"
-title: "Exámenes de inglés para enfermeras: puntajes VisaScreen 2026 (TOEFL, IELTS, PTE y OET)"
-description: "Puntajes mínimos de inglés vigentes desde mayo de 2026 para enfermeras formadas fuera de EE.UU.: IELTS, TOEFL iBT, PTE, OET, Cambridge y MET, con exenciones y fuentes oficiales."
+title: "Requisitos de inglés para VisaScreen: puntajes 2026"
+description: "Requisitos de inglés para VisaScreen 2026: puntajes mínimos IELTS, TOEFL iBT, PTE, OET, Cambridge y MET vigentes desde mayo de 2026, con exenciones y fuentes oficiales."
 image:
   url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1200&auto=format&fit=crop"
   alt: "Libros y apuntes de estudio para preparar un examen de inglés"
