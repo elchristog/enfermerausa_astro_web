@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-21
 team: "david-lee"
-title: "¿Cuánto cuesta el proceso completo para ser enfermera en Estados Unidos? (2026)"
-description: "Los precios oficiales, en una sola lista: evaluación de credenciales CES, examen NCLEX (con la subida a $350 en febrero de 2027), VisaScreen y petición I-140. Con fuentes oficiales y qué gastos no incluyen."
+title: "Cuánto cuesta el proceso de enfermería en USA 2026"
+description: "Cuánto cuesta el proceso de enfermería en USA 2026: evaluación CES, NCLEX ($350 desde feb 2027), VisaScreen y petición I-140, con fuentes oficiales."
 image:
   url: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera hispana planificando el presupuesto de su proceso profesional en Estados Unidos"
