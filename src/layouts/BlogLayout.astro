@@ -159,6 +159,8 @@ const relatedPosts = allPosts
           height={800}
           alt={frontmatter.image.alt}
           src={frontmatter.image.url}
+          loading="eager"
+          fetchpriority="high"
           class="object-cover object-center size-full max-h-120 rounded-2xl"
         />
         <div
