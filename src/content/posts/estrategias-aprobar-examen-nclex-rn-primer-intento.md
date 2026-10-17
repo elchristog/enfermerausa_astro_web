@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-16
 team: "david-lee"
-title: "Estrategias Clave para Aprobar el Examen NCLEX-RN en tu Primer Intento"
-description: "Cómo funciona el NCLEX-RN (85–150 preguntas, 5 horas) y 6 estrategias de juicio clínico NGN y priorización para aprobarlo en el primer intento, con datos oficiales de NCSBN."
+title: "Cómo aprobar el NCLEX-RN al primer intento: 6 estrategias"
+description: "Aprobar el NCLEX-RN al primer intento: 6 estrategias de juicio clínico NGN y priorización, con datos oficiales de NCSBN (85–150 preguntas)."
 image:
   url: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera hispana preparándose para el examen NCLEX-RN"
