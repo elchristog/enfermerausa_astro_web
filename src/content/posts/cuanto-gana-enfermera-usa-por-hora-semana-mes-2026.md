@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-10-03
 team: "david-lee"
-title: "Cuánto gana una enfermera en Estados Unidos por hora, por semana y por mes (2026)"
-description: "Salario de enfermera RN en USA: $46.90 por hora, ~$1,876 por semana y ~$8,129 al mes (mediana BLS mayo 2025). Con ejemplos por estado y conversión a pesos mexicanos."
+title: "Cuánto gana una enfermera en USA: $46.90 por hora (2026)"
+description: "Cuánto gana una enfermera RN en USA: $46.90 por hora, $1,876 por semana y $8,129 al mes (mediana BLS mayo 2025). Ejemplos por estado y en pesos mexicanos."
 image:
   url: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera registrada trabajando en un hospital de Estados Unidos"
@@ -12,7 +12,7 @@ tags:
 
 ¿Cuánto gana una enfermera en Estados Unidos por hora, por semana y por mes? Aquí está la respuesta directa, con las cifras oficiales más recientes del Bureau of Labor Statistics (BLS, OEWS de mayo de 2025, ocupación 29-1141).
 
-## Respuesta corta: hora, semana y mes
+## Cuánto gana una enfermera por hora, semana y mes
 
 La mediana nacional de una enfermera registrada (RN) es **$97,550 al año**, que equivale a **$46.90 por hora**. Sobre esa base:
 
@@ -59,6 +59,24 @@ Para una enfermera recién llegada con visa, el punto de referencia es el salari
 ## Cuánto es en pesos mexicanos
 
 El tipo de cambio de referencia FIX de Banxico rondaba 17.2 pesos por dólar en septiembre de 2026 y se mueve a diario: consúltalo en Banxico antes de convertir. Con ese nivel, la mediana mensual de ~$8,129 equivale a **unos 139,000 pesos mexicanos al mes**; a un tipo de 18 pesos serían ~146,000. Si tu meta es trabajar en USA y enviar remesas, la diferencia frente a un salario de enfermería en México es el motor económico principal de todo el proceso.
+
+## Preguntas frecuentes
+
+### ¿Cuánto gana una enfermera al mes en Estados Unidos?
+
+Unos **$8,129 al mes** es la mediana nacional de una enfermera registrada (BLS mayo 2025: $97,550 al año). Si tomas la media en lugar de la mediana, el número sube a ~$8,452 al mes, porque incluye salarios muy altos de zonas y especialidades concretas.
+
+### ¿Cuánto gana una enfermera por semana?
+
+Con la mediana nacional, unas **$1,876 por semana** a 40 horas ($97,550 al año ÷ 52 semanas). En pagos quincenales son ~$3,752. Las horas extra se pagan por ley federal (FLSA) a tarifa y media, así que una semana con horas extra supera ese promedio.
+
+### ¿Cuánto son esos salarios en pesos mexicanos?
+
+Con el tipo de cambio de referencia de Banxico (rondaba 17.2 pesos por dólar en septiembre de 2026 y se mueve a diario), la mediana de ~$8,129 al mes equivale a **unos 139,000 pesos mexicanos al mes**. Verifica siempre el tipo del día en [Banxico](https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp).
+
+### ¿Cuánto gana una enfermera anestesista?
+
+Muy por encima de un RN general: la mediana de las enfermeras anestesistas (CRNA) es de **$236,590 al año** según el BLS. La comparación completa está en nuestra guía de [especialidades de enfermería mejor pagadas](/blog/posts/especialidades-enfermeria-mejor-pagadas-usa-2026/).
 
 ## Qué necesitas para poder cobrar ese salario
 
