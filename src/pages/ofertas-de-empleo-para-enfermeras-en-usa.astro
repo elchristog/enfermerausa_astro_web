@@ -1,374 +1,127 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-const jobOffers = [
+const faqs = [
   {
-    id: "RN-ICU-HOU-2026",
-    title: "Enfermero/a Registrado/a (RN) - Cuidados Intensivos (ICU)",
-    hospital: "Texas Medical Center Network",
-    location: "Houston, Texas",
-    salary: "$42.00 - $56.00 USD / hora",
-    minWage: 42,
-    maxWage: 56,
-    shift: "Turno Rotativo (12h)",
-    sponsor: "Patrocinio Visa EB-3 Directo (Schedule A)",
-    benefits: "Bono de bienvenida $10,000 USD + Pasajes aéreos + Hospedaje 30 días",
-    badge: "Vacantes Abiertas 2026",
-    streetAddress: "2100 Fannin Street",
-    addressLocality: "Houston",
-    addressRegion: "TX",
-    postalCode: "77002",
+    question: "¿Hay vacantes publicadas en esta página?",
+    answer: "No. Esta página no publica vacantes: explica cómo funciona el empleo con patrocinio para enfermeras registradas. Las oportunidades dependen de tu licencia, tu inglés y de cada empleador. En la sesión informativa revisamos tu caso."
   },
   {
-    id: "RN-ER-ORL-2026",
-    title: "Enfermero/a Registrado/a (RN) - Departamento de Urgencias (ER)",
-    hospital: "AdventHealth System",
-    location: "Orlando, Florida",
-    salary: "$39.50 - $51.00 USD / hora",
-    minWage: 39.5,
-    maxWage: 51,
-    shift: "Turno Nocturno (12h)",
-    sponsor: "Patrocinio Green Card para Grupo Familiar",
-    benefits: "Seguro médico 100% cubierto + Ayuda con vivienda inicial",
-    badge: "Urgente",
-    streetAddress: "601 E Rollins Street",
-    addressLocality: "Orlando",
-    addressRegion: "FL",
-    postalCode: "32803",
+    question: "¿Qué es la visa EB-3 Schedule A para enfermeras?",
+    answer: "Schedule A es una lista del Departamento del Trabajo de EE.UU. con ocupaciones en las que ya se reconoció escasez de trabajadores. Las enfermeras registradas (RN) están en esa lista, por lo que el empleador no tiene que pasar por el proceso de certificación laboral PERM. Igual debes cumplir otros requisitos, como la licencia y el certificado VisaScreen."
   },
   {
-    id: "RN-OR-DAL-2026",
-    title: "Enfermero/a Registrado/a (RN) - Quirófano y Sala de Operaciones (OR)",
-    hospital: "Memorial Hermann Health System",
-    location: "Dallas, Texas",
-    salary: "$44.00 - $58.00 USD / hora",
-    minWage: 44,
-    maxWage: 58,
-    shift: "Turno Diurno (12h)",
-    sponsor: "Patrocinio Visa EB-3 Directo",
-    benefits: "Plan de retiro 401(k) con aportación patronal + Asesoría migratoria",
-    badge: "Destacado",
-    streetAddress: "5201 Harry Hines Boulevard",
-    addressLocality: "Dallas",
-    addressRegion: "TX",
-    postalCode: "75235",
+    question: "¿Cuánto gana una enfermera RN en Estados Unidos?",
+    answer: "Según el Bureau of Labor Statistics (BLS), la mediana anual de una RN fue de $97,550 en mayo de 2025. Cambia por estado y por especialidad, y cada empleador define su oferta."
   },
   {
-    id: "RN-MS-CHI-2026",
-    title: "Enfermero/a Registrado/a (RN) - Médico-Quirúrgico (Med-Surg)",
-    hospital: "Mercy Health Hospital Network",
-    location: "Chicago, Illinois",
-    salary: "$40.00 - $52.00 USD / hora",
-    minWage: 40,
-    maxWage: 52,
-    shift: "Turno Flex (12h)",
-    sponsor: "Patrocinio Visa EB-3 Schedule A",
-    benefits: "Capacitación paga + Asignación de mentor bilingüe",
-    badge: "Disponible",
-    streetAddress: "2525 S Michigan Avenue",
-    addressLocality: "Chicago",
-    addressRegion: "IL",
-    postalCode: "60616",
-  }
+    question: "¿Mi familia puede obtener la residencia con la mía?",
+    answer: "El cónyuge y los hijos solteros menores de 21 años pueden calificar como beneficiarios derivados de la visa EB-3, según USCIS. Cada caso se evalúa individualmente."
+  },
+  {
+    question: "¿Necesito la licencia RN antes de que un hospital me patrocine?",
+    answer: "Para ejercer como RN necesitas la licencia del estado donde trabajas, y la vía EB-3 pide además un certificado VisaScreen. El orden de los pasos depende de tu caso y de la junta de enfermería del estado."
+  },
 ];
-
-const datePosted = "2026-09-01";
-const validThrough = "2026-12-31";
-
-const jobPostingSchemas = jobOffers.map((job) => ({
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  title: job.title,
-  description: `<p>${job.title} en ${job.hospital}, ${job.location}.</p><p>Salario base: ${job.salary}. ${job.shift}.</p><p>${job.sponsor}.</p><p>Beneficios: ${job.benefits}.</p><p>Posición de tiempo completo para enfermeros registrados (RN). El proceso de postulación se inicia en la sesión informativa de Enfermera en Estados Unidos.</p>`,
-  identifier: {
-    "@type": "PropertyValue",
-    name: "Enfermera en Estados Unidos",
-    value: job.id,
-  },
-  datePosted,
-  validThrough,
-  employmentType: "FULL_TIME",
-  hiringOrganization: {
-    "@type": "Organization",
-    name: "Enfermera en Estados Unidos",
-    sameAs: "https://enfermerausa.com",
-    logo: "https://enfermerausa.com/logo.webp",
-  },
-  jobLocation: {
-    "@type": "Place",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: job.streetAddress,
-      addressLocality: job.addressLocality,
-      addressRegion: job.addressRegion,
-      postalCode: job.postalCode,
-      addressCountry: "US",
-    },
-  },
-  baseSalary: {
-    "@type": "MonetaryAmount",
-    currency: "USD",
-    value: {
-      "@type": "QuantitativeValue",
-      minValue: job.minWage,
-      maxValue: job.maxWage,
-      unitText: "HOUR",
-    },
-  },
-  directApply: false,
-}));
 ---
 
 <BaseLayout
-  title="Empleo para Enfermeras en USA con Visa EB-3"
-  description="Encuentra vacantes de trabajo activas para enfermeras registradas (RN) en hospitales de EE.UU. con salarios de $39 a $58 USD/hora y patrocinio de Visa EB-3 de Residencia Permanente."
+  title="Empleo para enfermeras en EE.UU. con visa EB-3: guía"
+  description="Cómo conseguir empleo como enfermera RN en EE.UU. con patrocinio EB-3 Schedule A: pasos, requisitos y sueldo oficial del BLS. Sin promesas y con fuentes."
   canonical="https://enfermerausa.com/ofertas-de-empleo-para-enfermeras-en-usa/"
   type="service"
+  faqs={faqs}
 >
-  <!-- Hero Section Intención de Búsqueda Empleos -->
   <div class="py-12 md:py-20 bg-slate-900 text-white relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/60 to-slate-900/90 z-0"></div>
     <div class="max-w-screen-xl mx-auto px-4 md:px-8 relative z-10">
       <div class="max-w-3xl">
         <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest bg-emerald-950/80 border border-emerald-800 px-3.5 py-1.5 rounded-full inline-block mb-4">
-          Oportunidades de Trabajo en EE.UU. 2026
+          Etapa 4: Empleo y patrocinio
         </span>
         <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-          Ofertas de Empleo para Enfermeros en EE.UU. con Patrocinio Directo de Visa EB-3
+          Empleo para enfermeras en EE.UU. con patrocinio de visa EB-3
         </h1>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-8">
-          Accede a posiciones permanentes de Enfermero Registrado (RN) en redes hospitalarias líderes de Estados Unidos. Salarios competitivos desde <strong class="text-emerald-400">$39.00 a $58.00 USD/hora</strong>, contratos directos y Green Card para ti y tu familia.
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">
+          Las enfermeras registradas (RN) pueden conseguir empleo en hospitales de EE.UU. con un empleador que patrocine su residencia permanente. Aquí explicamos cómo funciona, qué necesitas y qué depende de cada caso.
+        </p>
+        <p class="text-slate-300 text-sm leading-relaxed mb-8">
+          <strong class="text-white">Respuesta corta:</strong> necesitas evaluar tus credenciales, aprobar el NCLEX-RN, obtener la licencia del estado y un empleador que presente la petición EB-3. No publicamos vacantes ni garantizamos contratación.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a
-            href="https://bit.ly/3R6RbFW"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-lg transition-all gap-2"
-          >
-            <span>Postular a Ofertas de Empleo</span>
-            <svg class="size-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          <a href="/sesion-informativa/" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-lg transition-all gap-2">
+            <span>Reservar sesión informativa gratuita</span>
           </a>
-          <a
-            href="#vacantes-activas"
-            class="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition"
-          >
-            Ver Vacantes Abiertas ↓
+          <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition">
+            Ver el proceso de visa
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Búsqueda & Catálogo de Vacantes Activas -->
-  <section id="vacantes-activas" class="py-16 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-10 gap-4">
-        <div>
-          <span class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Catálogo de Empleo 2026</span>
-          <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 mt-1">Vacantes Activas en Hospitales de EE.UU.</h2>
-          <p class="text-sm text-slate-600 mt-1">Ofertas con vacantes directas aprobadas para patrocinio de residencia permanente (Schedule A).</p>
-        </div>
-        <div class="flex items-center gap-2 bg-emerald-100 text-emerald-800 text-xs font-bold px-4 py-2 rounded-lg border border-emerald-200">
-          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>4 Ofertas Disponibles en Selección Esta Semana</span>
-        </div>
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Cómo funciona el empleo con patrocinio, paso a paso</h2>
+      <ol class="list-decimal pl-6 text-slate-600 space-y-4">
+        <li><strong>Evalúa tus credenciales.</strong> Si la junta de enfermería lo pide, una entidad que ella acepte (por ejemplo CGFNS) revisa tu formación. Mira <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">homologación del título</a>.</li>
+        <li><strong>Aprueba el NCLEX-RN y obtén la licencia del estado.</strong> Detalles, costo y sedes en <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">licencia y examen NCLEX</a>.</li>
+        <li><strong>Cumple los requisitos de inglés.</strong> Según la junta y la vía migratoria pueden pedirte una prueba. Más en la guía de <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="text-emerald-700 underline">inglés y VisaScreen</a>.</li>
+        <li><strong>Consigue un empleador que te patrocine.</strong> El hospital o la empresa presenta la petición de inmigrante para ti. Cada empleador define sus condiciones.</li>
+        <li><strong>Visa o ajuste de estatus.</strong> Después de la petición sigue el trámite migratorio, cuyo tiempo depende de la cola de visas y de tu caso. Resumen en <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">proceso de visa y relocalización</a>.</li>
+      </ol>
+      <p class="text-slate-600 leading-relaxed">
+        ¿Ya vives en EE.UU. y aún no tienes licencia? Empieza por la <a href="/enfermera-sin-licencia-rn-en-estados-unidos/" class="text-emerald-700 underline">guía para enfermeras sin licencia RN</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-4">
+      <h2 class="text-2xl font-extrabold text-slate-900">Cuánto gana una RN: la cifra oficial</h2>
+      <p class="text-slate-600 leading-relaxed">
+        Según el BLS, la mediana anual de una enfermera registrada en EE.UU. fue de <strong>$97,550</strong> en mayo de 2025. El sueldo real cambia por estado, especialidad y empleador. Compara con los datos por estado en <a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline">salarios de enfermeros en Estados Unidos</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl">
+      <div class="p-5 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
+        <p class="text-xs font-bold text-amber-800 uppercase tracking-wide">Lo que no prometemos</p>
+        <p class="text-sm text-slate-800 mt-1">No publicamos vacantes ni aseguramos contratación, sueldo, bono, pasajes, vivienda ni fecha de ingreso. Cada empleador define su oferta y cada caso migratorio se evalúa por separado. Esta página no es asesoría legal.</p>
       </div>
+    </div>
+  </section>
 
-      <!-- Grid de Tarjetas de Empleo Reales -->
+  <section class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Preguntas frecuentes sobre empleo con patrocinio</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {jobOffers.map((job) => (
-          <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between gap-2 mb-3">
-                <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold text-xs px-2.5 py-1 rounded-md">
-                  {job.badge}
-                </span>
-                <span class="text-xs font-semibold text-slate-500">{job.location}</span>
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2">{job.title}</h3>
-              <p class="text-xs font-semibold text-emerald-800 mb-4">{job.hospital}</p>
-              
-              <div class="space-y-2 text-xs text-slate-700 mb-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                  <span class="font-semibold text-slate-500">Salario Base:</span>
-                  <span class="font-bold text-emerald-700">{job.salary}</span>
-                </div>
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                  <span class="font-semibold text-slate-500">Modalidad Visa:</span>
-                  <span class="font-bold text-slate-900">{job.sponsor}</span>
-                </div>
-                <div class="flex justify-between pb-0.5">
-                  <span class="font-semibold text-slate-500">Beneficios Extra:</span>
-                  <span class="text-slate-800 font-medium text-right">{job.benefits}</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-2 border-t border-slate-100 flex items-center justify-between gap-4">
-              <span class="text-xs font-medium text-slate-500">{job.shift}</span>
-              <a
-                href="https://bit.ly/3R6RbFW"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-lg transition"
-              >
-                Postular para esta Vacante →
-              </a>
-            </div>
+        {faqs.map((faq) => (
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">{faq.question}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{faq.answer}</p>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- Beneficios de Contratación Directa -->
-  <section class="py-16 bg-white border-b border-slate-200">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl font-extrabold text-slate-900">¿Qué incluye tu contrato laboral en EE.UU.?</h2>
-        <p class="text-sm text-slate-600 mt-2">Garantías legales y asistencias financieras aseguradas desde el primer día.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">💳</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Salario Igualitario de Ley</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">Ganarás el mismo sueldo que un enfermero estadounidense con tu misma experiencia (Prevailing Wage certificado por el Departamento del Trabajo de EE.UU.).</p>
-        </div>
-        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">👨‍👩‍👧‍👦</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Green Card para tu Familia</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">Tu cónyuge e hijos menores de 21 años reciben automáticamente la residencia permanente y autorización de trabajo y estudio.</p>
-        </div>
-        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">✈️</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Paquete de Relocalización</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">Pasajes aéreos internacionales pagos, alojamiento inicial gratuito durante tus primeros 30 días y bono de instalación.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Schema.org JobPosting: una entrada por vacante visible en la página -->
-  {jobPostingSchemas.map((schema) => (
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
-  ))}
-
-  <!-- Bloque Enlazado Interno SEO & Conversión -->
-  <section class="py-12 bg-emerald-900 text-white text-center">
+  <section class="py-10 bg-emerald-900 text-white text-center">
     <div class="max-w-screen-xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-2">¿Quieres aplicar a las entrevistas con los hospitales patrocinadores?</h3>
-      <p class="text-emerald-100 text-sm mb-6 max-w-xl mx-auto">Agenda tu lugar en nuestra próxima Sesión Informativa donde explicamos cómo calificar y presentar tu perfil.</p>
-      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-extrabold px-8 py-3.5 rounded-xl shadow hover:bg-emerald-50 transition text-sm">
-        Agendar Mi Lugar en la Sesión Informativa
+      <h2 class="text-2xl font-bold mb-2">¿Quieres saber qué camino te corresponde?</h2>
+      <p class="text-emerald-100 text-sm mb-6 max-w-xl mx-auto">En la sesión informativa gratuita, en español, revisamos tu caso: credenciales, licencia, inglés y patrocinio.</p>
+      <a href="/sesion-informativa/" class="inline-block bg-white text-emerald-900 font-extrabold px-8 py-3.5 rounded-xl shadow hover:bg-emerald-50 transition text-sm">
+        Reservar sesión informativa
       </a>
     </div>
   </section>
 
-  <!-- Bloque Enlazado Interno SEO -->
-  <section class="py-8 bg-emerald-900 text-white text-center">
-    <div class="max-w-screen-xl mx-auto px-4">
-      <h3 class="text-xl font-bold mb-2">¿Listo para dar el paso hacia tu Licencia RN en EE.UU.?</h3>
-      <p class="text-emerald-100 text-sm mb-4">Acompáñanos en nuestra próxima Sesión Informativa donde resolveremos tus dudas sobre costos y procesos.</p>
-      <a href="https://bit.ly/3R6RbFW" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
-        Agendar Mi Lugar en la Sesión Informativa
-      </a>
-    </div>
-  </section>
-
-
-  <!-- Bloque Outrank Competidor: Ratios Enfermero Paciente -->
-  <section class="py-12 bg-white border-t border-slate-200">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-8">
-        <span class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Estándares de Trabajo SEGUROS</span>
-        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Ratios de Pacientes por Enfermero (Nurse-to-Patient Ratios)</h2>
-        <p class="text-sm text-slate-600 mt-2">Nuestras redes hospitalarias aliadas garantizan cargas laborales protegidas por norma de seguridad.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="text-2xl font-extrabold text-emerald-700">1 : 1 o 1 : 2</span>
-          <h3 class="font-bold text-slate-900 text-sm mt-1">Cuidados Intensivos (ICU)</h3>
-          <p class="text-xs text-slate-500 mt-1">Atención personalizada de pacientes hemodinámicamente inestables.</p>
-        </div>
-        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="text-2xl font-extrabold text-emerald-700">1 : 3 o 1 : 4</span>
-          <h3 class="font-bold text-slate-900 text-sm mt-1">Urgencias (ER)</h3>
-          <p class="text-xs text-slate-500 mt-1">Triage y estabilización rápida en salas de alta complejidad.</p>
-        </div>
-        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="text-2xl font-extrabold text-emerald-700">1 : 4 o 1 : 5</span>
-          <h3 class="font-bold text-slate-900 text-sm mt-1">Médico-Quirúrgico (Med-Surg)</h3>
-          <p class="text-xs text-slate-500 mt-1">Cuidado piso estándar con soporte constante de asistentes (CNA).</p>
-        </div>
-        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="text-2xl font-extrabold text-emerald-700">1 : 3</span>
-          <h3 class="font-bold text-slate-900 text-sm mt-1">Pediatría y Neonatal (NICU)</h3>
-          <p class="text-xs text-slate-500 mt-1">Cuidado especializado infantil con protocolos de seguridad máxima.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Bloque E-E-A-T Autoría y Revisión -->
   <div class="max-w-screen-xl mx-auto px-4 my-8">
-    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 flex items-center gap-4 text-xs text-slate-700">
-      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded">✓ Información Verificada</span>
-      <span>Contenido redactado y revisado por el Equipo Especializado en Licencias Médicas de EE.UU. (CGFNS & NCLEX Specialists). Fuentes oficiales: <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a> | <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>.</span>
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes</span>
+      Publicado por Enfermera en Estados Unidos (fundadora: <a href="/quienes-somos/" class="underline">Alejandra Martínez, RN, BSN, IBCLC</a>). Fuentes oficiales: <a href="https://www.bls.gov/ooh/healthcare/registered-nurses.htm" target="_blank" rel="noopener" class="underline">BLS</a>, <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a>, <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>, <a href="https://www.uscis.gov" target="_blank" rel="noopener" class="underline">USCIS</a>.
     </div>
   </div>
-
-
-  <!-- Bloque Answer-First GEO -->
-  <div class="max-w-screen-xl mx-auto px-4 my-6">
-    <div class="p-5 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
-      <p class="text-xs font-bold text-emerald-800 uppercase tracking-wide">📌 Resumen Clave del Proceso:</p>
-      <p class="text-sm font-semibold text-slate-900 mt-1">Para ejercer como enfermero registrado (RN) en EE.UU. en 2026 se requiere: 1) Homologar créditos con CGFNS o TruMerit, 2) Aprobar el examen adaptativo NCLEX-RN (85-150 preguntas NGN), 3) Demostrar inglés (OET u IELTS), y 4) Obtener patrocinio de Visa EB-3 de Residencia Permanente directa (Schedule A).</p>
-    </div>
-  </div>
-
-  
-
-
-
-
-
-
-
-
-  <!-- Bloque Outrank Competidor: Direct Hire vs Staffing -->
-  <section class="py-12 bg-white border-t border-slate-200">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div class="max-w-3xl mb-8">
-        <span class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Benchmark Competitivo #1</span>
-        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 mb-2">Contratación Directa (Direct Hire) vs Agencia Staffing: ¿Cuál Conviene?</h2>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          Comparativa transparente de modelos de contratación patrocinada con Visa EB-3 en hospitales de Estados Unidos.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-        <div class="p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
-          <span class="inline-block bg-emerald-700 text-white font-bold px-3 py-1 rounded mb-3">Modelo Direct Hire (Hospital Directo)</span>
-          <ul class="space-y-2.5 text-slate-700">
-            <li class="flex items-center gap-2">✅ <span><strong>Empleado del Hospital:</strong> Mismos beneficios y escala salarial que enfermeros locales ($38-$58 USD/h).</span></li>
-            <li class="flex items-center gap-2">✅ <span><strong>Bono de Bienvenida:</strong> Patrocinio de pasajes, 1 a 2 meses de vivienda y relocation stipend.</span></li>
-            <li class="flex items-center gap-2">✅ <span><strong>Estabilidad Laboral:</strong> Contrato directo a término indefinido con Green Card inmediata.</span></li>
-          </ul>
-        </div>
-        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
-          <span class="inline-block bg-slate-800 text-white font-bold px-3 py-1 rounded mb-3">Modelo Staffing Agency</span>
-          <ul class="space-y-2.5 text-slate-700">
-            <li class="flex items-center gap-2">⚠️ <span><strong>Asignación por Contrato:</strong> Contrato de 2 a 3 años asignado a diferentes sistemas hospitalarios.</span></li>
-            <li class="flex items-center gap-2">⚠️ <span><strong>Tarifa Fija:</strong> El pago por hora suele ser menor mientras dura la penalidad de permanencia.</span></li>
-            <li class="flex items-center gap-2">✅ <span><strong>Facilidad de Entrada:</strong> Cobertura total de trámites migratorios iniciales por parte de la agencia.</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </BaseLayout>
