@@ -4,7 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 const faqs = [
   {
     question: "¿Hay vacantes publicadas en esta página?",
-    answer: "No. Esta página no publica vacantes: explica cómo funciona el empleo con patrocinio para enfermeras registradas. Las oportunidades dependen de tu licencia, tu inglés y de cada empleador. En la sesión informativa revisamos tu caso."
+    answer: "No. Esta página no publica vacantes individuales, porque se vencen en semanas. Te mostramos empleadores que tienen un programa para enfermeras internacionales, con el enlace oficial para que mires sus puestos vigentes. Las oportunidades dependen de tu licencia, tu inglés y de cada empleador."
   },
   {
     question: "¿Qué es la visa EB-3 Schedule A para enfermeras?",
@@ -52,6 +52,9 @@ const faqs = [
           <a href="/sesion-informativa/" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-lg transition-all gap-2">
             <span>Reservar sesión informativa gratuita</span>
           </a>
+          <a href="#empleadores" class="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition">
+            Ver empleadores con programa ↓
+          </a>
           <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="inline-flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition">
             Ver el proceso de visa
           </a>
@@ -73,6 +76,58 @@ const faqs = [
       <p class="text-slate-600 leading-relaxed">
         ¿Ya vives en EE.UU. y aún no tienes licencia? Empieza por la <a href="/enfermera-sin-licencia-rn-en-estados-unidos/" class="text-emerald-700 underline">guía para enfermeras sin licencia RN</a>.
       </p>
+    </div>
+  </section>
+
+  <section id="empleadores" class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl">
+      <span class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Directorio de empleadores</span>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 mb-3">Hospitales con programa para enfermeras internacionales</h2>
+      <p class="text-slate-600 text-sm leading-relaxed mb-2">
+        No son vacantes: son empleadores que, en su propia página oficial, dicen recibir a enfermeras formadas fuera de EE.UU. Lo que ves abajo es lo que cada página afirma, sin añadir nada. Las vacantes vigentes se consultan en su sitio.
+      </p>
+      <p class="text-xs text-slate-500 mb-8">Última revisión: 22 de octubre de 2026. No tenemos convenio con ninguno y no recibimos pago por listarlos.</p>
+
+      <div class="space-y-5">
+        <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900">AdventHealth</h3>
+          <p class="text-xs font-semibold text-emerald-800 mb-3">Programa internacional de enfermería · estados destacados en su página: Florida, Georgia, Carolina del Norte, Kentucky, Illinois, Texas, Kansas y Colorado</p>
+          <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1 mb-3">
+            <li>Dice ofrecer patrocinio de visa de inmigrante pagado por el empleador para candidatas elegibles.</li>
+            <li>Para calificar pide: 1 año o más de experiencia reciente en un hospital de cuidados agudos de nivel terciario (mínimo 100 camas), NCLEX-RN aprobado, examen de inglés aprobado y aceptar un contrato de 3 años.</li>
+          </ul>
+          <a href="https://jobs.adventhealth.com/international" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-emerald-700 underline">Ver la página oficial del programa →</a>
+        </article>
+
+        <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900">Adventist HealthCare</h3>
+          <p class="text-xs font-semibold text-emerald-800 mb-3">Programa para enfermeras internacionales · área de Washington D.C.</p>
+          <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1 mb-3">
+            <li>Su página dice que está contratando enfermeras registradas internacionales en el área de Washington D.C.</li>
+            <li>La página pública no detalla requisitos ni patrocinio: confirma esas condiciones directamente con el empleador.</li>
+          </ul>
+          <a href="https://www.adventisthealthcare.com/careers/international-nurses-program" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-emerald-700 underline">Ver la página oficial del programa →</a>
+        </article>
+
+        <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900">Mayo Clinic</h3>
+          <p class="text-xs font-semibold text-emerald-800 mb-3">Página para enfermeras que quieren mudarse a EE.UU.</p>
+          <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1 mb-3">
+            <li>Invita a postular a quienes ya tienen autorización para trabajar en EE.UU. y a quienes son elegibles para patrocinio TN.</li>
+            <li>Dice que, según el tipo de visa, tiene apoyo que «puede incluir» patrocinio de residencia permanente. No lo promete para todas.</li>
+          </ul>
+          <a href="https://jobs.mayoclinic.org/InternationalRN" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-emerald-700 underline">Ver la página oficial →</a>
+        </article>
+      </div>
+
+      <div class="mt-8 p-5 bg-white border-l-4 border-emerald-600 rounded-r-lg">
+        <p class="text-xs font-bold text-emerald-800 uppercase tracking-wide">Antes de postular</p>
+        <ul class="list-disc pl-5 text-sm text-slate-700 mt-2 space-y-1">
+          <li>Postula siempre desde la página oficial del empleador.</li>
+          <li>Desconfía de quien te pida dinero para «reservar» un puesto o una visa.</li>
+          <li>Que un hospital aparezca aquí no significa que te vaya a contratar ni a patrocinar: depende de tu perfil y de la vacante.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
