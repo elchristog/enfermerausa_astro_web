@@ -18,12 +18,16 @@ const faqs = [
     question: "¿Qué necesito antes de rendir el NCLEX-RN?",
     answer: "Que el Board of Nursing de tu estado apruebe tu solicitud y te dé la autorización para el examen (ATT). Antes suele haber una evaluación de credenciales; el orden exacto lo define cada estado."
   },
+  {
+    question: "¿Cuánto cuesta el NCLEX-RN?",
+    answer: "Según NCSBN, la inscripción cuesta $200 USD para quien busca licencia en EE.UU. Si rindes el examen fuera de EE.UU., se suma un cargo internacional de programación de $150 USD. Aparte, cada estado cobra su propia tarifa de licencia. NCSBN anunció que desde el 1 de febrero de 2027 la inscripción sube a $350 USD."
+  },
 ];
 ---
 
 <BaseLayout
-  title="NCLEX-RN para enfermeras hispanas 2026: requisitos y pasos"
-  description="Qué evalúa el NCLEX-RN NGN (85 a 150 preguntas), en qué idioma se rinde, dónde y cómo prepararte desde Latinoamérica. Guía en español 2026."
+  title="NCLEX-RN 2026: requisitos, costo y pasos para hispanas"
+  description="Qué evalúa el NCLEX-RN (85 a 150 preguntas), idioma, costo de inscripción ($200 USD en 2026), dónde rendirlo y cómo prepararte. Guía en español."
   canonical="https://enfermerausa.com/licencia-de-enfermeria-y-examen-nclex-usa/"
   type="service"
   faqs={faqs}
@@ -40,6 +44,9 @@ const faqs = [
         </p>
         <p class="text-base text-gray-600 leading-relaxed mb-6">
           <strong>Respuesta corta:</strong> se rinde solo en inglés, es adaptativo (85 a 150 preguntas) y puedes presentarlo en centros Pearson VUE, también fuera de EE.UU., una vez que el Board de tu estado te autorice.
+        </p>
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          <strong>Costo:</strong> la inscripción a NCSBN es de $200 USD (más $150 USD de cargo internacional si lo rindes fuera de EE.UU.) y cada estado cobra su tarifa de licencia. Desde el 1 de febrero de 2027 la inscripción sube a $350 USD, según NCSBN.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="/sesion-informativa/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow transition-all gap-2">
@@ -67,11 +74,11 @@ const faqs = [
       <div class="space-y-4">
         <div class="p-4 bg-gray-50 border-l-4 border-emerald-600 rounded-r-lg">
           <h3 class="font-bold text-gray-900">Mito: "Necesito un nivel de inglés perfecto de nativo para presentarlo."</h3>
-          <p class="text-sm text-gray-600 mt-1"><strong>Realidad:</strong> El vocabulario del NCLEX es técnico médico. Con nuestro programa de preparación enfocado, aprenderás la terminología clave en inglés médico para responder con éxito.</p>
+          <p class="text-sm text-gray-600 mt-1"><strong>Realidad:</strong> El vocabulario del NCLEX es técnico médico. Con nuestro programa de preparación enfocado, aprenderás la terminología clave en inglés médico para responder el examen.</p>
         </div>
         <div class="p-4 bg-gray-50 border-l-4 border-emerald-600 rounded-r-lg">
           <h3 class="font-bold text-gray-900">Mito: "Tengo que viajar obligatoriamente a Estados Unidos a rendirlo."</h3>
-          <p class="text-sm text-gray-600 mt-1"><strong>Realidad:</strong> El examen NCLEX se puede presentar en centros autorizados Pearson VUE en múltiples países del mundo (incluyendo Brasil, México, Reino Unido, etc.).</p>
+          <p class="text-sm text-gray-600 mt-1"><strong>Realidad:</strong> El examen NCLEX se puede presentar en centros autorizados Pearson VUE en múltiples países del mundo (la lista vigente de sedes internacionales está en nclex.com).</p>
         </div>
       </div>
 
@@ -90,14 +97,12 @@ const faqs = [
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
       <h2 class="text-2xl font-bold text-slate-900 mb-6">Preguntas Frecuentes sobre Preparación y Licencia del Examen NCLEX-RN</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-bold text-slate-900 text-lg mb-2">¿Se puede presentar el examen NCLEX-RN en español?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">El examen NCLEX-RN oficial se rinde únicamente en idioma inglés. Sin embargo, nuestra metodología de estudio incluye simuladores y clases de acompañamiento explicadas en español para que los enfermeros hispanohablantes dominen la terminología médica en inglés sin barreras.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 class="font-bold text-slate-900 text-lg mb-2">¿Cuántas preguntas tiene el examen NCLEX-RN NGN actual?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Con el nuevo formato Next Generation NCLEX (NGN), la prueba adaptativa contiene un mínimo de 85 preguntas y un máximo de 150 preguntas, incluyendo casos clínicos reales de toma de decisiones.</p>
-        </div>
+        {faqs.map((faq) => (
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">{faq.question}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
       </div>
       <div class="mt-8 text-center">
         <a href="/sesion-informativa/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow text-sm gap-2">
@@ -134,13 +139,13 @@ const faqs = [
             <tr class="bg-slate-100 border-b border-slate-200 text-slate-900 font-bold">
               <th class="p-4">Parámetro</th>
               <th class="p-4">NCLEX Tradicional</th>
-              <th class="p-4 text-emerald-800 bg-emerald-50">Nuevo Formato NCLEX NGN (2026)</th>
+              <th class="p-4 text-emerald-800 bg-emerald-50">Nuevo formato NGN (desde abril de 2023)</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-100 text-slate-700">
             <tr>
               <td class="p-4 font-bold">Preguntas Mínimas / Máximas</td>
-              <td class="p-4">75 a 145 preguntas</td>
+              <td class="p-4">75 a 265 preguntas</td>
               <td class="p-4 bg-emerald-50/50 font-bold text-emerald-900">85 a 150 preguntas adaptativas</td>
             </tr>
             <tr>
@@ -180,13 +185,13 @@ const faqs = [
           <span class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Resolución de Dudas Frecuentes</span>
           <h2 class="text-3xl font-extrabold text-slate-900 mt-1 mb-4">¿Dónde rendir el examen NCLEX-RN y en qué idioma?</h2>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            El examen NCLEX-RN se administra exclusivamente en **idioma inglés** por regulación nacional de NCSBN. Sin embargo, no requieres presentar el certificado de inglés antes de rendir el NCLEX.
+            El examen NCLEX-RN se administra exclusivamente en <strong>idioma inglés</strong> por regulación nacional de NCSBN. Según el estado y tu vía migratoria, la junta puede pedirte una prueba de inglés; confírmalo con la junta de tu estado.
           </p>
           <h3 class="font-bold text-slate-900 text-sm mb-2">Centros Oficiales Pearson VUE Habilitados:</h3>
           <ul class="space-y-2 text-xs text-slate-700 mb-6">
-            <li class="flex items-center gap-2">📍 <span><strong>Latinoamérica:</strong> Ciudad de México, San Juan (Puerto Rico), São Paulo (Brasil).</span></li>
-            <li class="flex items-center gap-2">📍 <span><strong>Estados Unidos:</strong> Más de 200 centros de evaluación en todos los estados.</span></li>
-            <li class="flex items-center gap-2">📍 <span><strong>Europa y Reino Unido:</strong> Londres, Madrid y Frankfurt.</span></li>
+            <li class="flex items-center gap-2">📍 <span><strong>Estados Unidos:</strong> centros Pearson VUE en todo el país.</span></li>
+            <li class="flex items-center gap-2">📍 <span><strong>Fuera de EE.UU.:</strong> hay sedes en varios países y se suma un cargo internacional de programación de $150 USD.</span></li>
+            <li class="flex items-center gap-2">📍 <span><strong>Lista vigente:</strong> consúltala en <a href="https://www.nclex.com" target="_blank" rel="noopener" class="underline">nclex.com</a> antes de registrarte.</span></li>
           </ul>
         </div>
         <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-200">
@@ -210,7 +215,7 @@ const faqs = [
         <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Ventaja Competitiva NGN 2026</span>
         <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-1 mb-4">¿Cómo Funciona el Sistema de Puntuación Parcial en el NCLEX NGN?</h2>
         <p class="text-slate-300 text-sm leading-relaxed mb-6">
-          A diferencia del NCLEX antiguo donde una opción incorrecta invalidaba toda la respuesta, el **Next Generation NCLEX (NGN)** otorga créditos parciales mediante 3 métodos de calificación oficiales:
+          A diferencia del NCLEX antiguo donde una opción incorrecta invalidaba toda la respuesta, el <strong>Next Generation NCLEX (NGN)</strong> otorga créditos parciales mediante 3 métodos de calificación oficiales:
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
           <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
@@ -235,7 +240,7 @@ const faqs = [
   <div class="max-w-screen-xl mx-auto px-4 my-8">
     <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 flex items-center gap-4 text-xs text-slate-700">
       <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded">✓ Información Verificada</span>
-      <span>Contenido redactado y revisado por el Equipo Especializado en Licencias Médicas de EE.UU. (CGFNS & NCLEX Specialists). Fuentes oficiales: <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a> | <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>.</span>
+      <span>Publicado por Enfermera en Estados Unidos (fundadora: <a href="/quienes-somos/" class="underline">Alejandra Martínez, RN, BSN, IBCLC</a>). Fuentes oficiales: <a href="https://www.ncsbn.org" target="_blank" rel="noopener" class="underline">NCSBN</a> | <a href="https://www.cgfns.org" target="_blank" rel="noopener" class="underline">CGFNS</a>.</span>
     </div>
   </div>
 
