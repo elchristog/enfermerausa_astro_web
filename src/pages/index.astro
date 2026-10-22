@@ -3,11 +3,11 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const faqs = [
   {
-    question: "¿Cuál es el sueldo de una enfermera en Estados Unidos?",
-    answer: "Según el Bureau of Labor Statistics, la mediana nacional de una Registered Nurse (RN) es de $97,550 al año ($46.90/hora, mayo 2025). Por estado varía: Texas $95,380, Florida $90,650 y California $150,280 de media (OEWS mayo 2025). El neto depende de si el estado cobra impuesto a la renta."
+    question: "¿Dónde veo cuánto pagan a una enfermera en cada estado?",
+    answer: "El pago de una RN cambia por estado y por especialidad. La fuente oficial es el Bureau of Labor Statistics (BLS), y reunimos sus cifras por estado en nuestra página de salarios, con el detalle de impuestos y licencia de Texas, Florida, California y Nueva York."
   },
   {
-    question: "¿Qué necesito para trabajar de enfermera en Estados Unidos?",
+    question: "¿Cómo ser enfermera en Estados Unidos y qué necesito?",
     answer: "En la práctica el camino es: 1) título y licencia de enfermería en tu país, 2) evaluación de credenciales que acepte la junta del estado (p. ej. vía CGFNS/TruMerit u otra autorizada), 3) aprobar el NCLEX-RN, 4) licencia de la junta estatal, 5) demostrar inglés cuando lo exija la junta o el empleador (IELTS, OET, PTE, etc.) y 6) una vía migratoria con sponsor —con frecuencia EB-3 Schedule A— más la oferta de un hospital."
   },
   {
@@ -45,8 +45,8 @@ const testimonials = [
 ---
 
 <BaseLayout
-  title="Enfermera en Estados Unidos | Homologación, NCLEX, Salarios y Empleo"
-  description="Cuánto gana una enfermera en EE.UU. ($97,550/año, BLS mayo 2025) y el camino completo: homologación del título, NCLEX-RN, visa EB-3 y empleo con sponsor. Sesión informativa gratuita en español."
+  title="Enfermera en Estados Unidos: homologación, NCLEX y empleo"
+  description="Cómo ser enfermera en EE.UU.: homologación del título, NCLEX-RN, licencia, visa EB-3 y empleo con sponsor. Sesión informativa gratuita en español."
   canonical="https://enfermerausa.com/"
   type="home"
   faqs={faqs}
@@ -79,6 +79,9 @@ const testimonials = [
             Ver el proceso de homologación
           </a>
         </div>
+        <p class="mt-6 text-sm text-gray-500">
+          También: <a href="/ofertas-de-empleo-para-enfermeras-en-usa/" class="text-emerald-700 underline">empleo con sponsor</a>{" "}·{" "}<a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">NCLEX y licencia</a>{" "}·{" "}<a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">visa EB-3</a>{" "}·{" "}<a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline">salarios por estado</a>{" "}·{" "}<a href="/enfermera-sin-licencia-rn-en-estados-unidos/" class="text-emerald-700 underline">ya estoy en EE.UU. sin licencia RN</a>
+        </p>
       </div>
     </div>
   </section>
@@ -104,13 +107,14 @@ const testimonials = [
           </ul>
         </div>
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-8">
-          <p class="text-sm font-bold text-emerald-800 uppercase tracking-wide mb-3">El camino en 4 etapas</p>
+          <p class="text-sm font-bold text-emerald-800 uppercase tracking-wide mb-3">Cómo ser enfermera en Estados Unidos: el camino en 4 etapas</p>
           <ol class="space-y-3 text-sm text-gray-700">
             <li><strong>1. Homologación</strong> — credenciales y junta estatal. <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">Guía</a></li>
             <li><strong>2. NCLEX y licencia</strong> — examen y RN. <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">Guía</a></li>
             <li><strong>3. Empleo con sponsor</strong> — oferta hospitalaria. <a href="/ofertas-de-empleo-para-enfermeras-en-usa/" class="text-emerald-700 underline">Ofertas</a></li>
             <li><strong>4. Visa y llegada</strong> — EB-3 / green card. <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">Visa</a></li>
           </ol>
+          <p class="text-xs text-gray-500 mt-4">¿Ya vives en EE.UU. sin licencia RN? Mira la <a href="/enfermera-sin-licencia-rn-en-estados-unidos/" class="text-emerald-700 underline">guía para obtenerla</a>.</p>
         </div>
       </div>
     </div>
@@ -167,10 +171,10 @@ const testimonials = [
       <div class="max-w-2xl mb-8">
         <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Salarios RN · Datos BLS</span>
         <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-2 mb-3">
-          Cuánto gana una enfermera en Estados Unidos
+          Salarios de enfermería: mira tu estado
         </h2>
         <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-          Mediana nacional: <strong>$97,550 al año</strong> (BLS, mayo 2025). El bruto cambia por estado —y el neto, si hay impuesto estatal.
+          El pago de una RN cambia mucho por estado y por especialidad. Reunimos las cifras oficiales del BLS en una sola página, con impuestos y licencia de cada estado.
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
@@ -190,8 +194,8 @@ const testimonials = [
           <p class="text-xs text-gray-500 mt-1">Con impuesto estatal · sin Compact</p>
         </a>
       </div>
-      <a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-sm font-bold text-emerald-700 hover:text-emerald-800 underline">
-        Ver tabla de salarios por estado (BLS) →
+      <a href="/salarios-de-enfermeros-en-estados-unidos/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-3 rounded-lg transition-all">
+        Ver la tabla de salarios por estado (BLS) →
       </a>
     </div>
   </section>
@@ -216,10 +220,10 @@ const testimonials = [
             <span class="block text-2xl md:text-3xl font-extrabold text-emerald-800">180.800</span>
             <span class="text-xs text-gray-600 font-medium">Aperturas anuales proyectadas de RN (BLS 2025–2035)</span>
           </div>
-          <div class="p-5 bg-emerald-50 rounded-xl border border-emerald-100">
-            <span class="block text-2xl md:text-3xl font-extrabold text-emerald-800">$97.550</span>
-            <span class="text-xs text-gray-600 font-medium">Mediana nacional RN (BLS mayo 2025)</span>
-          </div>
+          <a href="/ofertas-de-empleo-para-enfermeras-en-usa/" class="block p-5 bg-emerald-50 rounded-xl border border-emerald-100 hover:border-emerald-300 transition">
+            <span class="block text-lg md:text-xl font-extrabold text-emerald-800">Ofertas con sponsor</span>
+            <span class="text-xs text-gray-600 font-medium">Mira las vacantes de enfermera registrada en hospitales de EE.UU. →</span>
+          </a>
         </div>
       </div>
     </div>
