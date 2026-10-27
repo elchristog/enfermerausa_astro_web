@@ -107,10 +107,19 @@ const calendlyUrl = "https://calendly.com/enfermeraenestadosunidos/homologacion-
           if (!window.Calendly) return;
           var parent = document.getElementById('calendly-embed');
           if (!parent) return;
+          var attr = {};
+          try { attr = JSON.parse(localStorage.getItem('eeeu_attr') || '{}'); } catch (e) {}
+          var utm = {};
+          if (attr.utm_source) utm.utmSource = attr.utm_source;
+          if (attr.utm_medium) utm.utmMedium = attr.utm_medium;
+          if (attr.utm_campaign) utm.utmCampaign = attr.utm_campaign;
+          if (attr.utm_content) utm.utmContent = attr.utm_content;
+          if (attr.utm_term) utm.utmTerm = attr.utm_term;
           window.Calendly.initInlineWidget({
             url: CALENDLY_URL,
             parentElement: parent,
-            resize: true
+            resize: true,
+            utm: utm
           });
           var sk = document.getElementById('calendly-skeleton');
           if (sk) {
