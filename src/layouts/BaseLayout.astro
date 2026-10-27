@@ -63,6 +63,29 @@ const { title, description, canonical, type, faqs, datePublished, ogImage, autho
         });
       });
     </script>
+    <script is:inline>
+      // Guarda de dónde llegó la visita (anuncio, buscador, referido) para pasarlo a la reserva.
+      (function () {
+        try {
+          var p = new URLSearchParams(location.search);
+          var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+          var d = {}, has = false;
+          keys.forEach(function (k) { var v = p.get(k); if (v) { d[k] = v.slice(0, 100); has = true; } });
+          if (!d.utm_source && p.get('gclid')) { d.utm_source = 'google'; d.utm_medium = d.utm_medium || 'cpc'; has = true; }
+          if (!d.utm_source && p.get('fbclid')) { d.utm_source = 'facebook'; d.utm_medium = d.utm_medium || 'paid'; has = true; }
+          var prev = localStorage.getItem('eeeu_attr');
+          if (has) {
+            d.t = Date.now();
+            localStorage.setItem('eeeu_attr', JSON.stringify(d));
+          } else if (!prev) {
+            var ref = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, '') : '';
+            if (ref && ref.indexOf('enfermerausa.com') === -1) {
+              localStorage.setItem('eeeu_attr', JSON.stringify({ utm_source: ref, utm_medium: 'referral', t: Date.now() }));
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body class="flex flex-col bg-white min-h-dvh">
     <Navigation />
