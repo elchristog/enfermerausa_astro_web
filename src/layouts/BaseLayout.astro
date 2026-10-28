@@ -80,7 +80,12 @@ const { title, description, canonical, type, faqs, datePublished, ogImage, autho
           } else if (!prev) {
             var ref = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, '') : '';
             if (ref && ref.indexOf('enfermerausa.com') === -1) {
-              localStorage.setItem('eeeu_attr', JSON.stringify({ utm_source: ref, utm_medium: 'referral', t: Date.now() }));
+              var src = ref, med = 'referral';
+              if (/(^|\.)(gemini\.google\.com|chatgpt\.com|chat\.openai\.com|perplexity\.ai|copilot\.microsoft\.com|claude\.ai)$/.test(ref)) { src = ref.split('.').slice(-2, -1)[0] === 'google' ? 'gemini' : ref.split('.').slice(-2, -1)[0]; med = 'ai'; }
+              else if (/(^|\.)google\.[a-z.]+$/.test(ref)) { src = 'google'; med = 'organic'; }
+              else if (/(^|\.)bing\.com$/.test(ref)) { src = 'bing'; med = 'organic'; }
+              else if (/(^|\.)(duckduckgo\.com|search\.yahoo\.com|ecosia\.org|yandex\.com)$/.test(ref)) { src = ref.replace(/^search\./, '').split('.')[0]; med = 'organic'; }
+              localStorage.setItem('eeeu_attr', JSON.stringify({ utm_source: src, utm_medium: med, t: Date.now() }));
             }
           }
         } catch (e) {}
