@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-24
 team: "david-lee"
-title: "Agencias Reclutadoras de Enfermeras en Estados Unidos: Cómo Elegir Bien (Guía 2026)"
-description: "Cómo funciona una agencia reclutadora de enfermeras en Estados Unidos: patrocinio EB-3, Schedule A, cómo verificar firmas certificadas por la Alianza de TruMerit y qué revisar antes de firmar."
+title: "Agencia de reclutamiento o asesoría para enfermeras en EE.UU."
+description: "Agencia que coloca o asesoría: cuál necesitas para trabajar de enfermera en EE.UU., qué preguntar antes de pagar y cómo verificar firmas éticas."
 image:
   url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera hispana revisando un contrato con una agencia reclutadora de enfermeras"
@@ -13,6 +13,21 @@ tags:
 ---
 
 Si buscas trabajar como enfermera registrada (RN) en Estados Unidos, una **agencia reclutadora** puede ser el puente entre tu título extranjero y un contrato hospitalario con patrocinio de visa. Pero no todas las agencias trabajan igual, y elegir mal puede costarte meses de retraso —o dinero. Esta guía explica, con fuentes oficiales, qué hace una agencia, qué le corresponde al empleador y cómo verificar que estás tratando con una firma ética.
+
+**Respuesta corta:** una agencia de reclutamiento te coloca con un empleador que te patrocina; una asesoría te acompaña en el camino (credenciales, NCLEX, licencia) pero no te contrata. Son servicios distintos, y antes de pagar conviene saber cuál estás comprando y qué te promete por escrito.
+
+## Agencia que coloca o asesoría: cuál necesitas
+
+| | Agencia de reclutamiento | Asesoría o acompañamiento |
+|---|---|---|
+| Qué hace | Te presenta a empleadores de salud que buscan RN | Te explica y ordena los pasos: credenciales, NCLEX, licencia, visa |
+| Quién te contrata | El empleador, a veces con contrato por varios años | Nadie: tú decides con quién trabajar |
+| Quién paga | Lo habitual y ético es que lo cubra el empleador | Tú, por el servicio de acompañamiento |
+| Qué debes revisar | Contrato de permanencia, estado, salario y costos por escrito | Qué incluye y qué no incluye, y la política de reembolso |
+
+Ninguna de las dos puede aprobar tu licencia ni tu visa. Esas decisiones son de la junta de enfermería de cada estado y de USCIS. Si ya tienes tus credenciales y el NCLEX aprobado, una agencia suele tener más sentido. Si aún no sabes por dónde empezar, una asesoría te ayuda a llegar con el perfil listo.
+
+En Enfermera en Estados Unidos hacemos acompañamiento en español: **no somos una agencia que coloca personal ni tramitamos tu visa**. El patrocinio lo hace siempre un empleador.
 
 ## Qué hace (y qué no hace) una agencia reclutadora
 
@@ -43,18 +58,31 @@ La industria tiene un estándar internacional verificable: la **Alianza para las
 
 Antes de avanzar con cualquier agencia, busca su nombre en la lista oficial de reclutadores certificados de la Alianza. Si no aparece, no significa automáticamente que sea fraudulenta, pero sí que no ha pasado por esa verificación externa —y tendrás que hacer tu propia diligencia con más cuidado.
 
-## Preguntas que debes hacer antes de firmar
+## Preguntas que debes hacer antes de firmar o pagar
 
-Tu contrato de patrocinio es el documento más importante de todo el proceso. Pregúntalo y pídelo todo por escrito:
+Tu contrato es el documento más importante de todo el proceso. Pregúntalo y pídelo todo por escrito:
 
-1. **¿Quién paga cada etapa?** Evaluación de credenciales, examen NCLEX, tarifas de visa y del examen médico: aclara qué cubre el empleador y qué cubres tú.
+1. **¿Me cobran algo antes de tener una oferta de empleo?** Desconfía si te piden dinero para "reservar" un puesto o una visa.
+2. **¿Quién paga cada etapa?** Evaluación de credenciales, examen NCLEX, tarifas de visa y del examen médico: aclara qué cubre el empleador y qué cubres tú.
 2. **¿Cuál es el compromiso de permanencia?** Muchos contratos de patrocinio incluyen un período mínimo de trabajo con el empleador tras tu llegada. Conoce su duración y las consecuencias de terminarlo antes.
 3. **¿Dónde y en qué condiciones trabajarás?** Estado, hospital, turno y salario ofrecido deben estar en la oferta, no solo en una conversación.
 4. **¿Qué pasa si repruebo el NCLEX?** Una buena firma tiene un plan de preparación y reintento, no un castigo.
+5. **¿Qué pasa si quiero cancelar?** Pide la política de reembolso y las condiciones de salida antes de pagar.
+
+### Señales de alerta
+
+- Te garantizan licencia, visa o empleo.
+- Te piden pagos por adelantado sin una oferta de empleo concreta.
+- No te dan el contrato por escrito o te presionan para firmar el mismo día.
+- No aparecen en la lista pública de reclutadores certificados de la Alianza y tampoco muestran otra verificación.
 
 Si algo no queda claro en el contrato, pide asesoría independiente antes de firmar. Tu homologación y tu [licencia RN](/licencia-de-enfermeria-y-examen-nclex-usa/) son tuyas: no las dejes atadas a condiciones que no entiendes.
 
 ## Preguntas frecuentes
+
+### ¿Cuál es la diferencia entre una agencia de reclutamiento y una asesoría?
+
+La agencia te coloca con un empleador que te patrocina. La asesoría te acompaña en los pasos previos (credenciales, NCLEX, licencia) pero no te contrata ni presenta la petición de visa. Pregunta siempre qué incluye el servicio y qué no, por escrito.
 
 ### ¿Contratar una agencia garantiza la visa?
 
@@ -75,7 +103,7 @@ No siempre. Algunas firmas patrocinan enfermeras que aún están en proceso de h
 3. Con tu perfil listo, contacta empleadores o firmas —idealmente certificadas— para la oferta con patrocinio EB-3.
 4. Revisa el contrato con las preguntas de arriba antes de firmar.
 
-Si quieres revisar tu caso completo —homologación, NCLEX, visa y empleo— con acompañamiento en español, [agenda tu sesión informativa](https://bit.ly/3R6RbFW).
+Si quieres revisar tu caso completo —homologación, NCLEX, visa y empleo— con acompañamiento en español, [reserva tu sesión informativa gratuita](https://enfermerausa.com/sesion-informativa/).
 
 ### Fuentes oficiales
 
