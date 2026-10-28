@@ -18,7 +18,7 @@ Si buscas trabajar como enfermera registrada (RN) en Estados Unidos, una **agenc
 
 ## Agencia que coloca o asesoría: cuál necesitas
 
-| | Agencia de reclutamiento | Asesoría o acompañamiento |
+| Aspecto | Agencia de reclutamiento | Asesoría o acompañamiento |
 |---|---|---|
 | Qué hace | Te presenta a empleadores de salud que buscan RN | Te explica y ordena los pasos: credenciales, NCLEX, licencia, visa |
 | Quién te contrata | El empleador, a veces con contrato por varios años | Nadie: tú decides con quién trabajar |
