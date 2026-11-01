@@ -1,7 +1,7 @@
 ---
 pubDate: 2026-09-16
 team: "david-lee"
-title: "Cómo Homologar tu Título de Enfermería en EE.UU. desde Latinoamérica (Guía 2026)"
+title: "Homologar título de enfermería en EE.UU. desde Latinoamérica"
 description: "Paso a paso para enfermeros de Colombia, México, Argentina y Perú para revalidar su título ante CGFNS International y TruMerit."
 image:
   url: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop"
