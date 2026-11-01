@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-26
 team: "david-lee"
-title: "Cómo Trabajar de Enfermera en Estados Unidos: Guía Paso a Paso 2026"
-description: "El camino completo para trabajar de enfermera en Estados Unidos: validación del título, NCLEX-RN, licencia, visa EB-3 y empleo hospitalario, con datos oficiales."
+title: "Cómo trabajar de enfermera en EE.UU.: guía paso a paso 2026"
+description: "El camino completo para trabajar de enfermera en EE.UU.: validación del título, NCLEX-RN, licencia, visa EB-3 y empleo, con datos oficiales."
 image:
   url: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera hispana preparándose para trabajar en Estados Unidos"
