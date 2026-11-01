@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-16
 team: "david-lee"
-title: "Examen NCLEX-RN para Enfermeros Hispanos: Estrategias de Estudio y Preparación 2026"
-description: "Cómo prepararte para el NCLEX-RN desde cero: registro en Pearson VUE, plan de estudio por semanas, NGN y cómo estudiar en español un examen en inglés. Datos de NCSBN."
+title: "Examen NCLEX-RN en español: cómo prepararte en 2026"
+description: "Cómo prepararte para el NCLEX-RN desde cero: registro en Pearson VUE, plan de estudio por semanas, NGN y cómo estudiar en español. Datos de NCSBN."
 image:
   url: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop"
   alt: "Estudio y preparación para examen NCLEX RN"
