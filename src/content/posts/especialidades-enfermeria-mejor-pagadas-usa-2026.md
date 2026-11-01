@@ -2,7 +2,7 @@
 pubDate: 2026-09-27
 team: "david-lee"
 title: "Especialidades de enfermería mejor pagadas en USA 2026"
-description: "Especialidades de enfermería mejor pagadas en EE.UU. según el BLS: enfermera anestesista $236,590 al año, partera y nurse practitioner, con la ruta para llegar a cada una."
+description: "Especialidades de enfermería mejor pagadas en EE.UU. según el BLS: anestesista $236,590 al año, partera y nurse practitioner, y cómo llegar a cada una."
 image:
   url: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera especializada trabajando en hospital de Estados Unidos"
