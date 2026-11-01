@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-10-10
 team: "david-lee"
-title: "¿Cuánto tarda el proceso completo para ser enfermera en Estados Unidos? (2026)"
-description: "Los tiempos oficiales, etapa por etapa: evaluación CES del título, resultados del NCLEX, VisaScreen y visa EB-3. Fuentes oficiales y qué puede alargar cada plazo."
+title: "¿Cuánto tarda ser enfermera en EE.UU.? Proceso 2026"
+description: "Los tiempos oficiales, etapa por etapa: evaluación CES, resultados del NCLEX, VisaScreen y visa EB-3. Fuentes oficiales y qué puede alargar cada plazo."
 image:
   url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera hispana revisando el calendario de su proceso profesional hacia Estados Unidos"
