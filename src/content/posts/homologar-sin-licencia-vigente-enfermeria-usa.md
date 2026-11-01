@@ -2,7 +2,7 @@
 pubDate: 2026-09-20
 team: "david-lee"
 title: "¿Puedes homologar tu título sin licencia vigente?"
-description: "Qué dice la evaluación de credenciales sobre licencias vigentes, vencidas o antiguas, según fuentes oficiales, y cuándo la vigencia vuelve a ser obligatoria para tu visa."
+description: "Qué dice la evaluación de credenciales sobre licencias vigentes, vencidas o antiguas, y cuándo la vigencia vuelve a ser obligatoria para tu visa."
 image:
   url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera revisando su documentación profesional"
