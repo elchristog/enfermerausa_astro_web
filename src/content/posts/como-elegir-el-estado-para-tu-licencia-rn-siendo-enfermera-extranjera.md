@@ -4,8 +4,8 @@ pubDate: 2026-10-13
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
-title: "Cómo elegir el estado para tu licencia RN siendo enfermera extranjera"
-description: "Qué estado elegir para licencia RN: prioriza requisitos y destino laboral. Compara homologación, NCLEX y Seguro Social antes de iniciar tu solicitud en 2026."
+title: "Cómo elegir el estado para tu licencia RN siendo extranjera"
+description: "Qué estado elegir para tu licencia RN: prioriza requisitos y destino laboral. Compara homologación, NCLEX y Seguro Social antes de aplicar en 2026."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/eeac4e7f-f8c7-43cc-9315-457b1dae063f/featured.jpg"
   alt: "Cómo elegir el estado para tu licencia RN siendo enfermera extranjera"
