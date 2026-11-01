@@ -111,14 +111,14 @@ const articleSchema = type === 'article' ? {
   ...(image ? { "image": [image] } : {}),
   "author": {
     "@type": "Person",
-    "name": authorName || "Alejandra Martínez",
+    "name": authorName || "Alejandra Martínez", "url": "https://enfermerausa.com/quienes-somos/",
     "jobTitle": authorRole || "RN, BSN, IBCLC",
     "worksFor": { "@type": "Organization", "name": "Enfermera en Estados Unidos", "url": "https://enfermerausa.com" }
   },
   "publisher": {
     "@type": "Organization",
     "name": "Enfermera en Estados Unidos",
-    "logo": {
+    "@id": "https://enfermerausa.com/#organization", "url": "https://enfermerausa.com", "logo": {
       "@type": "ImageObject",
       "url": "https://enfermerausa.com/logo.webp"
     }
