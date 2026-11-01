@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-16
 team: "david-lee"
-title: "¿Cómo es un día como enfermera en USA? Rutinas, Turnos y Vivencias"
-description: "Descubre la realidad operativa de trabajar como enfermero registrado (RN) en hospitales de Estados Unidos: organización de turnos de 12 horas, relación con médicos, relación paciente-enfermero 1:4 y beneficios de ley."
+title: "¿Cómo es un día como enfermera en USA? Turnos y rutina"
+description: "Cómo es trabajar de enfermera RN en hospitales de EE.UU.: turnos de 12 horas, trabajo con médicos, relación paciente-enfermero 1:4 y beneficios de ley."
 image:
   url: "https://img.youtube.com/vi/KsF6eqzc_hY/maxresdefault.jpg"
   alt: "¿Cómo es un día como enfermera en USA? Rutinas, Turnos y Vivencias"
