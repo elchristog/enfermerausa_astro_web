@@ -5,7 +5,7 @@ team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
 title: "Cuánto gana un enfermero en Estados Unidos en 2026"
-description: "Cuanto gana un enfermero en estados unidos por hora: mediana de 45 dólares según BLS. Compara salario bruto, licencia RN y condiciones de una oferta hospitalaria."
+description: "Cuánto gana un enfermero en EE.UU. por hora: mediana de 45 dólares según BLS (mayo 2024). Salario bruto, licencia RN y condiciones de una oferta."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/9d627440-cb9a-4899-b56e-59270bd17f6e/featured.jpg"
   alt: "Cuánto gana un enfermero en Estados Unidos en 2026"
