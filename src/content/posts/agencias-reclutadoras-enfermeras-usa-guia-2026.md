@@ -1,7 +1,7 @@
 ---
 pubDate: 2026-09-24
 team: "david-lee"
-title: "Agencia de reclutamiento o asesoría para enfermeras en EE.UU."
+title: "Agencia de reclutamiento o asesoría para enfermeras en USA"
 description: "Agencia que coloca o asesoría: cuál necesitas para trabajar de enfermera en EE.UU., qué preguntar antes de pagar y cómo verificar firmas éticas."
 image:
   url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
