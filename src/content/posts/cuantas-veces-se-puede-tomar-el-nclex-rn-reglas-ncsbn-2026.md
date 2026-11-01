@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-22
 team: "david-lee"
-title: "¿Cuántas veces se puede tomar el NCLEX-RN? Reglas oficiales de NCSBN 2026"
-description: "NCSBN permite tomar el NCLEX hasta 8 veces al año con 45 días de espera entre intentos. Conoce la regla oficial, las excepciones por estado y los pasos para reprogramar tu examen."
+title: "¿Cuántas veces puedes tomar el NCLEX-RN? Regla NCSBN 2026"
+description: "NCSBN permite tomar el NCLEX hasta 8 veces al año, con 45 días de espera entre intentos. Regla oficial, excepciones por estado y cómo reprogramar."
 image:
   url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera hispanohablante preparando su reintento del examen NCLEX-RN"
