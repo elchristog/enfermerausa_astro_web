@@ -5,7 +5,7 @@ team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
 title: "Licencia multiestatal para enfermeras (Compact): cómo funciona"
-description: "Licencia multiestatal para enfermeras: el Nurse Licensure Compact permite ejercer en estados participantes, pero no da visa. Conoce requisitos y próximos pasos."
+description: "Licencia multiestatal para enfermeras: el Nurse Licensure Compact permite ejercer en estados participantes, pero no da visa. Requisitos y pasos."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/74edd1e5-e127-4149-a630-7caba8bfa52f/featured.jpg"
   alt: "Licencia multiestatal para enfermeras (Compact): cómo funciona"
