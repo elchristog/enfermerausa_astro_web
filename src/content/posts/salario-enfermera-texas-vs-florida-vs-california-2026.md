@@ -1,7 +1,7 @@
 ---
 pubDate: 2026-09-16
 team: "david-lee"
-title: "Comparativa de Salarios de Enfermería 2026: California vs. Texas vs. Florida"
+title: "Salario RN 2026: California vs. Texas vs. Florida"
 description: "Salario medio anual y por hora de enfermeras RN en California, Texas y Florida con datos oficiales del BLS (mayo 2025), impuestos y costo de vida."
 image:
   url: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=1200&auto=format&fit=crop"
