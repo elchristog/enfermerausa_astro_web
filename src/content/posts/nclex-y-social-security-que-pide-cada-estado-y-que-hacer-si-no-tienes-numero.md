@@ -4,8 +4,8 @@ pubDate: 2026-10-12
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
-title: "NCLEX y Social Security: qué pide cada estado y qué hacer si no tienes número"
-description: "Presentar el NCLEX sin Social Security depende del estado. Distingue examen, licencia y permiso laboral, y confirma qué necesitas antes de enviar tu solicitud."
+title: "NCLEX y Social Security: qué pide cada estado si no tienes número"
+description: "Presentar el NCLEX sin Social Security depende del estado. Distingue examen, licencia y permiso laboral y confirma qué necesitas antes de aplicar."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/a27842b0-d2bf-4f36-b40e-f453cd7b2b89/featured.jpg"
   alt: "NCLEX y Social Security: qué pide cada estado y qué hacer si no tienes número"
