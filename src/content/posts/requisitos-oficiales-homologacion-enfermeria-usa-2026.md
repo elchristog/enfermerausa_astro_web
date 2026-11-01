@@ -2,7 +2,7 @@
 pubDate: 2026-09-17
 team: "david-lee"
 title: "Requisitos de Homologación de Enfermería en EE.UU. 2026"
-description: "Guía completa con los requisitos actualizados exigidos por CGFNS y los Boards de Enfermería en Estados Unidos para validar tu título universitario de BSN o ADN internacional."
+description: "Requisitos actualizados de CGFNS y los Boards de Enfermería de EE.UU. para validar tu título de BSN o ADN internacional."
 image:
   url: "https://img.youtube.com/vi/9DxJz8MZzEY/maxresdefault.jpg"
   alt: "Requisitos de Homologación de Enfermería en EE.UU. 2026"
