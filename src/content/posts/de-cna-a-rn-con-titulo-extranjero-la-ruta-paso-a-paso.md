@@ -5,7 +5,7 @@ team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
 title: "De CNA a RN con título extranjero: la ruta paso a paso"
-description: "De CNA a RN con título extranjero: sigue la ruta de homologación, NCLEX-RN, licencia, visa y empleo. Distingue requisitos y prepara tu siguiente paso con claridad."
+description: "De CNA a RN con título extranjero: la ruta de homologación, NCLEX-RN, licencia, visa y empleo. Distingue requisitos y prepara tu siguiente paso."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/85d43f90-ef54-4236-8ec9-feb7ce99d22c/featured.jpg"
   alt: "De CNA a RN con título extranjero: la ruta paso a paso"
