@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-10-09
 team: "david-lee"
-title: "Enfermería en Estados Unidos: niveles, años de estudio y cómo llegar si ya eres enfermera (2026)"
-description: "Qué tipos de enfermería hay en EE.UU. (CNA, LPN, RN, APRN), cuántos años toma cada uno y qué camino sigue una enfermera formada en Latinoamérica para ser RN."
+title: "Enfermería en EE.UU.: niveles, años de estudio y ruta a RN"
+description: "Tipos de enfermería en EE.UU. (CNA, LPN, RN, APRN), años de estudio de cada uno y el camino para ser RN si te formaste en Latinoamérica."
 image:
   url: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera registrada trabajando en un hospital de Estados Unidos"
