@@ -4,8 +4,8 @@ pubDate: 2026-10-15
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
-title: "NCLEX Next Generation explicado en español: qué cambió en el examen"
-description: "NCLEX Next Generation en español: evalúa tu juicio clínico. Entiende casos, puntuación parcial y cómo prepararte en inglés para avanzar hacia tu licencia RN."
+title: "NCLEX Next Generation en español: qué cambió en el examen"
+description: "NCLEX Next Generation en español: evalúa tu juicio clínico. Casos, puntuación parcial y cómo prepararte en inglés hacia tu licencia RN."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/ea1737ee-5c8d-4511-82e4-33309e5ff764/featured.jpg"
   alt: "NCLEX Next Generation explicado en español: qué cambió en el examen"
