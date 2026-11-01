@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-09-16
 team: "david-lee"
-title: "Visa EB-3 para Enfermeras: Residencia Permanente (Green Card) con patrocinio de hospitales en EE.UU."
-description: "Cómo funciona el patrocinio EB-3 con Schedule A para enfermeras profesionales: requisitos, petición I-140 paso a paso, procesamiento premium y residencia con su familia."
+title: "Visa EB-3 para enfermeras: Green Card con patrocinio"
+description: "Cómo funciona el patrocinio EB-3 con Schedule A: requisitos, petición I-140 paso a paso, procesamiento premium y residencia con tu familia."
 image:
   url: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera en hospital de Estados Unidos"
