@@ -1,0 +1,93 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { entrevistas } from "@/data/entrevistas.mjs";
+
+const title = "Entrevistas a enfermeras latinas: NCLEX y homologación";
+const description = "Entrevistas reales a enfermeras hispanas: documentos aprobados, NCLEX, licencia y el camino hacia EE.UU. Videos del canal Enfermera en Estados Unidos.";
+const canonical = "https://enfermerausa.com/entrevistas/";
+const thumb = (id) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": entrevistas
+    .filter((e) => e.uploadDate)
+    .map((e) => ({
+      "@type": "VideoObject",
+      name: e.titulo,
+      description: e.resumen,
+      thumbnailUrl: thumb(e.id),
+      uploadDate: e.uploadDate,
+      embedUrl: `https://www.youtube.com/embed/${e.id}`,
+      contentUrl: `https://www.youtube.com/watch?v=${e.id}`,
+      inLanguage: "es",
+    })),
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical} type="info">
+  <section class="py-14 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Casos reales</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mt-2 mb-5">
+          Entrevistas a enfermeras que ya dieron pasos del camino
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-3">
+          Son entrevistas publicadas en el canal oficial de YouTube <strong>Enfermera en Estados Unidos</strong>. Las personas autorizaron mostrarlas. Cada una cuenta una parte distinta del camino: documentos aprobados, NCLEX, licencia.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Cada caso depende de los documentos, el inglés y los tiempos de cada persona: ninguna entrevista garantiza un resultado. Para ver cómo se aplica a tu caso, entra a la <a href="/sesion-informativa/" class="text-emerald-700 underline">sesión informativa gratuita</a>.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {entrevistas.map((e) => (
+          <article id={`v-${e.id}`} class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm flex flex-col">
+            <div class="yt-facade relative w-full overflow-hidden rounded-xl bg-black mb-4" style="padding-bottom:56.25%" data-id={e.id} data-title={e.titulo}>
+              <a href={`https://www.youtube.com/watch?v=${e.id}`} target="_blank" rel="noopener noreferrer" class="absolute inset-0 block" aria-label={`Reproducir: ${e.titulo}`}>
+                <img src={thumb(e.id)} alt={`Entrevista: ${e.titulo}`} loading="lazy" width="480" height="360" class="absolute inset-0 h-full w-full object-cover" />
+                <span class="absolute inset-0 flex items-center justify-center">
+                  <span class="flex h-14 w-14 items-center justify-center rounded-full bg-[#CC3700] text-white text-xl" aria-hidden="true">▶</span>
+                </span>
+              </a>
+            </div>
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">{e.tema}</span>
+            <h2 class="text-lg font-extrabold text-gray-900 mt-1 mb-2 leading-snug">{e.titulo}</h2>
+            <p class="text-sm text-gray-600 leading-relaxed flex-1">{e.resumen}</p>
+            <a href={`https://www.youtube.com/watch?v=${e.id}`} target="_blank" rel="noopener noreferrer" class="mt-3 text-sm font-bold text-emerald-700 underline">Ver en YouTube →</a>
+          </article>
+        ))}
+      </div>
+
+      <div class="mt-12 max-w-3xl rounded-2xl border border-emerald-200 bg-emerald-50/60 p-6 md:p-8">
+        <h2 class="text-2xl font-extrabold text-gray-900 mb-2">¿Quieres ver cómo sería tu caso?</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">En la sesión informativa gratuita, en español, te explicamos homologación, NCLEX, empleo y visa, con costos y tiempos.</p>
+        <a href="/sesion-informativa/" class="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl">Agendar sesión informativa gratuita</a>
+      </div>
+
+      <p class="text-xs text-gray-500 mt-8 max-w-3xl">
+        Canal: <a href="https://www.youtube.com/@enfermeraenestadosunidos" target="_blank" rel="noopener noreferrer" class="underline">Enfermera en Estados Unidos en YouTube</a>. Más guías: <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="underline">homologación</a> · <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="underline">NCLEX y licencia</a>.
+      </p>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <script is:inline>
+    document.addEventListener('click', function (ev) {
+      var a = ev.target.closest && ev.target.closest('.yt-facade a');
+      if (!a) return;
+      ev.preventDefault();
+      var box = a.parentElement;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-id') + '?autoplay=1&rel=0';
+      f.title = box.getAttribute('data-title') || 'Entrevista';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      f.className = 'absolute inset-0 w-full h-full';
+      box.innerHTML = '';
+      box.appendChild(f);
+    });
+  </script>
+</BaseLayout>
