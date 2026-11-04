@@ -27,6 +27,7 @@ const faqs = [
 const testimonials = [
   {
     name: "Elizabeth Duque",
+    headline: "De inglés básico a aprobar el NCLEX-RN",
     detail: "Enfermera colombiana · Aprobó el NCLEX-RN",
     quote: "Pasé el NCLEX a la pregunta 85. Empecé con inglés básico y, con disciplina diaria y acompañamiento, di cada escalón del proceso. La noticia del pass es un logro que no se olvida.",
     videoId: "A13rKHMjH_c",
@@ -35,6 +36,7 @@ const testimonials = [
   },
   {
     name: "Sara",
+    headline: "Del primer paso a una oferta de hospital",
     detail: "Enfermera colombiana · NCLEX, PTE y oferta hospitalaria",
     quote: "Aprobé el NCLEX, el PTE de inglés y conseguí oferta con hospital. El proceso es largo, pero alcanzable: se vuelve un proyecto de vida. Lo difícil es empezar; después se sigue paso a paso.",
     videoId: "8kfnvoUVvvI",
@@ -145,6 +147,7 @@ const testimonials = [
                 allowfullscreen
               ></iframe>
             </div>
+            <h3 class="text-lg md:text-xl font-extrabold text-gray-900 mb-3">{t.headline}</h3>
             <blockquote class="text-gray-700 leading-relaxed text-sm md:text-base flex-1">
               “{t.quote}”
             </blockquote>
