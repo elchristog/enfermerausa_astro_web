@@ -11,6 +11,10 @@ const salaryStates = [
 
 const faqs = [
   {
+    question: "¿Cuánto recibe una enfermera al mes después de impuestos en Estados Unidos?",
+    answer: "Con la mediana nacional del BLS ($97,550 al año), una enfermera soltera, sin hijos y con deducción estándar recibe unos $6,455 al mes después del impuesto federal y FICA de 2026, antes del impuesto estatal. En Texas, que no cobra impuesto estatal, el neto estimado es ~$6,327 al mes (media BLS $95,380); en Florida, ~$6,050 (media BLS $90,650). Es una estimación: cambia con tu estado civil, hijos, seguro médico y retiro."
+  },
+  {
     question: "¿Cuánto cobra un enfermero o una enfermera en Estados Unidos?",
     answer: "Un enfermero o enfermera registrado (RN) cobra en mediana $97,550 al año en Estados Unidos: unos $8,129 brutos al mes y $46.90 por hora (BLS, mayo 2025). «Cobra», «gana» y «salario» se refieren a lo mismo aquí: el sueldo bruto, antes de impuestos. Cambia por estado, especialidad y turno."
   },
@@ -39,7 +43,7 @@ const faqs = [
 
 <BaseLayout
   title="Cuánto gana una enfermera en Estados Unidos 2026, por estado"
-  description="Sueldo de una enfermera RN por estado, al mes y por hora, y en qué estados pagas impuesto estatal. Datos oficiales del BLS (mayo 2025), sin promesas."
+  description="Sueldo de una enfermera RN por estado, al mes y por hora, y cuánto recibes después de impuestos. Datos oficiales del BLS (mayo 2025) y del IRS 2026, sin promesas."
   canonical="https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/"
   type="info"
   faqs={faqs}
@@ -225,8 +229,8 @@ const faqs = [
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
       <div class="text-center max-w-2xl mx-auto mb-8">
         <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Ingresos Reales vs Impuestos</span>
-        <h2 class="text-2xl md:text-3xl font-extrabold text-white">¿Cuánto Dinero Líquido Recibes al Mes en tu Cuenta?</h2>
-        <p class="text-sm text-slate-300 mt-2">Bruto mensual estimado = media estatal anual del BLS (mayo 2025) dividida entre 12. El neto exacto depende de tu situación federal; la columna clave es si el estado cobra renta o no.</p>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-white">¿Cuánto dinero recibes al mes después de impuestos?</h2>
+        <p class="text-sm text-slate-300 mt-2">Cálculo con la media anual del BLS (mayo 2025) y las reglas federales de 2026 del IRS, para una persona soltera, sin hijos, con deducción estándar de $16,100 y FICA de 7.65 % (Seguro Social 6.2 % + Medicare 1.45 %). Es una estimación: tu neto real cambia con tu estado civil, hijos, seguro médico y retiro.</p>
       </div>
 
       <div class="overflow-x-auto bg-slate-800 rounded-2xl border border-slate-700 text-xs">
@@ -234,33 +238,52 @@ const faqs = [
           <thead>
             <tr class="bg-slate-950 text-emerald-400 font-bold">
               <th class="p-4">Estado</th>
-              <th class="p-4">Salario Bruto Mensual</th>
-              <th class="p-4">Impuesto Estatal a la Renta</th>
-              <th class="p-4 font-bold text-white">Ingreso Neto Estimado en Banco</th>
+              <th class="p-4">Bruto al año</th>
+              <th class="p-4">Impuesto federal + FICA</th>
+              <th class="p-4">Impuesto estatal</th>
+              <th class="p-4 font-bold text-white">Neto al mes (aprox.)</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-700 text-slate-200">
             <tr>
+              <td class="p-4 font-bold text-white">Mediana nacional</td>
+              <td class="p-4">$97,550</td>
+              <td class="p-4">~$20,094</td>
+              <td class="p-4 text-slate-300">Depende del estado</td>
+              <td class="p-4 font-bold text-emerald-300">~$6,455 antes del impuesto estatal</td>
+            </tr>
+            <tr>
               <td class="p-4 font-bold text-white">Texas (Houston / Dallas)</td>
-              <td class="p-4">~$7,948 USD</td>
-              <td class="p-4 text-emerald-400 font-bold">0% (sin impuesto estatal)</td>
-              <td class="p-4 font-bold text-emerald-300">Mayor neto relativo (solo federal + FICA)</td>
+              <td class="p-4">$95,380</td>
+              <td class="p-4">~$19,450</td>
+              <td class="p-4 text-emerald-400 font-bold">0 % (sin impuesto estatal)</td>
+              <td class="p-4 font-bold text-emerald-300">~$6,327</td>
             </tr>
             <tr>
               <td class="p-4 font-bold text-white">Florida (Orlando / Miami)</td>
-              <td class="p-4">~$7,554 USD</td>
-              <td class="p-4 text-emerald-400 font-bold">0% (sin impuesto estatal)</td>
-              <td class="p-4 font-bold text-emerald-300">Mayor neto relativo (solo federal + FICA)</td>
+              <td class="p-4">$90,650</td>
+              <td class="p-4">~$18,048</td>
+              <td class="p-4 text-emerald-400 font-bold">0 % (sin impuesto estatal)</td>
+              <td class="p-4 font-bold text-emerald-300">~$6,050</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-white">Nueva York</td>
+              <td class="p-4">$113,440</td>
+              <td class="p-4">~$24,805</td>
+              <td class="p-4 text-slate-300">Sí, progresivo (no incluido)</td>
+              <td class="p-4 font-bold text-emerald-300">~$7,386 antes del impuesto estatal</td>
             </tr>
             <tr>
               <td class="p-4 font-bold text-white">California (Los Ángeles / Bay Area)</td>
-              <td class="p-4">~$12,523 USD</td>
-              <td class="p-4 text-slate-300">Impuesto estatal progresivo</td>
-              <td class="p-4 font-bold text-emerald-300">Bruto alto; neto y arriendo varían mucho</td>
+              <td class="p-4">$150,280</td>
+              <td class="p-4">~$36,298</td>
+              <td class="p-4 text-slate-300">Sí, progresivo (no incluido)</td>
+              <td class="p-4 font-bold text-emerald-300">~$9,499 antes del impuesto estatal</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p class="text-xs text-slate-400 mt-4">Cómo se calcula: neto al mes = (bruto anual − impuesto federal − FICA) ÷ 12. Impuesto federal 2026 con los tramos del IRS para personas solteras (10 % hasta $12,400; 12 % hasta $50,400; 22 % hasta $105,700; 24 % por encima) sobre el ingreso menos la deducción estándar de $16,100. En Nueva York y California falta restar el impuesto estatal, que depende de tu ingreso y de tu ciudad; consulta las tablas oficiales de cada estado. Fuentes: <a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener" class="underline">IRS, ajustes 2026</a> y <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf" target="_blank" rel="noopener" class="underline">IRS, Form 1040-ES 2026</a>. Revisado el 7 de noviembre de 2026.</p>
     </div>
   </section>
 
