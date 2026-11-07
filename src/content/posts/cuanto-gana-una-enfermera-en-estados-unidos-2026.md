@@ -4,8 +4,8 @@ pubDate: 2026-10-12
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
-title: "Cuánto gana una enfermera en Estados Unidos en 2026"
-description: "Una enfermera RN gana una mediana de $97,550 al año en EE.UU. (BLS). Mira el salario por estado en 2026 y qué necesitas si tu título es extranjero."
+title: "Cuánto gana una enfermera extranjera en EE.UU. (2026)"
+description: "Qué sueldo esperar si tu título es de otro país: cómo cambia por estado y qué pasos te separan de la licencia RN. Datos del BLS, sin promesas."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/a0def9d7-8362-4157-b458-31525a7548ac/featured.jpg"
   alt: "Cuánto gana una enfermera en Estados Unidos en 2026"
@@ -47,7 +47,7 @@ Por eso esta guía usa únicamente cifras del BLS, la agencia del gobierno de EE
 
 La **mediana nacional** de una Registered Nurse es de **$97,550 al año** (mayo 2025). Mediana significa que la mitad de las enfermeras gana más y la otra mitad gana menos. Por hora equivale a **$46.90**.
 
-Ese promedio mezcla estados caros y baratos, hospitales grandes y clínicas pequeñas, enfermeras con años de experiencia y recién graduadas. Trátalo como un punto de partida, no como una promesa de sueldo. Para ver la tabla completa por estado, revisa la [tabla de salarios de enfermeros por estado](https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/).
+Ese promedio mezcla estados caros y baratos, hospitales grandes y clínicas pequeñas, enfermeras con años de experiencia y recién graduadas. Trátalo como un punto de partida, no como una promesa de sueldo. Para ver la tabla completa por estado y cuánto recibes al mes después de impuestos, revisa la [tabla de salarios de enfermeros por estado](https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/).
 
 ## Salario por estado en 2026: tres ejemplos
 
