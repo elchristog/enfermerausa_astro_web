@@ -1,8 +1,8 @@
 ---
 pubDate: 2026-10-09
 team: "david-lee"
-title: "Enfermería en EE.UU.: niveles, años de estudio y ruta a RN"
-description: "Tipos de enfermería en EE.UU. (CNA, LPN, RN, APRN), años de estudio de cada uno y el camino para ser RN si te formaste en Latinoamérica."
+title: "Cuánto dura la carrera de enfermería en EE.UU. y ruta a RN"
+description: "Cuántos años se estudia cada nivel (CNA, LPN, RN, APRN) y qué cambia si ya eres enfermera y te formaste en Latinoamérica. Guía 2026."
 image:
   url: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop"
   alt: "Enfermera registrada trabajando en un hospital de Estados Unidos"
@@ -11,6 +11,10 @@ tags:
 ---
 
 Si buscas información sobre enfermería en Estados Unidos, lo primero es saber qué estás buscando: **estudiar la carrera desde cero** en EE.UU. o **ejercer como enfermera si ya te formaste en tu país**. Son dos caminos distintos, con tiempos y requisitos muy diferentes. Esta guía explica ambos y te dice cuál aplica a ti.
+
+## Cuánto dura la carrera de enfermería en Estados Unidos
+
+Si empiezas desde cero, un RN tarda unos **2 años** con grado asociado (ADN) o unos **4 años** con licenciatura (BSN), más el examen NCLEX. Si ya eres enfermera titulada en otro país, **no repites la carrera**: el camino es homologar, aprobar el NCLEX y sacar la licencia, y su duración depende de tus documentos, tu inglés y la fila migratoria.
 
 ## Respuesta corta
 
