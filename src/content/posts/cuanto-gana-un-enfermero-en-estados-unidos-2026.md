@@ -5,15 +5,15 @@ team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
 title: "Cuánto gana un enfermero en Estados Unidos en 2026"
-description: "Cuánto gana un enfermero en EE.UU. por hora: mediana de 45 dólares según BLS (mayo 2024). Salario bruto, licencia RN y condiciones de una oferta."
+description: "Cuánto gana un enfermero en EE.UU. por hora: mediana de 46,90 dólares según BLS (mayo 2025). Salario bruto, licencia RN y condiciones de una oferta."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/9d627440-cb9a-4899-b56e-59270bd17f6e/featured.jpg"
   alt: "Cuánto gana un enfermero en Estados Unidos en 2026"
 faqs:
   - question: "¿Cuánto gana un enfermero en Estados Unidos por hora en 2026?"
-    answer: "La referencia oficial utilizada es una mediana de 45 dólares por hora para enfermeros registrados, según BLS con datos de mayo de 2024. No es una medición de 2026 ni una oferta garantizada; el salario varía por estado, especialidad y empleador."
+    answer: "La referencia oficial utilizada es una mediana de 46,90 dólares por hora para enfermeros registrados, según BLS con datos de mayo de 2025. No es una medición de 2026 ni una oferta garantizada; el salario varía por estado, especialidad y empleador."
   - question: "¿El salario de enfermería publicado es bruto o neto?"
-    answer: "La mediana de 93.600 dólares anuales de BLS es una referencia bruta. El ingreso neto depende de impuestos, deducciones y condiciones individuales."
+    answer: "La mediana de 97.550 dólares anuales de BLS es una referencia bruta. El ingreso neto depende de impuestos, deducciones y condiciones individuales."
   - question: "¿Puedo recibir un salario RN solamente con mi título extranjero?"
     answer: "El título extranjero por sí solo no autoriza a ejercer como RN. Necesitas cumplir los requisitos de licencia del estado y contar con autorización laboral."
   - question: "¿Aprobar el NCLEX-RN me permite trabajar inmediatamente?"
@@ -28,12 +28,12 @@ tags:
   - salarios
 ---
 
-En 2026, una referencia oficial para el salario de un enfermero registrado en Estados Unidos es **45 dólares por hora de mediana**, según los datos de mayo de 2024 de la Oficina de Estadísticas Laborales de Estados Unidos, BLS. Esa cifra corresponde a una mediana de **93.600 dólares anuales**, no a una oferta garantizada ni al dinero que recibirás después de impuestos. El salario cambia por estado, especialidad y empleador; además, tener un título extranjero no equivale a tener autorización para ejercer como enfermero registrado.
+En 2026, una referencia oficial para el salario de un enfermero registrado en Estados Unidos es **46,90 dólares por hora de mediana**, según los datos de mayo de 2025 de la Oficina de Estadísticas Laborales de Estados Unidos, BLS. Esa cifra corresponde a una mediana de **97.550 dólares anuales**, no a una oferta garantizada ni al dinero que recibirás después de impuestos. El salario cambia por estado, especialidad y empleador; además, tener un título extranjero no equivale a tener autorización para ejercer como enfermero registrado.
 
 
 **TL;DR**
 
-- Cuanto gana un enfermero en estados unidos por hora: BLS reporta una mediana de 45 dólares, con datos de mayo de 2024.
+- Cuanto gana un enfermero en estados unidos por hora: BLS reporta una mediana de 46,90 dólares, con datos de mayo de 2025.
 - El salario de enfermería registrada no corresponde automáticamente a puestos de asistencia ni a títulos extranjeros sin licencia estadounidense.
 - Compara salario base, horas, beneficios y obligaciones de patrocinio antes de aceptar empleo hospitalario.
 - Enfermera en Estados Unidos ofrece acompañamiento en español para homologación, NCLEX, licencia, visa y empleo.
@@ -41,16 +41,16 @@ En 2026, una referencia oficial para el salario de un enfermero registrado en Es
 
 ## ¿Cuánto gana un enfermero en Estados Unidos por hora en 2026?
 
-**La mediana oficial de referencia es 45 dólares por hora para enfermeros registrados**, conocidos como RN por las siglas en inglés de *Registered Nurse*. La fuente es BLS, en su información ocupacional sobre enfermeros registrados correspondiente a mayo de 2024. La mediana divide los salarios observados: una mitad queda por debajo y la otra por encima.
+**La mediana oficial de referencia es 46,90 dólares por hora para enfermeros registrados**, conocidos como RN por las siglas en inglés de *Registered Nurse*. La fuente es BLS, en su información ocupacional sobre enfermeros registrados correspondiente a mayo de 2025. La mediana divide los salarios observados: una mitad queda por debajo y la otra por encima.
 
 [Enfermera en Estados Unidos](https://enfermerausa.com/) es para enfermeras formadas en el extranjero que buscan acompañamiento en español para obtener licencia RN y trabajar en Estados Unidos.
 
 | Dato de referencia | Valor | Qué significa para ti |
 |---|---|---|
-| Mediana por hora de RN | 45 dólares por hora | Referencia nacional; no determina una oferta individual |
-| Mediana anual de RN | 93.600 dólares al año | Salario bruto, antes de impuestos y deducciones |
-| Base de conversión anual | 2.080 horas al año | Permite relacionar la cifra anual con la cifra por hora |
-| Periodo de los datos BLS | Mayo de 2024 | No representa una medición salarial de 2026 |
+| Mediana por hora de RN | 46,90 dólares por hora | Referencia nacional; no determina una oferta individual |
+| Mediana anual de RN | 97.550 dólares al año | Salario bruto, antes de impuestos y deducciones |
+| Base de conversión anual | 2.080 horas al año | Permite relacionar la cifra anual con la cifra por hora (46,90 × 2.080 = 97.552, que BLS publica redondeado como 97.550) |
+| Periodo de los datos BLS | Mayo de 2025 | No representa una medición salarial de 2026 |
 
 La referencia de 2.080 horas anuales equivale a 40 horas semanales durante 52 semanas. **Es una base de cálculo, no una promesa de jornada**: tu contrato puede establecer otra distribución de horas, turnos y descansos.
 
@@ -151,15 +151,15 @@ Antes de decidir, solicita información escrita. Una conversación sobre ingreso
 
 Si una cláusula no se entiende, pide una explicación escrita y revisión profesional cuando corresponda. La claridad contractual también forma parte de una decisión laboral segura.
 
-## ¿Los 45 dólares por hora son lo que recibiré en mi cuenta?
+## ¿Los 46,90 dólares por hora son lo que recibiré en mi cuenta?
 
-**Los 45 dólares por hora son una referencia salarial bruta**, no un ingreso neto garantizado. Tu depósito depende de las horas pagadas, los impuestos y las deducciones aplicables a tu situación.
+**Los 46,90 dólares por hora son una referencia salarial bruta**, no un ingreso neto garantizado. Tu depósito depende de las horas pagadas, los impuestos y las deducciones aplicables a tu situación.
 
 Para presupuestar tu vida en Estados Unidos, utiliza las condiciones de una oferta concreta. No calcules alquiler y gastos familiares suponiendo que la mediana nacional será tu pago personal.
 
-## ¿Los 93.600 dólares anuales corresponden a una enfermera recién llegada?
+## ¿Los 97.550 dólares anuales corresponden a una enfermera recién llegada?
 
-**Los 93.600 dólares anuales representan la mediana nacional RN**, no un salario reservado a enfermeras recién llegadas. El dato agrupa trabajadores con situaciones laborales distintas y no indica cuánto ofrecerá un empleador a una candidata específica.
+**Los 97.550 dólares anuales representan la mediana nacional RN**, no un salario reservado a enfermeras recién llegadas. El dato agrupa trabajadores con situaciones laborales distintas y no indica cuánto ofrecerá un empleador a una candidata específica.
 
 Tu propuesta depende del puesto y de cómo el empleador valore tu experiencia. Pide que esa evaluación quede reflejada en las condiciones de contratación.
 
@@ -174,11 +174,11 @@ Tu calendario real depende del contrato. Revisa cómo se pagan descansos, ausenc
 
 **¿Cuánto gana un enfermero en Estados Unidos por hora en 2026?**
 
-La referencia oficial utilizada es una mediana de 45 dólares por hora para enfermeros registrados, según BLS con datos de mayo de 2024. No es una medición de 2026 ni una oferta garantizada; el salario varía por estado, especialidad y empleador.
+La referencia oficial utilizada es una mediana de 46,90 dólares por hora para enfermeros registrados, según BLS con datos de mayo de 2025. No es una medición de 2026 ni una oferta garantizada; el salario varía por estado, especialidad y empleador.
 
 **¿El salario de enfermería publicado es bruto o neto?**
 
-La mediana de 93.600 dólares anuales de BLS es una referencia bruta. El ingreso neto depende de impuestos, deducciones y condiciones individuales.
+La mediana de 97.550 dólares anuales de BLS es una referencia bruta. El ingreso neto depende de impuestos, deducciones y condiciones individuales.
 
 **¿Puedo recibir un salario RN solamente con mi título extranjero?**
 
