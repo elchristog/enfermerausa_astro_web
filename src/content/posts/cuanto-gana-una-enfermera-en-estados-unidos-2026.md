@@ -26,7 +26,7 @@ tags:
   - salarios
 ---
 
-Una enfermera registrada (RN) en Estados Unidos gana una mediana de **$97,550 al año**, es decir **$46.90 por hora**, según el Bureau of Labor Statistics (BLS, datos de mayo 2025). En 2026 el monto real depende sobre todo del estado donde trabajes.
+Una enfermera registrada (RN) en Estados Unidos gana una mediana de **$97,550 al año**, es decir **$46.90 por hora**, según el Bureau of Labor Statistics (BLS, datos de mayo 2025). En 2026 el monto real depende sobre todo del estado donde trabajes. Si solo buscas la tabla completa por estado, está en la [guía de salarios de enfermeros en Estados Unidos por estado](https://enfermerausa.com/salarios-de-enfermeros-en-estados-unidos/); esta guía se centra en lo que cambia si tu título es extranjero.
 
 
 **TL;DR**
@@ -43,7 +43,7 @@ Cuando buscas "cuánto gana una enfermera en Estados Unidos" casi siempre estás
 
 Por eso esta guía usa únicamente cifras del BLS, la agencia del gobierno de EE.UU. que publica las estadísticas de empleo y salarios. Son salarios brutos, antes de impuestos.
 
-## Cuánto gana una enfermera en Estados Unidos: la cifra nacional
+## La cifra nacional de referencia para una RN
 
 La **mediana nacional** de una Registered Nurse es de **$97,550 al año** (mayo 2025). Mediana significa que la mitad de las enfermeras gana más y la otra mitad gana menos. Por hora equivale a **$46.90**.
 
