@@ -1,6 +1,8 @@
 ---
 pubDate: 2026-09-24
 team: "david-lee"
+author: "Alejandra Martínez, RN, BSN, IBCLC"
+authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
 title: "Agencia de reclutamiento o asesoría para enfermeras en USA"
 description: "Agencia que coloca o asesoría: cuál necesitas para trabajar de enfermera en EE.UU., qué preguntar antes de pagar y cómo verificar firmas éticas."
 image:
