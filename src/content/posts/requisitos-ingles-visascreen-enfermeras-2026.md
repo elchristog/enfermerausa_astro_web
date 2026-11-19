@@ -16,6 +16,8 @@ Si te formaste como enfermera fuera de Estados Unidos, necesitas demostrar domin
 
 Esta guía reúne los puntajes vigentes para enfermeras registradas, qué cambió y cómo planificar el examen sin perder tiempo ni dinero.
 
+> **¿Buscas qué es el VisaScreen, cuánto cuesta y cómo se tramita?** Lee la guía completa: [Qué es el VisaScreen: costo ($740), requisitos y pasos para enfermeras](/que-es-el-visascreen-costo-requisitos-pasos/).
+
 ## Qué cambió el 12 de mayo de 2026
 
 HRSA (la agencia federal de recursos de salud) actualizó la lista de exámenes de inglés aprobados para profesionales de la salud extranjeros. TruMerit, la organización autorizada por USCIS para emitir la certificación VisaScreen, adaptó sus requisitos a esa lista. Las reglas prácticas:
@@ -68,7 +70,7 @@ El examen de inglés no es un paso aislado; se encadena con lo demás:
 1. **Evaluación de credenciales.** Empieza por definir tu estado objetivo y la evaluación que acepta su junta, como explica la [guía de homologación del título de enfermería](/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026).
 2. **Examen de inglés.** Puede prepararse en paralelo a la recolección de documentos. Tu certificado de inglés tiene vigencia limitada (generalmente dos años según cada examen), así que no lo presentes demasiado pronto respecto a tu fecha de visa.
 3. **NCLEX-RN.** Con la evaluación y la autorización de la junta, pasas a la preparación del examen de licencia: la [guía del NCLEX-RN en español](/blog/posts/preparacion-examen-nclex-rn-espanol-2026) cubre ese tramo.
-4. **Visa y empleo.** Para la visa de enfermera (típica EB-3 con Schedule A), el certificado VisaScreen —que incluye tu inglés aprobado— es requisito federal. El proceso completo se detalla en la [guía de visa y relocalización](/proceso-de-visa-y-relocalizacion-para-enfermeras).
+4. **Visa y empleo.** Para la visa de enfermera (típica EB-3 con Schedule A), el certificado VisaScreen —que incluye tu inglés aprobado— es requisito federal. Los costos, requisitos y pasos del trámite están en la guía [Qué es el VisaScreen](/que-es-el-visascreen-costo-requisitos-pasos/), y el proceso completo se detalla en la [guía de visa y relocalización](/proceso-de-visa-y-relocalizacion-para-enfermeras).
 
 Un error frecuente: presentar el examen de inglés al inicio del proceso, dejar pasar su vigencia durante la homologación y tener que repetirlo. Calendariza hacia atrás desde tu fecha estimada de trámite de visa.
 
