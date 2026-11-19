@@ -1,0 +1,205 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Qué es el VisaScreen?",
+    answer: "Es el certificado de profesional de la salud que la ley federal de EE.UU. exige a las enfermeras y otros profesionales formados fuera del país antes de recibir una visa de trabajo, temporal o permanente. Lo emite TruMerit (antes CGFNS), autorizada por USCIS, y verifica tu educación, tus licencias, tu inglés y, si eres RN, que aprobaste el NCLEX-RN."
+  },
+  {
+    question: "¿Cuánto cuesta el VisaScreen?",
+    answer: "La solicitud inicial cuesta $740 USD según la tabla de tarifas oficial de TruMerit y ya incluye el certificado digital. El certificado en papel es un servicio aparte con costo adicional. Confirma siempre el monto vigente en la tabla de tarifas de TruMerit antes de pagar."
+  },
+  {
+    question: "¿Qué exámenes de inglés acepta el VisaScreen?",
+    answer: "IELTS Academic, TOEFL iBT, Pearson PTE Academic, OET, Cambridge (B2 First, C1 Advanced o C2 Proficiency) y MET, con los puntajes mínimos que HRSA publicó el 12 de mayo de 2026. No se aceptan las versiones desde casa (at-home) de ningún examen. Hay exención si tu carrera de enfermería se cursó en inglés en EE.UU., Reino Unido, Australia, Canadá (excepto Quebec), Nueva Zelanda o Irlanda."
+  },
+  {
+    question: "¿Cuánto tarda el VisaScreen?",
+    answer: "TruMerit informa que emite los certificados en un máximo de 3,5 días hábiles una vez que recibió y validó todos los documentos desde la fuente. El tiempo total de tu trámite depende de cuánto tarden tu escuela en enviar las transcripciones y tus autoridades de licencia en firmar las validaciones, que son pasos que TruMerit no controla."
+  },
+  {
+    question: "¿Necesito el VisaScreen para presentar el NCLEX?",
+    answer: "No. Es al revés: si eres enfermera registrada (RN), el VisaScreen exige que ya hayas aprobado el NCLEX-RN (o el TruMerit Qualifying Exam). Para el NCLEX tu junta de enfermería pide su propia evaluación de credenciales, que es un trámite distinto."
+  },
+  {
+    question: "¿Qué relación tiene el VisaScreen con la visa EB-3?",
+    answer: "Es un requisito federal para la visa de trabajo. En el proceso EB-3 con Schedule A, el empleador adjunta tu certificado VisaScreen a la petición I-140 junto con tu licencia y la oferta de empleo. Por eso se tramita cuando ya tienes NCLEX aprobado y el proceso de visa está por empezar."
+  },
+];
+---
+
+<BaseLayout
+  title="Qué es el VisaScreen: costo ($740), requisitos y pasos"
+  description="Qué es el VisaScreen para enfermeras: cuesta $740, exige inglés aprobado y NCLEX-RN, se emite en hasta 3,5 días hábiles tras recibir tus documentos y se usa en la visa EB-3."
+  canonical="https://enfermerausa.com/que-es-el-visascreen-costo-requisitos-pasos/"
+  type="service"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Etapa 3: Visa y empleo</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Qué es el VisaScreen: costo, requisitos y pasos para enfermeras
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+          El VisaScreen es el certificado federal que necesita una enfermera formada fuera de EE.UU. antes de recibir una visa de trabajo.
+        </p>
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          <strong>Respuesta corta:</strong> lo emite TruMerit (antes CGFNS), cuesta <strong>$740 USD</strong> la solicitud inicial, exige inglés aprobado en un examen aceptado y, para enfermeras registradas, el NCLEX-RN aprobado. Se usa en el proceso de visa EB-3 junto con tu licencia y tu oferta de empleo.
+        </p>
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          <strong>Costo:</strong> $740 USD por la solicitud inicial, según la <a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline">tabla de tarifas de TruMerit</a>. Revisado el 19 de noviembre de 2026.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/sesion-informativa/" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow transition-all gap-2">
+            <span>Sesión informativa gratuita</span>
+          </a>
+          <a href="#pasos-visascreen" class="inline-flex items-center border-2 border-emerald-600 text-emerald-800 hover:bg-emerald-50 font-bold px-6 py-3 rounded-lg gap-2">
+            <span>Ver los pasos</span>
+          </a>
+          <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="inline-flex items-center border-2 border-emerald-600 text-emerald-800 hover:bg-emerald-50 font-bold px-6 py-3 rounded-lg gap-2">
+            <span>Puntajes de inglés al detalle</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-8">
+      <h2 class="text-2xl font-bold text-gray-900" id="que-es">¿Qué es el VisaScreen y para qué sirve?</h2>
+      <p class="text-gray-600 leading-relaxed">
+        La ley migratoria de 1996 (sección 343 del IIRIRA) obliga a ciertos profesionales de la salud extranjeros, entre ellos las enfermeras registradas (RN), a completar un programa de verificación antes de recibir una visa de trabajo, temporal o permanente. Ese programa es el VisaScreen. Al completarlo recibes el certificado ICHP (International Commission on Healthcare Professions), que cumple el requisito federal.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Según TruMerit, es la única empresa de evaluación de credenciales autorizada por USCIS para emitir este certificado en las nueve ocupaciones de salud que lo exigen. Desde el 1 de noviembre de 2025 el certificado se emite en formato digital; el certificado en papel es un servicio aparte con costo adicional.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900" id="costo-visascreen">¿Cuánto cuesta el VisaScreen?</h2>
+      <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-slate-200">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200 text-slate-900 font-bold">
+              <th class="p-4">Concepto</th>
+              <th class="p-4">Costo</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr><td class="p-4 font-bold">Solicitud inicial de VisaScreen (incluye el certificado digital)</td><td class="p-4">$740 USD</td></tr>
+            <tr><td class="p-4 font-bold">Certificado en papel</td><td class="p-4">Servicio aparte, con costo adicional</td></tr>
+            <tr><td class="p-4 font-bold">Examen de inglés (IELTS, TOEFL, PTE, OET, etc.)</td><td class="p-4">Lo cobra cada examen, aparte del VisaScreen</td></tr>
+            <tr><td class="p-4 font-bold">Traducción de documentos por TruMerit (solo si tu escuela no puede traducirlos)</td><td class="p-4">Tarifa adicional</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-gray-500">
+        Fuente: <a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener noreferrer" class="underline">TruMerit, Fee Schedule and Policies</a> y <a href="https://www.trumerit.org/services/certification/visascreen-visa-credentials-assessment/" target="_blank" rel="noopener noreferrer" class="underline">página de VisaScreen de TruMerit</a>. Revisado el 19 de noviembre de 2026. Las tarifas pueden cambiar: confirma el monto antes de pagar.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900" id="requisitos-visascreen">Requisitos: qué verifica el VisaScreen</h2>
+      <p class="text-gray-600 leading-relaxed">TruMerit revisa cuatro cosas, y además pide algunos documentos de apoyo:</p>
+      <ol class="list-decimal pl-6 text-gray-600 space-y-2">
+        <li><strong>Educación comparable.</strong> Que tu formación sea comparable a la de un graduado de EE.UU. en la misma profesión. Las transcripciones deben llegar directamente desde cada institución donde estudiaste enfermería.</li>
+        <li><strong>Licencias válidas y sin restricciones.</strong> TruMerit valida todas las licencias y registros que tienes o tuviste, en cualquier país. La firma de la autoridad que valida debe tener menos de tres años.</li>
+        <li><strong>Inglés aprobado</strong> en un examen aceptado (tabla más abajo), salvo que tengas una exención.</li>
+        <li><strong>Solo para RN: NCLEX-RN aprobado</strong> o el TruMerit Nurse Qualifying Exam.</li>
+      </ol>
+      <p class="text-gray-600 leading-relaxed">
+        Documentos de apoyo: diploma de secundaria (se exime si la terminaste hace más de 10 años), documentos en inglés (la traducción la debe hacer tu institución) y una foto tipo pasaporte, a color, cuadrada (51 mm x 51 mm), en JPG de menos de 5 MB y tomada en los últimos 6 meses.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900" id="examenes-ingles">Exámenes de inglés aceptados y puntajes mínimos para RN</h2>
+      <p class="text-gray-600 leading-relaxed">
+        HRSA actualizó la lista el 12 de mayo de 2026. TruMerit no acepta las versiones desde casa de ningún examen, y el TOEIC ya no sirve. Si presentaste el examen antes del 12 de mayo de 2026, se aplican los puntajes anteriores.
+      </p>
+      <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-slate-200">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200 text-slate-900 font-bold">
+              <th class="p-4">Examen</th>
+              <th class="p-4">Puntaje mínimo (RN)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr><td class="p-4 font-bold">IELTS Academic</td><td class="p-4">6.5 global y 7.0 en Speaking</td></tr>
+            <tr><td class="p-4 font-bold">TOEFL iBT (escala nueva)</td><td class="p-4">4.5 global, 4.5 Speaking y 3.5 en Reading, Listening y Writing</td></tr>
+            <tr><td class="p-4 font-bold">Pearson PTE Academic</td><td class="p-4">55 global, 76 Speaking y 62 en Reading, Writing y Listening</td></tr>
+            <tr><td class="p-4 font-bold">OET</td><td class="p-4">360 Speaking, 340 Reading, 350 Writing y 320 Listening</td></tr>
+            <tr><td class="p-4 font-bold">Cambridge (B2 First, C1 Advanced o C2 Proficiency)</td><td class="p-4">169 global y 194 en Speaking</td></tr>
+            <tr><td class="p-4 font-bold">MET (Michigan English Test)</td><td class="p-4">58 global y 59 en Speaking</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-gray-500">
+        Fuente: <a href="https://www.hrsa.gov/office-global-health/foreign-healthcare-worker-requirements" target="_blank" rel="noopener noreferrer" class="underline">HRSA, requisitos para profesionales de salud extranjeros</a>. Detalle, comparación entre exámenes y exenciones en nuestra guía de <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="underline">requisitos de inglés para VisaScreen</a>.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        <strong>Exención:</strong> no necesitas el examen si tu carrera de enfermería se cursó en inglés (incluidos los libros de texto) en EE.UU., Reino Unido, Australia, Canadá (excepto Quebec), Nueva Zelanda o Irlanda. Es una excepción poco común entre enfermeras formadas en Latinoamérica.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900" id="pasos-visascreen">Pasos y tiempos del VisaScreen</h2>
+      <ol class="list-decimal pl-6 text-gray-600 space-y-3">
+        <li><strong>Aprueba el NCLEX-RN</strong> (o el TruMerit Qualifying Exam). Si eres RN, el VisaScreen se cierra después de este paso. Guía: <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">licencia y examen NCLEX</a>.</li>
+        <li><strong>Presenta el examen de inglés</strong> con los puntajes de la tabla, con tiempo suficiente: los resultados tienen vigencia limitada.</li>
+        <li><strong>Crea tu cuenta en TruMerit y abre la solicitud de VisaScreen</strong>, y paga los $740 USD.</li>
+        <li><strong>Pide los documentos a quien corresponde:</strong> tu escuela envía las transcripciones directo a TruMerit y cada autoridad de licencia firma su validación. Avísales el mismo día que abres la solicitud.</li>
+        <li><strong>Sube tus documentos de apoyo</strong>: foto, diploma de secundaria si aplica y los resultados de inglés.</li>
+        <li><strong>TruMerit revisa y emite el certificado digital.</strong> Según TruMerit, se emite en un máximo de 3,5 días hábiles después de recibir y validar todos los documentos desde la fuente.</li>
+        <li><strong>Úsalo en tu proceso de visa.</strong> Tu empleador lo adjunta a la petición I-140 del proceso EB-3 (ver siguiente sección).</li>
+      </ol>
+      <p class="text-gray-600 leading-relaxed">
+        <strong>Dónde está el tiempo real:</strong> los 3,5 días hábiles cuentan desde que TruMerit tiene todo. Lo que más demora suele ser lo que no controlas: escuelas que tardan en enviar transcripciones y autoridades de licencia que tardan en firmar. Por eso conviene abrir los pedidos en paralelo.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900" id="visascreen-eb3">VisaScreen y visa EB-3: cómo se relacionan</h2>
+      <p class="text-gray-600 leading-relaxed">
+        La visa EB-3 con designación Schedule A es la vía habitual de residencia permanente para enfermeras con patrocinio de un hospital. El VisaScreen no es la visa ni te da elegibilidad para ella: es el requisito federal que verifica tus credenciales. En el proceso EB-3, el empleador presenta la petición I-140 y adjunta tu VisaScreen, tu licencia y la oferta de empleo.
+      </p>
+      <ul class="list-disc pl-6 text-gray-600 space-y-2">
+        <li><strong>VisaScreen:</strong> certifica que tus credenciales cumplen el estándar federal. Lo emite TruMerit.</li>
+        <li><strong>EB-3 / I-140:</strong> es la petición del empleador para tu residencia. La procesa USCIS.</li>
+        <li><strong>Evaluación CES para el NCLEX:</strong> es otro trámite, el que piden las juntas estatales de enfermería para declararte elegible al examen.</li>
+      </ul>
+      <p class="text-gray-600 leading-relaxed">
+        Más detalle del patrocinio en <a href="/blog/posts/visa-eb3-enfermeras-green-card-hospitales-usa/" class="text-emerald-700 underline">Visa EB-3 para enfermeras</a> y en la página de <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">proceso de visa y relocalización</a>.
+      </p>
+      <p class="text-xs text-gray-500">
+        Fuentes: <a href="https://www.uscis.gov/working-in-the-united-states/temporary-workers/health-care-worker-certification" target="_blank" rel="noopener noreferrer" class="underline">USCIS, Healthcare Worker Certification</a> y <a href="https://www.trumerit.org/services/certification/visascreen-visa-credentials-assessment/" target="_blank" rel="noopener noreferrer" class="underline">TruMerit, VisaScreen</a>. Esta página es informativa y no reemplaza la asesoría de un abogado de inmigración.
+      </p>
+    </div>
+  </div>
+
+  <div class="py-12 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Preguntas frecuentes sobre el VisaScreen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {faqs.map((faq) => (
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">{faq.question}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <section class="py-8 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <h3 class="text-xl font-bold mb-2">¿Quieres revisar tu ruta completa: homologación, NCLEX, VisaScreen y visa?</h3>
+      <p class="text-emerald-100 text-sm mb-4">En la sesión informativa gratuita revisamos tu caso paso a paso, en español.</p>
+      <a href="/sesion-informativa/" class="inline-block bg-white text-emerald-900 font-bold px-6 py-2.5 rounded-lg shadow hover:bg-emerald-50 transition">
+        Reservar sesión informativa
+      </a>
+      <p class="text-emerald-100 text-xs mt-4">¿Te falta aprobar el NCLEX? Practica en <a href="https://rnnclex.com" target="_blank" rel="noopener" class="underline text-white">rnnclex.com</a>, la plataforma de preparación del NCLEX de Enfermera en Estados Unidos.</p>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 flex items-center gap-4 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded">✓ Información Verificada</span>
+      <span>Publicado por Enfermera en Estados Unidos (fundadora: <a href="/quienes-somos/" class="underline">Alejandra Martínez, RN, BSN, IBCLC</a>). Fuentes oficiales: <a href="https://www.trumerit.org" target="_blank" rel="noopener" class="underline">TruMerit</a> | <a href="https://www.uscis.gov" target="_blank" rel="noopener" class="underline">USCIS</a> | <a href="https://www.hrsa.gov" target="_blank" rel="noopener" class="underline">HRSA</a>.</span>
+    </div>
+  </div>
+</BaseLayout>
