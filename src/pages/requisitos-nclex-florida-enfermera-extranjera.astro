@@ -4,7 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 const faqs = [
   {
     question: "¿Qué necesita una enfermera extranjera para presentar el NCLEX en Florida?",
-    answer: "Solicitar la licencia por examen a la Junta de Enfermería de Florida, pagar la tarifa de la junta ($110 según su solicitud revisada en abril de 2022), hacer que un organismo aprobado por la junta (por ejemplo TruMerit/CGFNS) le envíe directamente la revisión completa de tus credenciales, demostrar competencia en inglés, enviar huellas dactilares electrónicas y esperar la aprobación escrita de la junta antes de registrarte en Pearson VUE.",
+    answer: "Solicitar la licencia por examen a la Junta de Enfermería de Florida, pagar la tarifa de la junta ($110 según la página de requisitos RN de la junta), hacer que un organismo aprobado por la junta (por ejemplo TruMerit/CGFNS) le envíe directamente la revisión completa de tus credenciales, demostrar competencia en inglés, enviar huellas dactilares electrónicas y esperar la aprobación escrita de la junta antes de registrarte en Pearson VUE.",
   },
   {
     question: "¿Cuánto cuesta el NCLEX para Florida?",
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "¿Cuándo debo registrarme en Pearson VUE si estudié fuera de Estados Unidos?",
-    answer: "Después de recibir la aprobación escrita de la junta. La solicitud de Florida indica que quienes se educaron fuera de EE.UU. no deben registrarse en Pearson VUE hasta tenerla. Luego, la Autorización para Examinarte (ATT) tiene una vigencia de 90 días y la junta no concede prórrogas.",
+    answer: "Después de recibir la aprobación escrita de la junta. La solicitud de Florida indica que quienes se educaron fuera de EE.UU. no deben registrarse en Pearson VUE hasta tenerla. La Autorización para Examinarte (ATT) tiene una fecha de vencimiento y, según la junta, no se conceden prórrogas: si no rindes antes, te registras de nuevo en Pearson VUE. Confirma el plazo exacto en tu ATT.",
   },
   {
     question: "¿Cuántas veces puedo repetir el NCLEX en Florida?",
@@ -59,12 +59,12 @@ const faqs = [
         <h2 class="text-2xl font-bold text-gray-900 mb-4">Los pasos, en orden</h2>
         <ol class="list-decimal pl-6 text-gray-600 space-y-3 leading-relaxed">
           <li><strong>Revisión completa de credenciales.</strong> La solicitud de la junta pide que un organismo aprobado la envíe de forma electrónica y directa; la junta ya no acepta copias en papel. La solicitud de Florida cita a CGFNS (hoy TruMerit) y a Josef Silny &amp; Associates como evaluadores aprobados. Confirma la lista vigente en la junta. Detalle en nuestra <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">guía de homologación</a>.</li>
-          <li><strong>Solicitud a la junta (licencia por examen).</strong> Tarifa de $110 según la solicitud revisada en abril de 2022. El nombre debe coincidir exactamente con el que uses después en Pearson VUE y con tu documento de identidad.</li>
-          <li><strong>Competencia en inglés.</strong> La regla 64B9-3.002 del código administrativo de Florida exige demostrarla. La solicitud lista IELTS, TOEFL, TOEIC y MELAB entre los exámenes aceptados; revisa la hoja informativa actual de la junta para educadas fuera de EE.UU. Ver también <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="text-emerald-700 underline">requisitos de inglés y VisaScreen</a>.</li>
+          <li><strong>Solicitud a la junta (licencia por examen).</strong> Tarifa de $110 según la página de requisitos RN de la junta. El nombre debe coincidir exactamente con el que uses después en Pearson VUE y con tu documento de identidad.</li>
+          <li><strong>Competencia en inglés.</strong> La regla 64B9-3.002 del código administrativo de Florida exige demostrarla. Si estudiaste en inglés y con libros de texto en inglés, no necesitas demostrarlo; si no, la <a href="https://floridasnursing.gov/forms/licensure-info-edu-outside-us.pdf" target="_blank" rel="noopener" class="text-emerald-700 underline">hoja de la junta para educadas fuera de EE.UU.</a> acepta IELTS académico, Michigan English Test (MET), OET, PTE Academic y TOEFL, cada uno con un puntaje mínimo que debes revisar allí (la hoja no muestra fecha de revisión). Ver también <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="text-emerald-700 underline">requisitos de inglés y VisaScreen</a>.</li>
           <li><strong>Huellas dactilares electrónicas (Livescan).</strong> Todos los solicitantes las envían de forma electrónica con un proveedor aprobado; la junta no acepta tarjetas en papel. El costo varía según el proveedor.</li>
           <li><strong>Curso de Prevención de Errores Médicos.</strong> Son dos horas, de un proveedor aprobado por la junta, y se exigen antes de la licencia.</li>
           <li><strong>Aprobación escrita de la junta y registro en Pearson VUE.</strong> Las educadas fuera de EE.UU. no se registran hasta recibirla. Pearson VUE cobra $200 (suben a $350 para registros desde el 1 de febrero de 2027).</li>
-          <li><strong>Autorización para Examinarte (ATT) y examen.</strong> La ATT vale 90 días; si no rindes en ese plazo, te registras de nuevo. Lleva un pasaporte vigente: es la única identificación aceptada fuera de EE.UU.</li>
+          <li><strong>Autorización para Examinarte (ATT) y examen.</strong> La ATT tiene fecha de vencimiento y la junta no concede prórrogas: si no rindes antes, te registras de nuevo. Lleva un pasaporte vigente: es la única identificación aceptada fuera de EE.UU.</li>
         </ol>
       </section>
 
@@ -76,7 +76,7 @@ const faqs = [
               <tr><th class="px-6 py-3">Trámite</th><th class="px-6 py-3">Tarifa (USD)</th><th class="px-6 py-3">Fuente</th></tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-              <tr><td class="px-6 py-3">Solicitud a la Junta de Florida</td><td class="px-6 py-3 font-semibold">$110</td><td class="px-6 py-3"><a href="https://floridasnursing.gov/applications/LPN-RN-endorsement-app.pdf" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a></td></tr>
+              <tr><td class="px-6 py-3">Solicitud a la Junta de Florida</td><td class="px-6 py-3 font-semibold">$110</td><td class="px-6 py-3"><a href="https://floridasnursing.gov/tag/registered-nurse-rn" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a></td></tr>
               <tr><td class="px-6 py-3">Evaluación CES Professional (TruMerit)</td><td class="px-6 py-3 font-semibold">$485</td><td class="px-6 py-3"><a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener" class="underline">TruMerit</a></td></tr>
               <tr><td class="px-6 py-3">NCLEX-RN (Pearson VUE) hasta el 31 de enero de 2027</td><td class="px-6 py-3 font-semibold">$200</td><td class="px-6 py-3"><a href="https://www.ncsbn.org/exams/application-registration/fees-and-payment.page" target="_blank" rel="noopener" class="underline">NCSBN</a></td></tr>
               <tr><td class="px-6 py-3">NCLEX-RN desde el 1 de febrero de 2027</td><td class="px-6 py-3 font-semibold">$350</td><td class="px-6 py-3"><a href="https://www.ncsbn.org/news/nclex-fee-changes-feb1" target="_blank" rel="noopener" class="underline">NCSBN</a></td></tr>
