@@ -1,0 +1,17 @@
+---
+import CountryGuide from "@/components/CountryGuide.astro";
+const otros = [
+  { slug: "enfermeras-de-mexico-en-estados-unidos", label: "Enfermeras de México en Estados Unidos" },
+  { slug: "enfermeras-de-espana-en-estados-unidos", label: "Enfermeras de España en Estados Unidos" },
+  { slug: "enfermeras-de-peru-en-estados-unidos", label: "Enfermeras de Perú en Estados Unidos" },
+];
+---
+<CountryGuide
+  pais="Colombia"
+  slug="enfermeras-de-colombia-en-estados-unidos"
+  descripcion="Proceso y costos oficiales para una enfermera con título de Colombia: evaluación TruMerit, NCLEX, licencia y VisaScreen. Tarifas de fuentes oficiales, sin promesas."
+  centroExamen={false}
+  paisesCercanos="México y Brasil"
+  notaPais="Tu título y tu tarjeta o registro profesional de Colombia son los documentos que revisa la evaluación de credenciales; cada junta estatal decide qué informe acepta."
+  otros={otros}
+/>
