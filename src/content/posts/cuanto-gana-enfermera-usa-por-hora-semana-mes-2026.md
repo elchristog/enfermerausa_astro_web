@@ -43,9 +43,12 @@ El salario cambia mucho según el estado. Con las medias estatales del BLS (mayo
 | Estado | Media anual | Por hora | Semana (40 h) | Mes |
 | --- | --- | --- | --- | --- |
 | California | $150,280 | $72.25 | ~$2,890 | ~$12,523 |
+| Nueva York | $113,440 | $54.54 | ~$2,182 | ~$9,453 |
+| Texas | $95,380 | $45.86 | ~$1,834 | ~$7,948 |
+| Florida | $90,650 | $43.58 | ~$1,743 | ~$7,554 |
 | Nacional (media) | $101,420 | $48.76 | ~$1,950 | ~$8,452 |
 
-Ojo: el bruto más alto no siempre es el que más dinero deja en tu cuenta. California cobra impuesto estatal a la renta y tiene el costo de vivienda más alto del país; Texas y Florida no cobran impuesto estatal. Las cifras de Nueva York, Texas y Florida las retiramos de esta tabla hasta contrastarlas con la publicación oficial del BLS: los valores vigentes por estado están en nuestra [guía de salarios por estado](/salarios-de-enfermeros-en-estados-unidos/) y en la [comparativa California vs. Texas vs. Florida](/blog/posts/salario-enfermera-texas-vs-florida-vs-california-2026/).
+Ojo: el bruto más alto no siempre es el que más dinero deja en tu cuenta. California cobra impuesto estatal a la renta y tiene el costo de vivienda más alto del país; Texas y Florida no cobran impuesto estatal. Fuente de la tabla: BLS OEWS, mayo 2025 (salario medio anual, ocupación 29-1141). La comparación completa está en nuestra [guía de salarios por estado](/salarios-de-enfermeros-en-estados-unidos/) y en la [comparativa California vs. Texas vs. Florida](/blog/posts/salario-enfermera-texas-vs-florida-vs-california-2026/).
 
 ## Horas extra y diferenciales: cómo sube el pago real
 
