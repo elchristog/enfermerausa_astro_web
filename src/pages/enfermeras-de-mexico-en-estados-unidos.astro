@@ -1,0 +1,17 @@
+---
+import CountryGuide from "@/components/CountryGuide.astro";
+const otros = [
+  { slug: "enfermeras-de-colombia-en-estados-unidos", label: "Enfermeras de Colombia en Estados Unidos" },
+  { slug: "enfermeras-de-espana-en-estados-unidos", label: "Enfermeras de España en Estados Unidos" },
+  { slug: "enfermeras-de-peru-en-estados-unidos", label: "Enfermeras de Perú en Estados Unidos" },
+];
+---
+<CountryGuide
+  pais="México"
+  slug="enfermeras-de-mexico-en-estados-unidos"
+  descripcion="Proceso y costos oficiales para una enfermera con título de México: evaluación TruMerit, NCLEX (hay centros en México), licencia y VisaScreen. Tarifas de fuentes oficiales."
+  centroExamen={true}
+  paisesCercanos=""
+  notaPais="Tu título y tu cédula profesional de México son los documentos que revisa la evaluación de credenciales; cada junta estatal decide qué informe acepta."
+  otros={otros}
+/>
