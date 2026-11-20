@@ -1,0 +1,17 @@
+---
+import CountryGuide from "@/components/CountryGuide.astro";
+const otros = [
+  { slug: "enfermeras-de-colombia-en-estados-unidos", label: "Enfermeras de Colombia en Estados Unidos" },
+  { slug: "enfermeras-de-mexico-en-estados-unidos", label: "Enfermeras de México en Estados Unidos" },
+  { slug: "enfermeras-de-peru-en-estados-unidos", label: "Enfermeras de Perú en Estados Unidos" },
+];
+---
+<CountryGuide
+  pais="España"
+  slug="enfermeras-de-espana-en-estados-unidos"
+  descripcion="Proceso y costos oficiales para una enfermera con título de España: evaluación TruMerit, NCLEX (hay centros en España), licencia y VisaScreen. Tarifas de fuentes oficiales."
+  centroExamen={true}
+  paisesCercanos=""
+  notaPais="Tu título universitario y tu colegiación de España son los documentos que revisa la evaluación de credenciales; cada junta estatal decide qué informe acepta."
+  otros={otros}
+/>
