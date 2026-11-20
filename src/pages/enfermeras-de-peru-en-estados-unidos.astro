@@ -1,0 +1,17 @@
+---
+import CountryGuide from "@/components/CountryGuide.astro";
+const otros = [
+  { slug: "enfermeras-de-colombia-en-estados-unidos", label: "Enfermeras de Colombia en Estados Unidos" },
+  { slug: "enfermeras-de-mexico-en-estados-unidos", label: "Enfermeras de México en Estados Unidos" },
+  { slug: "enfermeras-de-espana-en-estados-unidos", label: "Enfermeras de España en Estados Unidos" },
+];
+---
+<CountryGuide
+  pais="Perú"
+  slug="enfermeras-de-peru-en-estados-unidos"
+  descripcion="Proceso y costos oficiales para una enfermera con título de Perú: evaluación TruMerit, NCLEX, licencia y VisaScreen. Tarifas de fuentes oficiales, sin promesas."
+  centroExamen={false}
+  paisesCercanos="México y Brasil"
+  notaPais="Tu título y tu registro en el Colegio de Enfermeros del Perú son los documentos que revisa la evaluación de credenciales; cada junta estatal decide qué informe acepta."
+  otros={otros}
+/>
