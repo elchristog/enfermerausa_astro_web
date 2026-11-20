@@ -1,0 +1,132 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "¿Qué necesita una enfermera extranjera para presentar el NCLEX en Florida?",
+    answer: "Solicitar la licencia por examen a la Junta de Enfermería de Florida, pagar la tarifa de la junta ($110 según su solicitud revisada en abril de 2022), hacer que un organismo aprobado por la junta (por ejemplo TruMerit/CGFNS) le envíe directamente la revisión completa de tus credenciales, demostrar competencia en inglés, enviar huellas dactilares electrónicas y esperar la aprobación escrita de la junta antes de registrarte en Pearson VUE.",
+  },
+  {
+    question: "¿Cuánto cuesta el NCLEX para Florida?",
+    answer: "La tarifa de la junta es $110 y Pearson VUE cobra $200 por el examen. NCSBN anunció que desde el 1 de febrero de 2027 el registro del NCLEX será $350. Si rindes el examen en un centro fuera de Estados Unidos se suman $150 de cargo internacional. La evaluación de credenciales (TruMerit CES Professional, $485) y las huellas dactilares se pagan aparte.",
+  },
+  {
+    question: "¿Cuándo debo registrarme en Pearson VUE si estudié fuera de Estados Unidos?",
+    answer: "Después de recibir la aprobación escrita de la junta. La solicitud de Florida indica que quienes se educaron fuera de EE.UU. no deben registrarse en Pearson VUE hasta tenerla. Luego, la Autorización para Examinarte (ATT) tiene una vigencia de 90 días y la junta no concede prórrogas.",
+  },
+  {
+    question: "¿Cuántas veces puedo repetir el NCLEX en Florida?",
+    answer: "Si no apruebas, presentas una solicitud de reexamen a la junta y te registras de nuevo con Pearson VUE; NCSBN exige esperar al menos 45 días entre intentos. Tras tres fracasos consecutivos, la ley de Florida pide completar un curso de repaso aprobado por la junta.",
+  },
+  {
+    question: "¿Florida está en el Nurse Licensure Compact?",
+    answer: "Sí. Una licencia multiestatal de Florida puede usarse en los demás estados del compacto. Para solicitar la multiestatal, las enfermeras formadas fuera de EE.UU. también necesitan la revisión completa de credenciales por un organismo aprobado por la junta.",
+  },
+];
+---
+
+<BaseLayout
+  title="Requisitos NCLEX en Florida para enfermera extranjera (2026)"
+  description="Pasos, costos y requisitos de la Junta de Enfermería de Florida para una enfermera con título extranjero: credenciales, inglés, huellas, Pearson VUE y NCLEX. Fuentes oficiales."
+  canonical="https://enfermerausa.com/requisitos-nclex-florida-enfermera-extranjera/"
+  type="info"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">Florida · Licencia RN</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Requisitos para presentar el NCLEX en Florida si eres enfermera extranjera
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          Florida exige que un organismo que su junta apruebe revise por completo tus credenciales y que se las envíe directamente. Solo después de la aprobación escrita de la junta te registras con Pearson VUE. Esta guía resume los pasos, con las tarifas oficiales.
+        </p>
+        <p class="text-sm text-gray-500 mb-6">
+          Revisado el 20 de noviembre de 2026 con las páginas de la <a href="https://floridasnursing.gov/" target="_blank" rel="noopener" class="underline text-emerald-700">Florida Board of Nursing</a>, NCSBN y TruMerit. Los requisitos y tarifas cambian: confirma en la junta antes de pagar.
+        </p>
+        <a href="/sesion-informativa/?desde=florida" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow gap-2">
+          <span>Sesión informativa gratuita</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-10">
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Los pasos, en orden</h2>
+        <ol class="list-decimal pl-6 text-gray-600 space-y-3 leading-relaxed">
+          <li><strong>Revisión completa de credenciales.</strong> La solicitud de la junta pide que un organismo aprobado la envíe de forma electrónica y directa; la junta ya no acepta copias en papel. La solicitud de Florida cita a CGFNS (hoy TruMerit) y a Josef Silny &amp; Associates como evaluadores aprobados. Confirma la lista vigente en la junta. Detalle en nuestra <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">guía de homologación</a>.</li>
+          <li><strong>Solicitud a la junta (licencia por examen).</strong> Tarifa de $110 según la solicitud revisada en abril de 2022. El nombre debe coincidir exactamente con el que uses después en Pearson VUE y con tu documento de identidad.</li>
+          <li><strong>Competencia en inglés.</strong> La regla 64B9-3.002 del código administrativo de Florida exige demostrarla. La solicitud lista IELTS, TOEFL, TOEIC y MELAB entre los exámenes aceptados; revisa la hoja informativa actual de la junta para educadas fuera de EE.UU. Ver también <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="text-emerald-700 underline">requisitos de inglés y VisaScreen</a>.</li>
+          <li><strong>Huellas dactilares electrónicas (Livescan).</strong> Todos los solicitantes las envían de forma electrónica con un proveedor aprobado; la junta no acepta tarjetas en papel. El costo varía según el proveedor.</li>
+          <li><strong>Curso de Prevención de Errores Médicos.</strong> Son dos horas, de un proveedor aprobado por la junta, y se exigen antes de la licencia.</li>
+          <li><strong>Aprobación escrita de la junta y registro en Pearson VUE.</strong> Las educadas fuera de EE.UU. no se registran hasta recibirla. Pearson VUE cobra $200 (suben a $350 para registros desde el 1 de febrero de 2027).</li>
+          <li><strong>Autorización para Examinarte (ATT) y examen.</strong> La ATT vale 90 días; si no rindes en ese plazo, te registras de nuevo. Lleva un pasaporte vigente: es la única identificación aceptada fuera de EE.UU.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Costos oficiales</h2>
+        <div class="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
+          <table class="w-full text-left text-sm text-gray-700">
+            <thead class="bg-gray-100 font-bold text-gray-900 uppercase text-xs">
+              <tr><th class="px-6 py-3">Trámite</th><th class="px-6 py-3">Tarifa (USD)</th><th class="px-6 py-3">Fuente</th></tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="px-6 py-3">Solicitud a la Junta de Florida</td><td class="px-6 py-3 font-semibold">$110</td><td class="px-6 py-3"><a href="https://floridasnursing.gov/applications/LPN-RN-endorsement-app.pdf" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a></td></tr>
+              <tr><td class="px-6 py-3">Evaluación CES Professional (TruMerit)</td><td class="px-6 py-3 font-semibold">$485</td><td class="px-6 py-3"><a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener" class="underline">TruMerit</a></td></tr>
+              <tr><td class="px-6 py-3">NCLEX-RN (Pearson VUE) hasta el 31 de enero de 2027</td><td class="px-6 py-3 font-semibold">$200</td><td class="px-6 py-3"><a href="https://www.ncsbn.org/exams/application-registration/fees-and-payment.page" target="_blank" rel="noopener" class="underline">NCSBN</a></td></tr>
+              <tr><td class="px-6 py-3">NCLEX-RN desde el 1 de febrero de 2027</td><td class="px-6 py-3 font-semibold">$350</td><td class="px-6 py-3"><a href="https://www.ncsbn.org/news/nclex-fee-changes-feb1" target="_blank" rel="noopener" class="underline">NCSBN</a></td></tr>
+              <tr><td class="px-6 py-3">Cargo por rendir fuera de EE.UU.</td><td class="px-6 py-3 font-semibold">$150</td><td class="px-6 py-3">NCSBN</td></tr>
+              <tr><td class="px-6 py-3">Reexamen: solicitud a la junta</td><td class="px-6 py-3 font-semibold">$50</td><td class="px-6 py-3"><a href="https://floridasnursing.gov/applications/LPN-RN-re-exam-app.pdf" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">Sin contar inglés, traducciones, huellas dactilares ni el curso de errores médicos, la suma de junta + CES + NCLEX actual es $795 ($110 + $485 + $200), y $945 con el NCLEX desde febrero de 2027 ($110 + $485 + $350).</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Qué hacer después</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Con la licencia aprobada sigue el empleo con patrocinio y, si necesitas visa, el VisaScreen y la petición del empleador. Mira <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">proceso de visa y relocalización</a>, <a href="/que-es-el-visascreen-costo-requisitos-pasos/" class="text-emerald-700 underline">qué es el VisaScreen</a> y <a href="/salario-enfermera-florida/" class="text-emerald-700 underline">cuánto gana una enfermera en Florida</a>.
+        </p>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Enfermera en Estados Unidos es un servicio de acompañamiento en español: <strong>no es una agencia de colocación</strong> y no garantiza aprobación del NCLEX, empleo ni resultado migratorio.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <div class="p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="py-12 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-md mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿Florida es tu estado objetivo?</h2>
+      <p class="text-emerald-100 text-sm mb-6">En la sesión informativa revisamos el recorrido completo con el estado que elijas.</p>
+      <a href="/sesion-informativa/?desde=florida" class="inline-block bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg">Reservar sesión informativa</a>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes oficiales</span>
+      <a href="https://floridasnursing.gov/" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a>
+      · <a href="https://floridasnursing.gov/forms/lpn-rn-exam-app.pdf" target="_blank" rel="noopener" class="underline">Solicitud por examen (DH-MQA 1094)</a>
+      · <a href="https://www.ncsbn.org/exams/application-registration/fees-and-payment.page" target="_blank" rel="noopener" class="underline">NCSBN, tarifas</a>
+      · <a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener" class="underline">TruMerit, tarifas</a>
+    </div>
+  </div>
+</BaseLayout>
