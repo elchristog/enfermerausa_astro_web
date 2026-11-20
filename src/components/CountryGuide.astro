@@ -1,0 +1,168 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const { pais, gentilicio, slug, descripcion, centroExamen, paisesCercanos, notaPais, otros } = Astro.props;
+
+const canonical = `https://enfermerausa.com/${slug}/`;
+const nclexAhora = 200;
+const nclexDesdeFeb = 350;
+const ces = 485;
+const visascreen = 740;
+const junta = 110;
+const intl = 150;
+const base = ces + visascreen + junta;
+const totalAhora = base + nclexAhora + (centroExamen ? 0 : 0);
+const totalDesdeFeb = base + nclexDesdeFeb;
+const fmt = (n) => `$${n.toLocaleString('en-US')}`;
+
+const faqs = [
+  {
+    question: `¿Puedo trabajar como enfermera en Estados Unidos con título de ${pais}?`,
+    answer: `Sí es posible, pero el título de ${pais} no se acepta tal cual: la junta de enfermería del estado pide una evaluación de credenciales (por ejemplo el informe CES Professional de TruMerit/CGFNS), aprobar el examen NCLEX-RN y obtener la licencia estatal. Para la visa de residencia por empleo, el VisaScreen de TruMerit también se exige. Ninguna página puede garantizarte resultado: lo decide cada junta y USCIS.`,
+  },
+  {
+    question: `¿Cuánto cuesta el proceso para una enfermera de ${pais}?`,
+    answer: `Con las tarifas oficiales vigentes: evaluación de credenciales CES Professional ${fmt(ces)}, VisaScreen ${fmt(visascreen)}, examen NCLEX ${fmt(nclexAhora)} (sube a ${fmt(nclexDesdeFeb)} desde el 1 de febrero de 2027) y la tarifa de la junta estatal (en Florida, ${fmt(junta)}). Sumadas, ${fmt(totalAhora)} con el NCLEX actual y ${fmt(totalDesdeFeb)} desde el 1 de febrero de 2027, sin contar examen de inglés, traducciones, huellas dactilares, viaje ni los trámites migratorios. Si rindes el NCLEX en un centro fuera de Estados Unidos se suman ${fmt(intl)}.`,
+  },
+  {
+    question: `¿Dónde se puede rendir el NCLEX desde ${pais}?`,
+    answer: centroExamen
+      ? `La lista oficial de NCSBN incluye centros de examen en ${pais}. Se agenda con Pearson VUE una vez que la junta te da la Autorización para Examinarte (ATT).`
+      : `La lista oficial de NCSBN no incluye centros de examen en ${pais}. Los países de la lista más cercanos son ${paisesCercanos}; también puedes rendirlo dentro de Estados Unidos. Confirma siempre los centros vigentes en Pearson VUE antes de pagar.`,
+  },
+  {
+    question: `¿Enfermera en Estados Unidos es una agencia de colocación?`,
+    answer: `No. Es un servicio de acompañamiento en español: te explicamos los pasos oficiales y te acompañamos en el proceso. No garantizamos aprobación del NCLEX, empleo ni resultado migratorio. Las tarifas de esta página las cobran directamente TruMerit, NCSBN/Pearson VUE, las juntas estatales y USCIS.`,
+  },
+];
+---
+
+<BaseLayout
+  title={`Enfermera de ${pais} en Estados Unidos: proceso y costos oficiales (2026)`}
+  description={descripcion}
+  canonical={canonical}
+  type="info"
+  faqs={faqs}
+>
+  <div class="py-12 md:py-20 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl">
+        <span class="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full">{pais} · Proceso y costos</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6">
+          Cómo trabajar de enfermera en Estados Unidos si estudiaste en {pais}
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          El camino tiene cuatro etapas oficiales: evaluar tu título, aprobar el NCLEX-RN, obtener la licencia del estado y, si necesitas visa de trabajo, el VisaScreen y el trámite migratorio con un empleador que te patrocine. Aquí están las tarifas oficiales de cada etapa para quien estudió en {pais}.
+        </p>
+        <p class="text-sm text-gray-500 mb-6">
+          Revisado el 20 de noviembre de 2026 con las páginas oficiales de TruMerit, NCSBN, la Junta de Enfermería de Florida y USCIS. Las tarifas cambian: confírmalas en cada fuente antes de pagar.
+        </p>
+        <a href="/sesion-informativa/?desde=pais" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow gap-2">
+          <span>Sesión informativa gratuita</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 max-w-4xl space-y-10">
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Los pasos, en orden</h2>
+        <ol class="list-decimal pl-6 text-gray-600 space-y-3 leading-relaxed">
+          <li><strong>Elige el estado donde pedirás la licencia.</strong> La junta de ese estado define sus requisitos. Ejemplo de estado con guía propia: <a href="/requisitos-nclex-florida-enfermera-extranjera/" class="text-emerald-700 underline">requisitos de Florida para enfermera extranjera</a>.</li>
+          <li><strong>Evalúa tu título.</strong> Un organismo que la junta acepte revisa tu formación y tu licencia de {pais}. El más usado es el informe <em>CES Professional</em> de <a href="https://www.trumerit.org/" target="_blank" rel="noopener" class="text-emerald-700 underline">TruMerit (antes CGFNS)</a>. Detalle en nuestra <a href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/" class="text-emerald-700 underline">guía de homologación</a>.</li>
+          <li><strong>Demuestra inglés</strong> si la junta o la visa lo piden. Mira <a href="/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/" class="text-emerald-700 underline">requisitos de inglés y VisaScreen</a>.</li>
+          <li><strong>Obtén la autorización de la junta y rinde el NCLEX-RN</strong> con Pearson VUE. Más en <a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">licencia y examen NCLEX</a>.</li>
+          <li><strong>VisaScreen y visa.</strong> El <a href="/que-es-el-visascreen-costo-requisitos-pasos/" class="text-emerald-700 underline">VisaScreen</a> es el requisito de TruMerit para visas de trabajo; la petición migratoria la presenta tu empleador. Ver <a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">proceso de visa y relocalización</a>.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Costos oficiales para una enfermera de {pais}</h2>
+        <div class="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
+          <table class="w-full text-left text-sm text-gray-700">
+            <thead class="bg-gray-100 font-bold text-gray-900 uppercase text-xs">
+              <tr>
+                <th class="px-6 py-3">Trámite</th>
+                <th class="px-6 py-3">Tarifa (USD)</th>
+                <th class="px-6 py-3">Quién la cobra</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="px-6 py-3">Evaluación de credenciales CES Professional</td><td class="px-6 py-3 font-semibold">{fmt(ces)}</td><td class="px-6 py-3"><a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener" class="underline">TruMerit</a></td></tr>
+              <tr><td class="px-6 py-3">Informe de inglés (si la junta lo pide)</td><td class="px-6 py-3 font-semibold">$125</td><td class="px-6 py-3">TruMerit</td></tr>
+              <tr><td class="px-6 py-3">VisaScreen (solicitud inicial)</td><td class="px-6 py-3 font-semibold">{fmt(visascreen)}</td><td class="px-6 py-3">TruMerit</td></tr>
+              <tr><td class="px-6 py-3">Solicitud a la junta estatal (ejemplo: Florida)</td><td class="px-6 py-3 font-semibold">{fmt(junta)}</td><td class="px-6 py-3"><a href="https://floridasnursing.gov/" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a></td></tr>
+              <tr><td class="px-6 py-3">Examen NCLEX-RN (hasta 31 ene 2027)</td><td class="px-6 py-3 font-semibold">{fmt(nclexAhora)}</td><td class="px-6 py-3"><a href="https://www.ncsbn.org/exams/application-registration/fees-and-payment.page" target="_blank" rel="noopener" class="underline">NCSBN / Pearson VUE</a></td></tr>
+              <tr><td class="px-6 py-3">Examen NCLEX-RN (desde 1 feb 2027)</td><td class="px-6 py-3 font-semibold">{fmt(nclexDesdeFeb)}</td><td class="px-6 py-3">NCSBN / Pearson VUE</td></tr>
+              <tr><td class="px-6 py-3">Cargo por rendir en un centro fuera de EE.UU.</td><td class="px-6 py-3 font-semibold">{fmt(intl)}</td><td class="px-6 py-3">NCSBN / Pearson VUE</td></tr>
+              <tr><td class="px-6 py-3">Ajuste de estatus I-485 (mayor de 14 años; el empleador paga la petición I-140)</td><td class="px-6 py-3 font-semibold">$1,440 en papel · $1,390 en línea</td><td class="px-6 py-3"><a href="https://www.uscis.gov/g-1055" target="_blank" rel="noopener" class="underline">USCIS</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">
+          <strong>Suma de los cuatro pagos de licencia y visa:</strong> {fmt(totalAhora)} con el NCLEX actual y {fmt(totalDesdeFeb)} con el NCLEX desde el 1 de febrero de 2027 (CES + VisaScreen + junta de Florida + NCLEX). No incluye examen de inglés, traducciones de documentos, huellas dactilares, exámenes médicos, viaje ni el I-485.
+        </p>
+        <p class="text-xs text-gray-500 mt-2">Otros estados cobran otra tarifa de junta. La tarifa de Florida es la que publica su junta en su solicitud (revisión de abril de 2022).</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Lo que cambia por venir de {pais}</h2>
+        <ul class="list-disc pl-6 text-gray-600 space-y-2 leading-relaxed">
+          <li>{notaPais}</li>
+          <li>TruMerit tiene una página para elegir tu país de origen con los documentos que pide: <a href="https://www.trumerit.org/country/" target="_blank" rel="noopener" class="text-emerald-700 underline">elegir país en TruMerit</a>. Revísala antes de pedir documentos a tu universidad o a tu colegio profesional.</li>
+          <li>{centroExamen ? `NCSBN lista centros de examen en ${pais}.` : `NCSBN no lista centros de examen en ${pais}; los más cercanos de la lista oficial son ${paisesCercanos}.`} Consulta la <a href="https://www.ncsbn.org/exams/testing-locations.page" target="_blank" rel="noopener" class="text-emerald-700 underline">lista oficial de centros</a>.</li>
+        </ul>
+      </section>
+
+      <section class="bg-amber-50 border border-amber-100 rounded-2xl p-6">
+        <h2 class="text-lg font-bold text-gray-900 mb-2">Qué somos y qué no somos</h2>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Enfermera en Estados Unidos es un servicio de acompañamiento en español para enfermeras y enfermeros hispanos. <strong>No somos una agencia de colocación</strong> y no prometemos aprobación del NCLEX, empleo ni resultado migratorio: esas decisiones son de las juntas, de los empleadores y de USCIS.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+        <div class="space-y-4">
+          {faqs.map((f) => (
+            <div class="p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">{f.question}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
+        <h2 class="text-xl font-bold text-gray-900 mb-3">Otras guías por país</h2>
+        <ul class="text-sm text-gray-700 space-y-2">
+          {otros.map((o) => (
+            <li><a href={`/${o.slug}/`} class="text-emerald-700 underline font-semibold">{o.label}</a></li>
+          ))}
+          <li><a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline font-semibold">Cuánto gana una enfermera en Estados Unidos</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="py-12 bg-emerald-900 text-white text-center">
+    <div class="max-w-screen-md mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿Quieres revisar tu caso?</h2>
+      <p class="text-emerald-100 text-sm mb-6">En la sesión informativa gratuita revisamos los pasos con tu título y tu país, en español.</p>
+      <a href="/sesion-informativa/?desde=pais" class="inline-block bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg">Reservar sesión informativa</a>
+    </div>
+  </section>
+
+  <div class="max-w-screen-xl mx-auto px-4 my-8">
+    <div class="bg-slate-100 p-4 rounded-lg border border-slate-300 text-xs text-slate-700">
+      <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-1 rounded mr-2">Fuentes oficiales</span>
+      <a href="https://www.trumerit.org/support/fee-schedule" target="_blank" rel="noopener" class="underline">TruMerit, tarifas</a>
+      · <a href="https://www.ncsbn.org/exams/application-registration/fees-and-payment.page" target="_blank" rel="noopener" class="underline">NCSBN, tarifas NCLEX</a>
+      · <a href="https://www.ncsbn.org/exams/testing-locations.page" target="_blank" rel="noopener" class="underline">NCSBN, centros de examen</a>
+      · <a href="https://floridasnursing.gov/" target="_blank" rel="noopener" class="underline">Florida Board of Nursing</a>
+      · <a href="https://www.uscis.gov/g-1055" target="_blank" rel="noopener" class="underline">USCIS, tarifas G-1055</a>
+    </div>
+  </div>
+</BaseLayout>
