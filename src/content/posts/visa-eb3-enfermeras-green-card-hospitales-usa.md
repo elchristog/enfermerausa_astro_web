@@ -14,6 +14,8 @@ tags:
 
 # Visa EB-3 para Enfermeras: Residencia Permanente Directa en EE.UU.
 
+> **Actualización 21-nov-2026:** el Departamento de Trabajo propuso eliminar Schedule A; es una propuesta en comentarios hasta el 19-ene-2027 y hoy el proceso sigue igual. Lee las [preguntas frecuentes sobre la propuesta](/blog/posts/propuesta-eliminar-schedule-a-enfermeras-preguntas-frecuentes/).
+
 La enfermería profesional está designada en el **Grupo I de Schedule A** por el Departamento de Trabajo de EE.UU. Por esa designación, la petición EB-3 no requiere la certificación laboral (PERM) que piden otras ocupaciones: el empleador presenta la documentación requerida directamente junto con la petición de inmigración, según USCIS. Esto ahorra uno de los pasos más largos del proceso migratorio estándar.
 
 En esta guía encontrarás los beneficios, los requisitos exactos que verifica el empleador y el proceso paso a paso, con las fuentes oficiales enlazadas.
