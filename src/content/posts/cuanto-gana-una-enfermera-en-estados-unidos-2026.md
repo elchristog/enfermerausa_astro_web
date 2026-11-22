@@ -4,8 +4,8 @@ pubDate: 2026-10-12
 team: "david-lee"
 author: "Alejandra Martínez, RN, BSN, IBCLC"
 authorRole: "Fundadora de Enfermera en Estados Unidos y rnnclex.com"
-title: "Cuánto gana una enfermera extranjera en EE.UU. (2026)"
-description: "Qué sueldo esperar si tu título es de otro país: cómo cambia por estado y qué pasos te separan de la licencia RN. Datos del BLS, sin promesas."
+title: "Cuánto gana una enfermera extranjera en EE.UU.: $97,550 al año (2026)"
+description: "Una RN gana $97,550 al año ($46.90 por hora) según el BLS, sin escala distinta por ser extranjera. Sueldo por estado y pasos para llegar a la licencia."
 image:
   url: "https://gwvckixiegkllthleuyt.supabase.co/storage/v1/object/public/workspace-article-images-public/a0def9d7-8362-4157-b458-31525a7548ac/featured.jpg"
   alt: "Cuánto gana una enfermera en Estados Unidos en 2026"
@@ -80,7 +80,7 @@ El BLS publica el promedio, pero tu número final depende de factores concretos:
 
 ## Cuánto ganarías tú si tu título es extranjero
 
-No hay un sueldo especial para enfermeras extranjeras: una vez que tienes la licencia de RN, cobras como cualquier otra enfermera del estado y la especialidad. Lo que cambia es el camino para llegar ahí.
+No hay un sueldo especial para enfermeras extranjeras: una vez que tienes la licencia de RN, cobras como cualquier otra enfermera del estado y la especialidad. Lo que cambia es el camino para llegar ahí. Si quieres ver cómo sería ese camino con tu título y tu país, en la [sesión informativa gratuita](/sesion-informativa/?desde=cuanto-gana-2026) lo revisamos en español.
 
 En la práctica los pasos son estos:
 
@@ -131,4 +131,4 @@ Es bruto, antes de impuestos. El neto depende de si tu estado cobra impuesto sob
 
 Antes de fijarte en un número, pregunta cuánto tardarías en llegar a tener la licencia. En 2026 el sueldo importa, pero el paso que más define tu fecha de inicio es la homologación y el NCLEX, no el salario.
 
-Si quieres ver el camino completo para tu caso, en la sesión informativa gratuita de Enfermera en Estados Unidos lo explicamos en español y sin compromiso de compra: [agendar sesión informativa gratuita](https://bit.ly/3R6RbFW).
+Si quieres ver el camino completo para tu caso, en la sesión informativa gratuita de Enfermera en Estados Unidos lo explicamos en español y sin compromiso de compra: [agendar sesión informativa gratuita](/sesion-informativa/?desde=cuanto-gana-2026).

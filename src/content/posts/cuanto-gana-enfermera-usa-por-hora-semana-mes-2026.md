@@ -86,9 +86,9 @@ Estos números son para enfermeras **RN licenciadas en Estados Unidos**. El cami
 2. **Aprobar el NCLEX-RN** y obtener la licencia: [licencia y NCLEX](/licencia-de-enfermeria-y-examen-nclex-usa/).
 3. **Visa y empleo con patrocinio** (típicamente EB-3, Schedule A): [proceso de visa y relocalización](/proceso-de-visa-y-relocalizacion-para-enfermeras/).
 
-Si quieres revisar tus números concretos —costos, tiempos y ofertas reales—, reserva tu lugar en la [sesión informativa gratuita](/sesion-informativa/): en 30 minutos te explicamos la ruta completa en español.
+Si quieres revisar tus números concretos —costos, tiempos y ofertas reales—, reserva tu lugar en la [sesión informativa gratuita](/sesion-informativa/?desde=por-hora): en 30 minutos te explicamos la ruta completa en español.
 
-👉 [**Agendar sesión informativa**](https://bit.ly/3R6RbFW)
+👉 [**Agendar sesión informativa**](/sesion-informativa/?desde=por-hora)
 
 ### Fuente oficial
 
