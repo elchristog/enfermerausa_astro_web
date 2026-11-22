@@ -39,7 +39,7 @@ Estas son las fechas conocidas hoy:
 - **Después:** el Departamento de Trabajo tendría que revisar los comentarios y publicar una regla final. Estimamos que ese trámite tome como mínimo entre 6 y 8 meses; es una estimación, no una fecha oficial.
 - **Si se finaliza:** la regla entraría en vigor 60 días después de la regla final, con una transición de 30 días bajo las reglas actuales.
 
-Según la propia propuesta, el cambio afectaría a unas 23.800 peticiones al año.
+Se estima que el cambio afectaría a unas 23.800 peticiones al año.
 
 ## ¿Quiénes quedarían protegidos si se aprueba?
 
