@@ -144,7 +144,7 @@ No. La evaluación aporta información al expediente, pero la junta estatal deci
 
 ## Siguiente acción concreta
 
-Elige un estado objetivo y crea una lista con tres columnas: documento, institución que debe enviarlo y estado de recepción. Después contrasta esa lista con las instrucciones actuales de la junta estatal y de la entidad evaluadora. Enfermera en Estados Unidos puede ayudarte a entender el recorrido de homologación, NCLEX, empleo y visa en español sin confundir una etapa con otra.
+Elige un estado objetivo y crea una lista con tres columnas: documento, institución que debe enviarlo y estado de recepción. Después contrasta esa lista con las instrucciones actuales de la junta estatal y de la entidad evaluadora. Enfermera en Estados Unidos puede ayudarte a entender el recorrido de homologación, NCLEX, empleo y visa en español sin confundir una etapa con otra. Si quieres hacerlo con tu título y tu país en mente, reserva tu lugar en la [sesión informativa gratuita](/sesion-informativa/?desde=guia-homologacion): en vivo, en español y sin compromiso de compra.
 
 ### Fuentes oficiales
 
