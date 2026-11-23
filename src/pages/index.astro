@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import TrustpilotRating from "@/components/TrustpilotRating.astro";
 import { entrevistas } from "@/data/entrevistas.mjs";
 
 const recientes = entrevistas.slice(0, 3);
@@ -55,6 +56,7 @@ const testimonials = [
   canonical="https://enfermerausa.com/"
   type="home"
   faqs={faqs}
+  rating={true}
 >
   <section class="bg-gradient-to-b from-emerald-50/50 via-white to-white py-16 md:py-24 border-b border-gray-100">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -84,6 +86,7 @@ const testimonials = [
             Ver el proceso de homologación
           </a>
         </div>
+        <TrustpilotRating class="mt-6" />
         <p class="mt-6 text-sm text-gray-500">
           También: <a href="/ofertas-de-empleo-para-enfermeras-en-usa/" class="text-emerald-700 underline">empleo con sponsor</a>{" "}·{" "}<a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">NCLEX y licencia</a>{" "}·{" "}<a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">visa EB-3</a>{" "}·{" "}<a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline">salarios por estado</a>{" "}·{" "}<a href="/enfermera-sin-licencia-rn-en-estados-unidos/" class="text-emerald-700 underline">ya estoy en EE.UU. sin licencia RN</a>
         </p>
