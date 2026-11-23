@@ -3,9 +3,10 @@
 // cambia solo estos valores con lo que muestre el perfil público:
 // https://www.trustpilot.com/review/enfermerausa.com
 // Y actualiza a mano la línea "Calificación en Trustpilot" de public/llms.txt (archivo estático).
+// No llamar "verificadas" a las reseñas: ninguna lleva la etiqueta Verified de Trustpilot.
 export const trustpilot = {
-  ratingValue: 4.1,            // TrustScore del perfil (de 1 a 5)
-  reviewCount: 5,              // número de reseñas del perfil
+  ratingValue: 4.3,            // TrustScore del perfil (de 1 a 5)
+  reviewCount: 7,              // número de reseñas del perfil
   verifiedOn: '2026-11-23',    // fecha en que se leyó del perfil público
   profileUrl: 'https://www.trustpilot.com/review/enfermerausa.com',
 
@@ -18,5 +19,5 @@ export const trustpilot = {
   locale: 'es-ES',
 };
 
-// Formato visible en español: 4,1
+// Formato visible en español: 4,3
 export const ratingEs = String(trustpilot.ratingValue).replace('.', ',');
