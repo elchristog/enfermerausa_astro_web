@@ -1,0 +1,22 @@
+// FUENTE ÚNICA de la calificación de Trustpilot.
+// Para actualizar la cifra en TODO el sitio (JSON-LD, texto visible y TrustBox)
+// cambia solo estos valores con lo que muestre el perfil público:
+// https://www.trustpilot.com/review/enfermerausa.com
+// Y actualiza a mano la línea "Calificación en Trustpilot" de public/llms.txt (archivo estático).
+export const trustpilot = {
+  ratingValue: 4.1,            // TrustScore del perfil (de 1 a 5)
+  reviewCount: 5,              // número de reseñas del perfil
+  verifiedOn: '2026-11-23',    // fecha en que se leyó del perfil público
+  profileUrl: 'https://www.trustpilot.com/review/enfermerausa.com',
+
+  // TrustBox (widget oficial). El ID de la unidad de negocio sale del portal de Trustpilot
+  // Business → Integraciones → TrustBox → «Obtener código» (data-businessunit-id).
+  // Mientras esté vacío NO se carga el widget; el texto visible y el JSON-LD sí funcionan.
+  businessUnitId: '',
+  // Plantilla «Micro Star». Confirma el ID en el fragmento que entrega el portal.
+  templateId: '5419b732fbfb950b10de65e5',
+  locale: 'es-ES',
+};
+
+// Formato visible en español: 4,1
+export const ratingEs = String(trustpilot.ratingValue).replace('.', ',');

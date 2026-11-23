@@ -14,14 +14,15 @@ interface Props {
   ogImage?: string;
   authorName?: string;
   authorRole?: string;
+  rating?: boolean;
 }
 
-const { title, description, canonical, type, faqs, datePublished, ogImage, authorName, authorRole } = Astro.props;
+const { title, description, canonical, type, faqs, datePublished, ogImage, authorName, authorRole, rating } = Astro.props;
 ---
 
 <html lang="es" class="scroll-smooth">
   <head>
-    <BaseHead title={title} description={description} canonical={canonical} type={type} faqs={faqs} datePublished={datePublished} ogImage={ogImage} authorName={authorName} authorRole={authorRole} />
+    <BaseHead title={title} description={description} canonical={canonical} type={type} faqs={faqs} datePublished={datePublished} ogImage={ogImage} authorName={authorName} authorRole={authorRole} rating={rating} />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://connect.facebook.net" />
     <link rel="dns-prefetch" href="https://px.get-ryze.ai" />
