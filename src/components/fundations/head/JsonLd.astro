@@ -1,4 +1,6 @@
 ---
+import { trustpilot } from "@/data/trustpilot.mjs";
+
 interface Props {
   type?: 'home' | 'service' | 'faq' | 'article' | 'info';
   title?: string;
@@ -9,6 +11,7 @@ interface Props {
   authorName?: string;
   authorRole?: string;
   image?: string;
+  rating?: boolean;
 }
 
 const {
@@ -20,8 +23,19 @@ const {
   datePublished = '2026-01-01',
   authorName,
   authorRole,
-  image
+  image,
+  rating = false
 } = Astro.props;
+
+// Calificación real de Trustpilot (valores en src/data/trustpilot.mjs). Solo se emite
+// en las páginas que muestran la calificación de forma visible (rating = true).
+const aggregateRating = {
+  "@type": "AggregateRating",
+  "ratingValue": String(trustpilot.ratingValue),
+  "bestRating": "5",
+  "worstRating": "1",
+  "reviewCount": String(trustpilot.reviewCount)
+};
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -37,8 +51,21 @@ const organizationSchema = {
     "https://www.facebook.com/enfermeraenestadosunidosusa",
     "https://www.youtube.com/@enfermeraenestadosunidos",
     "https://www.tiktok.com/@enfermeraenestadosunidos",
-    "https://www.linkedin.com/company/enfermera-en-estados-unidos"
-  ]
+    "https://www.linkedin.com/company/enfermera-en-estados-unidos",
+    ...(rating ? [trustpilot.profileUrl] : [])
+  ],
+  ...(rating ? { "aggregateRating": aggregateRating } : {})
+};
+
+// En páginas que no son la home, la misma entidad (@id) lleva solo la calificación.
+const organizationRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://enfermerausa.com/#organization",
+  "name": "Enfermera en Estados Unidos",
+  "url": "https://enfermerausa.com",
+  "sameAs": [trustpilot.profileUrl],
+  "aggregateRating": aggregateRating
 };
 
 const websiteSchema = {
@@ -130,6 +157,7 @@ const articleSchema = type === 'article' ? {
 
 {type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />}
 {type === 'home' && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
+{type !== 'home' && rating && <script type="application/ld+json" set:html={JSON.stringify(organizationRatingSchema)} />}
 {(type === 'service' || type === 'faq') && <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />}
 {type === 'info' && <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": url, "inLanguage": "es", "isPartOf": { "@id": "https://enfermerausa.com/#website" }, "publisher": { "@id": "https://enfermerausa.com/#organization" } })} />}
 {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
