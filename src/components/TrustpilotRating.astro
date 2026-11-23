@@ -1,0 +1,41 @@
+---
+// Calificación visible de Trustpilot + widget oficial (TrustBox).
+// Los valores vienen de src/data/trustpilot.mjs (un solo lugar).
+import { trustpilot, ratingEs } from "@/data/trustpilot.mjs";
+
+interface Props {
+  dark?: boolean;
+  class?: string;
+}
+const { dark = false, class: extra = "" } = Astro.props;
+const hasBox = Boolean(trustpilot.businessUnitId);
+const wrap = dark
+  ? "border-slate-700 bg-slate-900/70 text-slate-200"
+  : "border-slate-200 bg-white text-slate-700";
+const link = dark ? "text-emerald-400" : "text-emerald-700";
+---
+
+<div class={`mx-auto flex max-w-xl flex-col items-center gap-2 rounded-xl border px-4 py-3 text-center ${wrap} ${extra}`} data-trustpilot-rating>
+  <p class="text-sm">
+    <strong>Calificación en Trustpilot: {ratingEs}/5</strong>
+    ({trustpilot.reviewCount} reseñas verificadas) ·
+    <a href={trustpilot.profileUrl} target="_blank" rel="noopener noreferrer" class={`font-semibold underline ${link}`}>Ver las reseñas en Trustpilot</a>
+  </p>
+  {hasBox && (
+    <div
+      class="trustpilot-widget w-full"
+      data-locale={trustpilot.locale}
+      data-template-id={trustpilot.templateId}
+      data-businessunit-id={trustpilot.businessUnitId}
+      data-style-height="24px"
+      data-style-width="100%"
+      data-theme={dark ? "dark" : "light"}
+    >
+      <a href={trustpilot.profileUrl} target="_blank" rel="noopener noreferrer">Trustpilot</a>
+    </div>
+  )}
+</div>
+
+{hasBox && (
+  <script is:inline async src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"></script>
+)}
