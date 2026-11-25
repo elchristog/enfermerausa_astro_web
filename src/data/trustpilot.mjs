@@ -6,8 +6,8 @@
 // No llamar "verificadas" a las reseñas: ninguna lleva la etiqueta Verified de Trustpilot.
 export const trustpilot = {
   ratingValue: 4.4,            // TrustScore del perfil (de 1 a 5)
-  reviewCount: 10,             // número de reseñas del perfil
-  verifiedOn: '2026-11-24',    // fecha en que se leyó del perfil público
+  reviewCount: 12,             // número de reseñas del perfil
+  verifiedOn: '2026-11-25',    // fecha en que se leyó del perfil público
   profileUrl: 'https://www.trustpilot.com/review/enfermerausa.com',
 
   // TrustBox (widget oficial). El ID de la unidad de negocio sale del portal de Trustpilot
