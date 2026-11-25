@@ -10,13 +10,11 @@ export const trustpilot = {
   verifiedOn: '2026-11-25',    // fecha en que se leyó del perfil público
   profileUrl: 'https://www.trustpilot.com/review/enfermerausa.com',
 
-  // TrustBox (widget oficial). El ID de la unidad de negocio sale del portal de Trustpilot
-  // Business → Integraciones → TrustBox → «Obtener código» (data-businessunit-id).
-  // Mientras esté vacío NO se carga el widget; el texto visible y el JSON-LD sí funcionan.
-  businessUnitId: '',
-  // Plantilla «Micro Star». Confirma el ID en el fragmento que entrega el portal.
-  templateId: '5419b732fbfb950b10de65e5',
-  locale: 'es-ES',
+  // TrustBox (widget oficial) «Review Collector», tal como lo entrega el portal de Trustpilot Business.
+  // El script de arranque se carga UNA vez en src/layouts/BaseLayout.astro.
+  businessUnitId: '6b00c10230d26ccd32cb90f2',
+  templateId: '56278e9abfbbba0bdcd568bc',
+  locale: 'en-US', // tal como lo entrega Trustpilot (no se cambia a es-ES)
 };
 
 // Formato visible en español: 4,3
