@@ -4,9 +4,10 @@
 // https://www.trustpilot.com/review/enfermerausa.com
 // Y actualiza a mano la línea "Calificación en Trustpilot" de public/llms.txt (archivo estático).
 // No llamar "verificadas" a las reseñas: ninguna lleva la etiqueta Verified de Trustpilot.
+// DECISIÓN DEL DUEÑO: el sitio NO muestra cuántas reseñas hay (ni en texto visible ni en llms.txt).
 export const trustpilot = {
   ratingValue: 4.4,            // TrustScore del perfil (de 1 a 5)
-  reviewCount: 12,             // número de reseñas del perfil
+  reviewCount: 12,             // SOLO para el JSON-LD (AggregateRating exige reviewCount); NO renderizar en pantalla
   verifiedOn: '2026-11-25',    // fecha en que se leyó del perfil público
   profileUrl: 'https://www.trustpilot.com/review/enfermerausa.com',
 

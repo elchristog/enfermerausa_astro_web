@@ -2,6 +2,7 @@
 // Calificación visible de Trustpilot + widget oficial (TrustBox «Review Collector»).
 // Los valores vienen de src/data/trustpilot.mjs (un solo lugar).
 // El script de arranque de TrustBox se carga una sola vez en BaseLayout.astro.
+// Decisión del dueño: NO mostrar cuántas reseñas hay; solo la puntuación.
 import { trustpilot, ratingEs } from "@/data/trustpilot.mjs";
 
 interface Props {
@@ -18,8 +19,7 @@ const link = dark ? "text-emerald-400" : "text-emerald-700";
 
 <div class={`mx-auto flex max-w-xl flex-col items-center gap-2 rounded-xl border px-4 py-3 text-center ${wrap} ${extra}`} data-trustpilot-rating>
   <p class="text-sm">
-    <strong>Calificación en Trustpilot: {ratingEs}/5</strong>
-    ({trustpilot.reviewCount} reseñas) ·
+    <strong>Calificación en Trustpilot: {ratingEs}/5</strong> ·
     <a href={trustpilot.profileUrl} target="_blank" rel="noopener noreferrer" class={`font-semibold underline ${link}`}>Ver las reseñas en Trustpilot</a>
   </p>
   {hasBox && (
