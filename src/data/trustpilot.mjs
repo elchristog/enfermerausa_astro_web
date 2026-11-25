@@ -5,9 +5,9 @@
 // Y actualiza a mano la línea "Calificación en Trustpilot" de public/llms.txt (archivo estático).
 // No llamar "verificadas" a las reseñas: ninguna lleva la etiqueta Verified de Trustpilot.
 export const trustpilot = {
-  ratingValue: 4.3,            // TrustScore del perfil (de 1 a 5)
-  reviewCount: 7,              // número de reseñas del perfil
-  verifiedOn: '2026-11-23',    // fecha en que se leyó del perfil público
+  ratingValue: 4.4,            // TrustScore del perfil (de 1 a 5)
+  reviewCount: 12,             // número de reseñas del perfil
+  verifiedOn: '2026-11-25',    // fecha en que se leyó del perfil público
   profileUrl: 'https://www.trustpilot.com/review/enfermerausa.com',
 
   // TrustBox (widget oficial). El ID de la unidad de negocio sale del portal de Trustpilot
