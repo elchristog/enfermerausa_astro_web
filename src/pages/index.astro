@@ -1,9 +1,21 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import TrustpilotRating from "@/components/TrustpilotRating.astro";
+import { trustpilot, ratingEs } from "@/data/trustpilot.mjs";
 import { entrevistas } from "@/data/entrevistas.mjs";
 
 const recientes = entrevistas.slice(0, 3);
+
+// Estrellas de la barra de confianza: relleno proporcional a la puntuación (solo puntuación, sin número de reseñas).
+const starsPct = Math.round((trustpilot.ratingValue / 5) * 100);
+const starPath = "M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z";
+
+const quickLinks = [
+  { href: "/ofertas-de-empleo-para-enfermeras-en-usa/", label: "empleo con sponsor" },
+  { href: "/licencia-de-enfermeria-y-examen-nclex-usa/", label: "NCLEX y licencia" },
+  { href: "/proceso-de-visa-y-relocalizacion-para-enfermeras/", label: "visa EB-3" },
+  { href: "/salarios-de-enfermeros-en-estados-unidos/", label: "salarios por estado" },
+  { href: "/enfermera-sin-licencia-rn-en-estados-unidos/", label: "ya estoy en EE.UU. sin licencia RN" },
+];
 
 const faqs = [
   {
@@ -58,39 +70,105 @@ const testimonials = [
   faqs={faqs}
   rating={true}
 >
-  <section class="bg-gradient-to-b from-emerald-50/50 via-white to-white py-16 md:py-24 border-b border-gray-100">
+  <!-- PROPUESTA DE REDISEÑO (borrador): hero con foto + barra de confianza + píldoras. No fusionar sin aprobación del dueño. -->
+  <section class="bg-gradient-to-b from-emerald-50 via-white to-white pt-8 pb-10 md:pt-14 md:pb-14">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div class="max-w-3xl mx-auto text-center">
-        <span class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1.5 rounded-full mb-6 uppercase tracking-wider">
-          Enfermera en Estados Unidos · Acompañamiento en español
-        </span>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
-          <span class="text-emerald-700">Enfermera en Estados Unidos</span>: de la homologación al empleo como RN
-        </h1>
-        <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-          Acompañamos a enfermeras y enfermeros hispanohablantes en el camino completo: homologación del título, NCLEX-RN, licencia, visa EB-3 y empleo con sponsor. Empieza con la <strong>sesión informativa gratuita</strong>, en español y sin tecnicismos innecesarios.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="/sesion-informativa/?desde=portada"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-full sm:w-auto inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/20 transition-all"
-          >
-            Agendar sesión informativa gratuita
-          </a>
-          <a
-            href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/"
-            class="w-full sm:w-auto inline-flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold text-base px-6 py-4 rounded-xl transition-all"
-          >
-            Ver el proceso de homologación
-          </a>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <span class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-bold px-3 py-1.5 rounded-full mb-5 uppercase tracking-wider">
+            Enfermera en Estados Unidos · Acompañamiento en español
+          </span>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-5">
+            <span class="text-emerald-700">Enfermera en Estados Unidos</span>: de la homologación al empleo como RN
+          </h1>
+          <p class="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+            Acompañamos a enfermeras y enfermeros hispanohablantes en el camino completo: homologación del título, NCLEX-RN, licencia, visa EB-3 y empleo con sponsor. Empieza con la <strong>sesión informativa gratuita</strong>, en español y sin tecnicismos innecesarios.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4">
+            <a
+              href="/sesion-informativa/?desde=portada"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/25 transition-all"
+            >
+              Agendar sesión informativa gratuita
+            </a>
+            <a
+              href="/evaluacion-y-homologacion-de-titulo-enfermeria-usa/"
+              class="inline-flex items-center justify-center bg-white hover:bg-emerald-50 text-emerald-800 border-2 border-emerald-200 hover:border-emerald-300 font-semibold text-base px-6 py-4 rounded-xl transition-all"
+            >
+              Ver el proceso de homologación
+            </a>
+          </div>
         </div>
-        <TrustpilotRating class="mt-6" />
-        <p class="mt-6 text-sm text-gray-500">
-          También: <a href="/ofertas-de-empleo-para-enfermeras-en-usa/" class="text-emerald-700 underline">empleo con sponsor</a>{" "}·{" "}<a href="/licencia-de-enfermeria-y-examen-nclex-usa/" class="text-emerald-700 underline">NCLEX y licencia</a>{" "}·{" "}<a href="/proceso-de-visa-y-relocalizacion-para-enfermeras/" class="text-emerald-700 underline">visa EB-3</a>{" "}·{" "}<a href="/salarios-de-enfermeros-en-estados-unidos/" class="text-emerald-700 underline">salarios por estado</a>{" "}·{" "}<a href="/enfermera-sin-licencia-rn-en-estados-unidos/" class="text-emerald-700 underline">ya estoy en EE.UU. sin licencia RN</a>
-        </p>
+
+        <!-- Foto real ya publicada en el sitio (fundadora, public/logo.webp). Sin imágenes generadas con IA. -->
+        <div class="lg:col-span-5">
+          <figure class="relative mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-md">
+            <div class="absolute -inset-3 rounded-[2rem] bg-emerald-100/70 -rotate-2" aria-hidden="true"></div>
+            <img
+              src="/logo.webp"
+              alt="Alejandra Martínez, RN, BSN, IBCLC, fundadora de Enfermera en Estados Unidos"
+              width="600"
+              height="600"
+              fetchpriority="high"
+              decoding="async"
+              class="relative w-full aspect-square object-cover rounded-3xl shadow-xl ring-1 ring-black/5"
+            />
+            <figcaption class="relative -mt-8 mx-4 bg-white/95 backdrop-blur rounded-xl shadow-md px-4 py-3 text-left">
+              <p class="text-sm font-bold text-gray-900 leading-tight">Alejandra Martínez, RN, BSN, IBCLC</p>
+              <p class="text-xs text-gray-500">Fundadora de Enfermera en Estados Unidos</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Barra de confianza integrada (solo puntuación de Trustpilot, SIN número de reseñas) -->
+  <section class="bg-white pb-6 md:pb-8 -mt-2" aria-label="Confianza">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-y md:divide-y-0 divide-gray-200 rounded-2xl border border-gray-200 bg-white shadow-sm" data-trustpilot-rating>
+        <div class="flex flex-col items-center justify-center gap-1 px-5 py-4 text-center">
+          <div class="flex items-center gap-2">
+            <span class="relative inline-block h-5 w-[6.25rem]" role="img" aria-label={`${ratingEs} de 5 estrellas en Trustpilot`}>
+              <span class="absolute inset-0 flex text-gray-200">
+                {[0, 1, 2, 3, 4].map(() => (<svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="currentColor" aria-hidden="true"><path d={starPath} /></svg>))}
+              </span>
+              <span class="absolute inset-y-0 left-0 overflow-hidden" style={`width:${starsPct}%`}>
+                <span class="flex w-[6.25rem] text-[#00b67a]">
+                  {[0, 1, 2, 3, 4].map(() => (<svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="currentColor" aria-hidden="true"><path d={starPath} /></svg>))}
+                </span>
+              </span>
+            </span>
+          </div>
+          <p class="text-sm text-gray-700"><strong>Calificación en Trustpilot: {ratingEs}/5</strong></p>
+          <a href={trustpilot.profileUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-700 underline">Ver las reseñas en Trustpilot</a>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-1 px-5 py-4 text-center">
+          <p class="text-sm text-gray-700"><strong>Más de 50.000 suscriptores</strong> en YouTube</p>
+          <p class="text-xs text-gray-500">Testimonios en video, verificables en el canal oficial</p>
+        </div>
+
+        <!-- Aval de Alliance: se suma una tercera celda aquí cuando la Alliance confirme el endoso y ENFERMERAEEU LLC aparezca en su lista oficial de endosantes (decisión del dueño, 25-nov-2026). -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Accesos rápidos: píldoras que se ajustan bien en móvil -->
+  <section class="bg-white pb-12 md:pb-14 border-b border-gray-100" aria-label="Accesos rápidos">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <p class="text-center text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">También:</p>
+      <ul class="flex flex-wrap justify-center gap-2 sm:gap-3">
+        {quickLinks.map((l) => (
+          <li>
+            <a href={l.href} class="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100 hover:border-emerald-300 transition">
+              {l.label}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 
