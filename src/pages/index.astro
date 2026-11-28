@@ -221,15 +221,28 @@ const testimonials = [
         {testimonials.map((t) => (
           <figure class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col">
             <div class="relative w-full overflow-hidden rounded-xl bg-black mb-4" style="padding-bottom:56.25%">
-              <iframe
-                class="absolute inset-0 w-full h-full"
-                src={`https://www.youtube-nocookie.com/embed/${t.videoId}`}
-                title={`Entrevista: ${t.name}`}
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <!-- Fachada ligera: la home no carga el reproductor de YouTube al abrir; muestra la miniatura del video y el reproductor entra solo al hacer clic. -->
+              <button
+                type="button"
+                class="yt-facade absolute inset-0 w-full h-full cursor-pointer"
+                data-yt={t.videoId}
+                aria-label={`Reproducir entrevista: ${t.name}`}
+              >
+                <img
+                  class="absolute inset-0 w-full h-full object-cover"
+                  src={`https://i.ytimg.com/vi_webp/${t.videoId}/sddefault.webp`}
+                  alt={`Entrevista en video: ${t.name}`}
+                  width="640"
+                  height="480"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="absolute inset-0 flex items-center justify-center">
+                  <span class="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 shadow-lg">
+                    <svg viewBox="0 0 24 24" class="ml-1 h-7 w-7 fill-red-600" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+                  </span>
+                </span>
+              </button>
             </div>
             <h3 class="text-lg md:text-xl font-extrabold text-gray-900 mb-3">{t.headline}</h3>
             <blockquote class="text-gray-700 leading-relaxed text-sm md:text-base flex-1">
@@ -420,3 +433,22 @@ const testimonials = [
     </div>
   </div>
 </BaseLayout>
+
+<!-- Carga del reproductor de YouTube solo al hacer clic en la miniatura (fachada ligera de la home). -->
+<script is:inline>
+  document.addEventListener("click", function (event) {
+    var facade = event.target.closest && event.target.closest(".yt-facade");
+    if (!facade) return;
+    event.preventDefault();
+    var id = facade.getAttribute("data-yt");
+    if (!id) return;
+    var iframe = document.createElement("iframe");
+    iframe.className = "absolute inset-0 w-full h-full";
+    iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1");
+    iframe.setAttribute("title", "Entrevista");
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+    iframe.setAttribute("allowfullscreen", "");
+    facade.replaceWith(iframe);
+  });
+</script>
