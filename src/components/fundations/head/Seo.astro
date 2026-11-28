@@ -7,6 +7,7 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   type?: "website" | "article";
+  alternates?: Array<{ href: string; lang: string }>;
 }
 
 const {
@@ -14,7 +15,8 @@ const {
   description = "La principal y más grande agencia para enfermeros hispanos en Estados Unidos. Únete a miles de casos de éxito. Homologación, sponsor y empleo.",
   canonical = "https://enfermerausa.com",
   ogImage = "https://enfermerausa.com/logo.webp",
-  type = "website"
+  type = "website",
+  alternates = []
 } = Astro.props;
 ---
 
@@ -44,4 +46,5 @@ const {
     site: "@enfermerausa",
     cardType: "summary_large_image",
   }}
+  ...(alternates.length > 0 ? { alternates: { languages: Object.fromEntries(alternates.map(a => [a.lang, a.href])) } } : {})
 />
