@@ -18,7 +18,7 @@ Si empiezas desde cero, un RN tarda unos **2 años** con grado asociado (ADN) o 
 
 ## Respuesta corta
 
-En Estados Unidos hay cuatro niveles principales de enfermería: **CNA** (auxiliar), **LPN/LVN** (enfermero práctico), **RN** (enfermero registrado, el nivel profesional estándar) y **APRN** (práctica avanzada, con maestría o doctorado). Quien estudia dentro de EE.UU. suele tardar unos 2 años para un RN con grado asociado (ADN) o unos 4 años con licenciatura (BSN), y luego debe aprobar el examen NCLEX.
+En Estados Unidos hay cuatro tipos de enfermeras, que corresponden a los cuatro niveles principales: **CNA** (auxiliar), **LPN/LVN** (enfermero práctico), **RN** (enfermero registrado, el nivel profesional estándar) y **APRN** (práctica avanzada, con maestría o doctorado). Quien estudia dentro de EE.UU. suele tardar unos 2 años para un RN con grado asociado (ADN) o unos 4 años con licenciatura (BSN), y luego debe aprobar el examen NCLEX.
 
 Si ya eres licenciada o titulado en enfermería en otro país, **no empiezas la carrera de cero**: homologas tu título, apruebas el NCLEX-RN y obtienes la licencia del estado donde quieres trabajar.
 
@@ -51,7 +51,7 @@ Este es el orden habitual para enfermeras formadas fuera de Estados Unidos:
 
 1. **Elegir el estado y su Board of Nursing.** No hay una licencia federal: cada estado define sus requisitos. Es el primer paso, porque de él depende qué evaluación de credenciales aceptan.
 2. **Evaluación de credenciales.** Un organismo autorizado (por ejemplo CGFNS/TruMerit) revisa tu título y tu plan de estudios. Detalle en nuestra [guía de homologación del título](/evaluacion-y-homologacion-de-titulo-enfermeria-usa/) y en la [guía paso a paso 2026](/blog/posts/guia-homologacion-titulo-enfermeria-usa-2026/).
-3. **Inglés.** Muchos estados y empleadores piden un examen de inglés aprobado. Qué pruebas se aceptan y qué puntaje piden está en [requisitos de inglés y VisaScreen](/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/), y el ejemplo de un estado concreto en los [requisitos de Florida para enfermera extranjera](/requisitos-nclex-florida-enfermera-extranjera/).
+3. **Inglés.** Muchos estados y empleadores piden un examen de inglés aprobado. Qué pruebas se aceptan y qué puntaje piden está en [requisitos de inglés y VisaScreen](/blog/posts/requisitos-ingles-visascreen-enfermeras-2026/), y el ejemplo de un estado concreto en los [requisitos de Florida para enfermera extranjera](/requisitos-nclex-florida-enfermera-extranjera/). Si prefieres leerlo en inglés, publicamos la misma guía como [VisaScreen for nurses: cost, requirements and steps](/visascreen-for-nurses/).
 4. **NCLEX-RN.** El examen de licencia es en inglés y adaptativo: tiene entre 85 y 150 preguntas. Más en [licencia y examen NCLEX](/licencia-de-enfermeria-y-examen-nclex-usa/) y en [cómo prepararlo en español](/blog/posts/preparacion-examen-nclex-rn-espanol-2026/).
 5. **Licencia estatal.** Con la aprobación del Board y del NCLEX obtienes tu licencia de RN.
 6. **Visa y empleo con sponsor.** Para trabajar con residencia, muchos hospitales patrocinan la visa EB-3. Conoce los tiempos reales en [cómo leer el Visa Bulletin EB-3](/blog/posts/como-leer-visa-bulletin-eb3-enfermeras-2026/) y en el [proceso de visa y relocalización](/proceso-de-visa-y-relocalizacion-para-enfermeras/).
