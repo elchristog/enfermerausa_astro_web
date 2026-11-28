@@ -59,6 +59,15 @@ const testimonials = [
     videoUrl: "https://www.youtube.com/watch?v=8kfnvoUVvvI",
     videoLabel: "Ver entrevista completa en YouTube",
   },
+  {
+    name: "Irene Sánchez",
+    headline: "De España a Estados Unidos: NCLEX e inglés aprobados",
+    detail: "Enfermera española · NCLEX e inglés aprobados, con patrocinador, en espera del trámite migratorio",
+    quote: "Cuanto antes empieces, antes podrás llegar allí. Yo sí que me arrepiento un poco de que esperé 2 años.",
+    videoId: "r-IN_VoCbuU",
+    videoUrl: "https://www.youtube.com/watch?v=r-IN_VoCbuU",
+    videoLabel: "Ver entrevista completa en YouTube",
+  },
 ];
 ---
 
@@ -217,7 +226,7 @@ const testimonials = [
           No inventamos reseñas. Estas entrevistas están publicadas en el canal oficial de YouTube; puedes ver el video completo.
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {testimonials.map((t) => (
           <figure class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col">
             <div class="relative w-full overflow-hidden rounded-xl bg-black mb-4" style="padding-bottom:56.25%">
