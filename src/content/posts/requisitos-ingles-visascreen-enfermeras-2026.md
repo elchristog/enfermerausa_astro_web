@@ -17,6 +17,8 @@ Si te formaste como enfermera fuera de Estados Unidos, necesitas demostrar domin
 Esta guía reúne los puntajes vigentes para enfermeras registradas, qué cambió y cómo planificar el examen sin perder tiempo ni dinero.
 
 > **¿Buscas qué es el VisaScreen, cuánto cuesta y cómo se tramita?** Lee la guía completa: [Qué es el VisaScreen: costo ($740), requisitos y pasos para enfermeras](/que-es-el-visascreen-costo-requisitos-pasos/).
+>
+> Reading in English? Here is the same guide: [VisaScreen for nurses: cost, requirements and steps](/visascreen-for-nurses/).
 
 ## Qué cambió el 12 de mayo de 2026
 
