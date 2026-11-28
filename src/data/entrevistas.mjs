@@ -14,6 +14,22 @@
 
 export const entrevistas = [
   {
+    id: "CpjVBZywR6g",
+    nombre: "Milena",
+    titulo: "Entrevista a Milena: un sueño que va más allá de ejercer enfermería en Estados Unidos",
+    resumen: "Milena, enfermera ecuatoriana, cuenta su historia y lo que la motiva a empezar su camino para ejercer enfermería en Estados Unidos: reencontrarse con su mamá, que vive allá.",
+    tema: "Experiencia",
+    uploadDate: "2026-11-25",
+  },
+  {
+    id: "r-IN_VoCbuU",
+    nombre: "Irene Sánchez",
+    titulo: "Entrevista a Irene Sánchez: de España a Estados Unidos",
+    resumen: "Irene, enfermera española, comparte parte de su experiencia, cómo ha sido dar este paso y qué significa trabajar por una oportunidad de crecimiento profesional fuera de su país.",
+    tema: "Experiencia",
+    uploadDate: "2026-11-19",
+  },
+  {
     id: "TEbnfUiGYf0",
     nombre: "Angelica Sarabria",
     titulo: "Angelica Sarabria: aprobó el NCLEX a la primera",
