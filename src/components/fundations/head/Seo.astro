@@ -18,6 +18,12 @@ const {
   type = "website",
   alternates = []
 } = Astro.props;
+
+// hreflang: solo se pasa cuando hay alternates definidos (par en/es)
+const alternateLanguages = alternates.length > 0
+  ? Object.fromEntries(alternates.map(a => [a.lang, a.href]))
+  : null;
+const seoExtraProps = alternateLanguages ? { alternates: { languages: alternateLanguages } } : {};
 ---
 
 <AstroSeo
@@ -46,5 +52,5 @@ const {
     site: "@enfermerausa",
     cardType: "summary_large_image",
   }}
-  ...(alternates.length > 0 ? { alternates: { languages: Object.fromEntries(alternates.map(a => [a.lang, a.href])) } } : {})
+  {...seoExtraProps}
 />
